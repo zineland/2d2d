@@ -8,3 +8,13 @@ cover = "/static/s1/1/retool.png"
 pub_date = "2021-12-23"
 publish = true
 featured = true
+
+[[article]]
+slug = "cncf"
+file = "2-cncf.md"
+title = "CNCF 的愿景：技术变革与对抗熵增"
+author = "Folyd"
+cover = "/static/s1/2/specs.png"
+pub_date = "2021-12-29"
+publish = true
+featured = true
