@@ -1,0 +1,23 @@
+
+[site]
+name = "TO-D 杂志"
+title = "TO-D 杂志"
+description = "专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。"
+menu = [
+  { name = "关于", url = "/about" },
+  { name = "博客", url = "/blog" },
+  { name = "Github", url = "https://github.com/zineland/2d2d" },
+]
+
+[theme]
+primary-color = "#ffb52f"
+primary-text-olor = "#000"
+primary-link-color = "#ffb52f"
+background-image = "/static/pattern.svg"
+footer-template = "templates/footer.html"
+
+[[season]]
+slug = "i"
+number = 1
+title = "第一季"
+path = "content/season-1"
