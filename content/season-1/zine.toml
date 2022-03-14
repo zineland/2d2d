@@ -18,3 +18,13 @@ cover = "/static/s1/2/specs.png"
 pub_date = "2021-12-29"
 publish = true
 featured = true
+
+[[article]]
+slug = "hashicorp"
+file = "3-hashicorp.md"
+title = "时势造英雄-HashiCorp"
+author = "Folyd"
+cover = "/static/s1/3/ipo.png"
+pub_date = "2022-01-06"
+publish = true
+featured = true

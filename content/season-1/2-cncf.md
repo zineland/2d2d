@@ -4,7 +4,7 @@
 
 CNCF (Cloud Native Computing Foundation) 这个词大家都有所耳闻，Cloud Native (云原生) 的概念在国内外也如火如荼。这家成立于 2015 年的非盈利基金会的愿景是什么？这一期我们来简单探讨一下。
 
-CNCF 的官方章程 (charter) 写的是：**The Foundation’s mission is to make cloud native computing ubiquitous...**。那云原生 (Cloud Native) 具体是指什么？官方给了一个[定义](https://www.cncf.io/about/who-we-are/)： 
+CNCF 的官方章程 (charter) 写的是：**The Foundation’s mission is to make cloud native computing ubiquitous...** 那云原生 (Cloud Native) 具体是指什么？官方给了一个[定义](https://www.cncf.io/about/who-we-are/)： 
 
 > Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach.
 
@@ -25,7 +25,7 @@ CNCF 的很多项目几乎都是各大云厂商纷纷采用的技术，同时也
 
 ## 对抗熵增
 
-事物无序程度的度量被称为熵，而熵增（事物无序程度的增加）是宇宙客观存在的规律。软件技术在不断进化变革的同时，不可避免的也会发生熵增。**这种熵增会体现在很多方面，比如技术复杂度变高、技术规范程度变低、软件间可交互性变难。**CNCF 不仅有引领新的技术变革的产品（Kubernetes, Prometeus)，同样也在孵化一批对抗熵增的项目，那就是这一系列的 **Specification（技术规范）**。 
+事物无序程度的度量被称为熵，而熵增（事物无序程度的增加）是宇宙客观存在的规律。软件技术在不断进化变革的同时，不可避免的也会发生熵增。**这种熵增会体现在很多方面，比如技术复杂度变高、技术规范程度变低、软件间可交互性变难。** CNCF 不仅有引领新的技术变革的产品（Kubernetes, Prometeus)，同样也在孵化一批对抗熵增的项目，那就是这一系列的 **Specification（技术规范）**。 
 
 ![img](/static/s1/2/specs.png)
 
