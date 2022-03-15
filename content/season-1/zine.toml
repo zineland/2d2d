@@ -28,3 +28,13 @@ cover = "/static/s1/3/ipo.png"
 pub_date = "2022-01-06"
 publish = true
 featured = true
+
+[[article]]
+slug = "kong-vs-apisix"
+file = "4-kong-vs-apisix.md"
+title = "云原生时代的中外 API 网关之争"
+author = "Folyd"
+cover = "/static/s1/4/vs.png"
+pub_date = "2022-01-13"
+publish = true
+featured = true
