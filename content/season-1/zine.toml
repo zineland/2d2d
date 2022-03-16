@@ -38,3 +38,13 @@ cover = "/static/s1/4/vs.png"
 pub_date = "2022-01-13"
 publish = true
 featured = true
+
+[[article]]
+slug = "coreos"
+file = "5-coreos.md"
+title = "云原生的一代传奇 CoreOS"
+author = "Folyd"
+cover = "/static/s1/5/product.png"
+pub_date = "2022-01-20"
+publish = true
+featured = true

@@ -1,5 +1,13 @@
 {
   "urlPreviews": {
+    "https://retool.com/blog/series-c/": [
+      "Series C: Raising less money at lower valuations",
+      ""
+    ],
+    "https://www.gv.com/news/core-os-founders/": [
+      "CoreOS Co-Founders Alex Polvi and Brandon Philips on Tackling Enormous Opportunities | GV",
+      "One of the more fulfilling aspects of my job is connecting new founders with experienced mentors who can help them grow. CoreOS founders Alex Polvi and Brandon Philips are among the most requested ope"
+    ],
     "https://www.hashicorp.com/blog/a-new-chapter-for-hashicorp": [
       "A New Chapter for HashiCorp",
       "As we officially enter the public markets, we plan to continue to do what we think we do best: solving problems for our end users."
@@ -12,9 +20,9 @@
       "Nomad vs. Kubernetes | Nomad by HashiCorp",
       "Comparison between Nomad and Kubernetes"
     ],
-    "https://retool.com/blog/series-c/": [
-      "Series C: Raising less money at lower valuations",
-      ""
+    "https://www.redhat.com/en/blog/faq-red-hat-acquire-coreos": [
+      "FAQ: Red Hat to acquire CoreOS",
+      "]Q. What is being announced?On Jan. 30, 2018, Red Hat announced that it has signed a definitive agreement to acquire CoreOS, Inc. The acquisition is subject to certain customary closing conditions.Q. "
     ]
   }
 }
