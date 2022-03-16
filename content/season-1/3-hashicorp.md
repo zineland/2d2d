@@ -13,25 +13,17 @@
 - 2021 年 12 月 7 日，AWS 发生了它当月第一次重大线上宕机事故；
 - 第三天（2021 年 12 月 9 日），一家多云软件提供商和倡导者 HashiCorp 在 Nasdaq [上市](https://www.sec.gov/Archives/edgar/data/0001720671/000119312521352796/d205906d424b4.htm)，市值 150 亿美金；
 
-<div class="url-preview">
-A New Chapter for HashiCorp
-
-As we officially enter the public markets, we plan to continue to do what we think we do best: solving problems for our end users.
-
-[https://www.hashicorp.com/blog/a-new-chapter-for-hashicorp](https://www.hashicorp.com/blog/a-new-chapter-for-hashicorp)
-</div>
+```urlpreview
+https://www.hashicorp.com/blog/a-new-chapter-for-hashicorp
+```
 
 - 2021 年 12 月 15 日、2021 年 12 月 23 日，AWS 再次发生当月第二、三次线上宕机事故；
 
 当月国外[众多媒体](https://www.cnbc.com/2021/12/12/aws-outage-and-hashicorp-ipo-point-to-a-multicloud-future.html)趁此机会都在利用这条时间线来大肆宣传多云 (Multi-Cloud) 时代，似乎意味着多云是未来不可避免的趋势？确实如此，2021 年 HashiCorp 发布了一份详细的关于云现状的问卷调查报告。
 
-<div class="url-preview">
-HashiCorp State of Cloud Strategy Survey
-
-Multi-cloud has become the de facto standard operations model for IT organizations of all sizes, in all regions, and every industry.
-
-[https://www.hashicorp.com/state-of-the-cloud](https://www.hashicorp.com/state-of-the-cloud)
-</div>
+```urlpreview
+https://www.hashicorp.com/state-of-the-cloud
+```
 
 这篇报告里面有几个重点值得关注：
 
@@ -54,13 +46,9 @@ HashiCorp 目前总共有八款主打产品，囊括了从开发 (Packer, Vagran
 - [Packer](https://www.packer.io/) - 遵循 Infrastructure as code 理念的多云自动化镜像构建工具；
 - [Nomad](https://www.nomadproject.io/) - 简单灵活的 (容器化和传统非容器化) 应用部署、调度、管理的解决方案，它可以无缝的和  Terraform, Vault, Consul 结合，是一个轻量级的 Kubernetes 替代产品；
 
-<div class="url-preview">
-Nomad vs. Kubernetes | Nomad by HashiCorp
-
-Comparison between Nomad and Kubernetes
-
-[https://www.nomadproject.io/docs/nomad-vs-kubernetes](https://www.nomadproject.io/docs/nomad-vs-kubernetes)
-</div>
+```urlpreview
+https://www.nomadproject.io/docs/nomad-vs-kubernetes
+```
 
 - [Boundary](https://www.boundaryproject.io/) - 2020 年 10 月份推出的多云远程访问解决方案，很有创新性，目前也没有很好的竞争产品；
 - [Waypoint](https://www.waypointproject.io/) - HashiCorp 最新的产品（同2020 年 10 月份）。遵循 Intrasturecture as code 的应用构建、部署、上线一站式工具。这个产品感觉潜力也很大。

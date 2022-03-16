@@ -1,16 +1,11 @@
 
-# 
-
 ![img](/static/s1/1/retool.png)
 
 [Retool](https://retool.com/) 是一家 YC 于 2017 年孵化的硅谷创业公司，专注于企业内部系统的低代码平台。昨天 Retool 官宣 C 轮 2000 万美金融资，估值超过 18亿美金。值得一提的是这篇官宣文非常有意思。
 
-<div class="url-preview">
-Series C: Raising less money at lower valuations
-
-
-[https://retool.com/blog/series-c/](https://retool.com/blog/series-c/)
-</div>
+```urlpreview
+https://retool.com/blog/series-c/
+```
 
 
 大家都知道每个创业公司都希望自己新一轮融资中估值越高越好，融到的钱越多越好。但 Retool CEO 却不这么认为，**他认为创业公司的这种高估值融资行为虽然非常利于吸引媒体的报道，但最终损害的是公司普通员工的切实利益。往往越早以越高估值进行融资，公司员工的期权会稀释的越快，最终受益的往往是投资人。** 因为投资人入场时都有重新按比例分配的权利（pro-rata rights）来保证自己的利益，但普通员工没有。为了满足投资人的利益，只有稀释普通员工的那部分期权。文章中举了 Uber 和 Coinbase 的例子做对比，同样是上市五年前相同价值的期权，两者上市后，Coinbase 的那份带来的回报有 57 倍，而 Uber 只有 2 倍。文中也举了 Snowflake 的例子，Snowflake 各轮融资到最后上市，普通员工的期权被稀释了接近 60%，Retool 希望能把这个数控制在 9%。

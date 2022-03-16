@@ -1,0 +1,20 @@
+{
+  "urlPreviews": {
+    "https://www.hashicorp.com/blog/a-new-chapter-for-hashicorp": [
+      "A New Chapter for HashiCorp",
+      "As we officially enter the public markets, we plan to continue to do what we think we do best: solving problems for our end users."
+    ],
+    "https://www.hashicorp.com/state-of-the-cloud": [
+      "HashiCorp State of Cloud Strategy Survey",
+      "Multi-cloud has become the de facto standard operations model for IT organizations of all sizes, in all regions, and every industry."
+    ],
+    "https://www.nomadproject.io/docs/nomad-vs-kubernetes": [
+      "Nomad vs. Kubernetes | Nomad by HashiCorp",
+      "Comparison between Nomad and Kubernetes"
+    ],
+    "https://retool.com/blog/series-c/": [
+      "Series C: Raising less money at lower valuations",
+      ""
+    ]
+  }
+}
