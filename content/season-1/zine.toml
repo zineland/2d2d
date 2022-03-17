@@ -78,3 +78,13 @@ cover = "/static/s1/8/d2iq.png"
 pub_date = "2022-02-18"
 publish = true
 featured = true
+
+[[article]]
+slug = "mirantis"
+file = "9-mirantis.md"
+title = "收购 Docker 企业业务的 Mirantis 是什么来路？"
+author = "Folyd"
+cover = "/static/s1/9/mirantis.png"
+pub_date = "2022-02-25"
+publish = true
+featured = true
