@@ -58,3 +58,13 @@ cover = "/static/s1/6/docker.jpeg"
 pub_date = "2022-01-27"
 publish = true
 featured = true
+
+[[article]]
+slug = "rancher"
+file = "7-rancher.md"
+title = "云农场的放牧人 Rancher"
+author = "Folyd"
+cover = "/static/s1/7/rancher.png"
+pub_date = "2022-02-10"
+publish = true
+featured = true
