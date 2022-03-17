@@ -48,3 +48,13 @@ cover = "/static/s1/5/product.png"
 pub_date = "2022-01-20"
 publish = true
 featured = true
+
+[[article]]
+slug = "docker"
+file = "6-docker.md"
+title = "一封 Docker 公司的来信"
+author = "Folyd"
+cover = "/static/s1/5/product.png"
+pub_date = "2022-01-27"
+publish = true
+featured = true
