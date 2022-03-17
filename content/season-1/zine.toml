@@ -68,3 +68,13 @@ cover = "/static/s1/7/rancher.png"
 pub_date = "2022-02-10"
 publish = true
 featured = true
+
+[[article]]
+slug = "mesos"
+file = "8-mesos.md"
+title = "曾经 Mesos 背后的公司，如今在干嘛?"
+author = "Folyd"
+cover = "/static/s1/8/d2iq.png"
+pub_date = "2022-02-18"
+publish = true
+featured = true
