@@ -12,8 +12,8 @@ menu = [
 
 [theme]
 primary-color = "#ffb52f"
-primary-text-olor = "#000"
-primary-link-color = "#ffb52f"
+main-color = "#000"
+link-color = "#e07312"
 background-image = "/static/pattern.svg"
 footer-template = "templates/footer.html"
 
