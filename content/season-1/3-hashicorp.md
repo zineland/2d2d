@@ -46,16 +46,16 @@ HashiCorp 目前总共有八款主打产品，囊括了从开发 (Packer, Vagran
 - [Packer](https://www.packer.io/) - 遵循 Infrastructure as code 理念的多云自动化镜像构建工具；
 - [Nomad](https://www.nomadproject.io/) - 简单灵活的 (容器化和传统非容器化) 应用部署、调度、管理的解决方案，它可以无缝的和  Terraform, Vault, Consul 结合，是一个轻量级的 Kubernetes 替代产品；
 
-```urlpreview
-https://www.nomadproject.io/docs/nomad-vs-kubernetes
-```
+  ```urlpreview
+  https://www.nomadproject.io/docs/nomad-vs-kubernetes
+  ```
 
 - [Boundary](https://www.boundaryproject.io/) - 2020 年 10 月份推出的多云远程访问解决方案，很有创新性，目前也没有很好的竞争产品；
 - [Waypoint](https://www.waypointproject.io/) - HashiCorp 最新的产品（同2020 年 10 月份）。遵循 Intrasturecture as code 的应用构建、部署、上线一站式工具。这个产品感觉潜力也很大。
 
 ![img](/static/s1/3/stack.png)
 
-HashiCorp 早些年发布了它的 HashiCorp 之道 ([The Tao of HashiCorp](https://www.hashicorp.com/tao-of-hashicorp))，这些产品无一不践行着这一哲学。HashiCorp 同样是 Go 语言的深度使用者，几乎所有产品都是 Go 语言编写，他们甚至把 Go 语言推崇的 CSP 并发理念也写进了他们的道中。
+HashiCorp 早些年发布了它的 HashiCorp 之道 ([The Tao of HashiCorp](https://www.hashicorp.com/tao-of-hashicorp))，这些产品无一不践行着这一哲学。HashiCorp 同样是 Go 语言的深度使用者，几乎所有产品都是 Go 语言编写，他们甚至把 Go 语言推崇的 [CSP 并发](https://en.wikipedia.org/wiki/Communicating_sequential_processes)理念也写进了他们的道中。
 
 ## 商业模式
 
@@ -66,11 +66,17 @@ HashiCorp 的商业模式也很有代表性，算是开源软件商业化的经�
 - **产品全部开源。** 开源是非常好的获客方式，同时也能得到社区检验和快速获取反馈、快速迭代的好途径。
 - **Enterprise 版本收费。** 原则是 technical challenges 都在免费的开源层面解决，针对企业或大团队需要的功能才收费。
 
-> 比如，一般大家会把安全放在 enterprise 版本里面，但是因为 Vault 是一个安全产品，所以“you should not have to pay us to be secure as Vault”。开源版本里面也可以满足非常高的安全要求。但是，是否满足 GDPR，以及各种数据管理法规等等，都不是技术问题，所以放在付费版本里。
->
-> 对于 Team，原则就是：个人或者小的 team 应该可以永远免费使用。但是，涉及跨团队协作的功能就要收费，因为这也是典型的 organizational challenges.
+  > 比如，一般大家会把安全放在 enterprise 版本里面，但是因为 Vault 是一个安全产品，所以“you should not have to pay us to be secure as Vault”。开源版本里面也可以满足非常高的安全要求。但是，是否满足 GDPR，以及各种数据管理法规等等，都不是技术问题，所以放在付费版本里。
+  >
+  > 对于 Team，原则就是：个人或者小的 team 应该可以永远免费使用。但是，涉及跨团队协作的功能就要收费，因为这也是典型的 organizational challenges.
 
 - **构建社区。** HashiCorp 从创立之初就非常注重开源社区的运营，也收获了非常多的社区粉丝。利用开源形成事实标准，是企业最牢固的隐形护城河。
+
+> 商业模式这部分内容有参考 **M小姐研习录** 的这篇公众号文章，写的非常详细，强烈推荐阅读：
+
+```urlpreview
+https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ
+```
 
 HashiCorp 是 2012 年创立，CNCF 的云原生在 2015 年才提出来，目前 HashiCorp 有五款产品在 CNCF 的全景图中，分别是 Terraform, Vault, Nomad, Consul, Packer，而这五款产品都是 2015 年之前发布的。从创立到上市的九年时间，HashiCorp 顺应了时代的潮流，而时代也成就了 HashiCorp!
 

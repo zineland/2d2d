@@ -81,7 +81,7 @@
 
 - [Fleet](https://github.com/rancher/fleet) - 业界首款**海量 K8S 集群** (up to a million clusters) 管理产品。
 
-  > Fleet 是 Rancher 联合创始人 Darren Shepherd 主导的项目，目前正在活跃开发中。细心的读者会发现之前 [CoreOS 那一期](/i/coreos)介绍过他们也有一款产品叫 Fleet。它是 CoreOS 团队在早期构建的容器编排系统，目前已经停止维护。**Rancher 的 Fleet 正是 Darren Shepherd 为了致敬 CoreOS 的 Fleet 的。**“我一直是它的忠实粉丝，将这一项目命名为 Fleet 也包含了我的私心。所以我希望重新使用 Fleet 这一名字，这是对这个非常出色的容器领域早期项目的致敬。”
+  > Fleet 是 Rancher 联合创始人 Darren Shepherd 主导的项目，目前正在活跃开发中。细心的读者会发现之前 [CoreOS 那一期](/s1/coreos)介绍过他们也有一款产品叫 Fleet。它是 CoreOS 团队在早期构建的容器编排系统，目前已经停止维护。**Rancher 的 Fleet 正是 Darren Shepherd 为了致敬 CoreOS 的 Fleet 的。**“我一直是它的忠实粉丝，将这一项目命名为 Fleet 也包含了我的私心。所以我希望重新使用 Fleet 这一名字，这是对这个非常出色的容器领域早期项目的致敬。”
 
 - [Submarine](https://submariner.io/) - 在 L3 层支持多个 Kubernetes 集群之间的跨集群连接的网络方案。
 
@@ -90,11 +90,13 @@
 - [Rio](https://github.com/rancher/rio) - 基于 Kubernetes 的 MicroPaaS 平台，后来于 2021 年暂停，官方并未给出具体原因。
 
   > ![img](/static/s1/7/tg-rio.png)
+  >
+  > 3 月更新：有 Twitter 网友问了为什么暂停 Rio 这个项目的问题， Darren Shepherd 给了一个[简短的回答](https://twitter.com/ibuildthecloud/status/1503411799294500866)。
 
 - [Rancher Desktop](https://rancherdesktop.io/) - 之前介绍过的 Docker Desktop 的一个替代产品，它另外的一个优点是**用户可以在 Rancher Desktop 上非常轻松地切换任何 K8S 的不同版本。**
 - [Epinio](https://epinio.io/) - Rancher 被收购后和 SUSE 一起开发的基于 Kubernetes 的 PaaS 项目，目前还在早期阶段。个人感觉 Rio 被暂停可能跟这个项目有关。
 
-  > ![img](/static/s1/7/tg-epinio.png)
+  > <p><img style="width: 380px" src="/static/s1/7/tg-epinio.png"></p>
 
 Rancher 的项目实在是太多了，还有一些项目没有例举出来。Rancher 过去几年深刻洞察行业趋势，发掘客户需求，推出了一个又一个备受欢迎的产品，2020 年被 SUSE 收购后更是强强联合。
 

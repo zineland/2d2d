@@ -21,13 +21,13 @@ Mesos 最初是加州伯克利大学 RAD 实验室 2009 年开始的一个学术
 
 > Mesos 一词来源于希腊语，是 middle (中间) 的意思，英语里面甚至有一个 *meso-* 的词根。Sphere 则表示某个领域或范围，而 Mesosphere 既指地球大气层的中流层（介于平流层和热流层中间），也可以表示 Mesos 这个领域。
 >
-> 国内青云也有一个专注于 Kubernetes 技术的团队，他们的产品名为 [Kubesphere](https://kubesphere.io/)，估计也是受当时 Mesosphere 的启发。
+> 国内青云也有一个专注于 Kubernetes 技术的团队，他们的产品名为 [Kubesphere](https://kubesphere.io/)，估计也是受到 Mesosphere 的启发。
 
 ![img](/static/s1/8/mesosphere.png)
 
 当时的 Mesosphere 除了 Apache Mesos 外，还有两款主要产品：
 
-- **[DC/OS](https://dcos.io/)** **- 一套基于 Mesos 的数据中心操作系统，也是 Mesosphere 最主要的商业化产品。**
+- **[DC/OS](https://dcos.io/)- 一套基于 Mesos 的数据中心操作系统，也是 Mesosphere 最主要的商业化产品。**
 
   > DC/OS 最初是 Data Center Operating System 的缩写，现在已经被改为 Distributed Cloud Operating System 的缩写。前期这款产品只支持 Mesos 和 Docker，后来随着 Kubernetes 的崛起，也支持了 Kubernetes。
 
@@ -91,4 +91,4 @@ Mesos “死了”，但 Mesosphere 这家公司还得继续活着。**没有成
 
 ![img](/static/s1/8/dkp.png)
 
-**技术迭代如此之快，市场竞争愈加激烈，没有人能预料到下一个** **Kubernetes** **会什么时候崛起，唯有勇敢、坚定，跌倒了再重新爬起，像 D2iQ 一样，既往不恋，纵情向前！**
+**技术迭代如此之快，市场竞争愈加激烈，没有人能预料到下一个 Kubernetes 会什么时候崛起，唯有勇敢、坚定，跌倒了再重新爬起，像 D2iQ 一样，既往不恋，纵情向前！**

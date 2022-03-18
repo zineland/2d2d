@@ -19,13 +19,13 @@
 
 2012 年 OpenStack 基金会[成立](https://www.businesswire.com/news/home/20120919005997/en/OpenStack-Launches-Independent-Foundation-Begins-Work-Protecting)，OpenStack 的黄金时代到来。而 Mirantis 也成为了这个基金会的创始成员之一，Mirantis 的创始人也当选了基金会的董事会成员。从 2013 年到 2015 年，Mirantis 分别完成了 2000 万美金的 A 轮和 2 亿美金的 B 轮融资，投资方不仅有 Intel、RedHat 和爱立信，还有一家来自中国的[华山资本](https://www.westsummitcap.com/zh/)。
 
-> Mirantis 在[官方博客](http://web.archive.org/web/20130916010432/http://www.mirantis.com/company/press-release/mirantis-receives-10-million-from-intel-capital-westsummit-capital-and-dell-ventures-to-accelerate-its-openstack-game/)中也提到之所以接受华山资本的投资是**因为** **[openstack.org](http://OpenStack.org)** **访问量最大的国家是中国， 中国拥有世界上最大的云部署和 OpenStack 需求**，华山资本可以帮助 Mirantis 在中国更好的拓展市场和客户。
+> Mirantis 在[官方博客](http://web.archive.org/web/20130916010432/http://www.mirantis.com/company/press-release/mirantis-receives-10-million-from-intel-capital-westsummit-capital-and-dell-ventures-to-accelerate-its-openstack-game/)中也提到之所以接受华山资本的投资是**因为[openstack.org](http://OpenStack.org)访问量最大的国家是中国， 中国拥有世界上最大的云部署和 OpenStack 需求**，华山资本可以帮助 Mirantis 在中国更好的拓展市场和客户。
 
 在资本的支持下，**Mirantis 发行了自己的商业化 OpenStack 发行版，也成为了全球顶尖的 OpenStack 服务提供商。在 OpenStack 贡献方面，当时的 Mirantis 很长时间一直都能排前三。**
 
 ![img](/static/s1/9/openstack-rank.png)
 
-> OpenStack Kilo 版本按 commit 数排名，Mirantis 排名第三 (扇图中最大的绿色部分为其他公司的总和)。数据来源于 Mirantis 维护的网站：https://www.stackalytics.com/
+> OpenStack Kilo 版本按 commit 数排名，Mirantis 排名第三 (扇图中最大的绿色部分为其他公司的总和)。数据来源于 Mirantis 维护的网站：[https://www.stackalytics.com](https://www.stackalytics.com)
 >
 > OpenStack 的版本命名和 Android 类似，从字母 A 开始命名，每一个版本换一个字母，截止到目前最新的版本是 Wallaby。
 
@@ -34,6 +34,9 @@
 OpenStack 的黄金时代才持续几年便开始逐渐没落。其中有很多原因：
 
 - **随着 OpenStack 不断发展，组件越来越多，整个项目越来越复杂。** 甚至到后期很多组件都成为了缺少维护的状态。
+ 
+ > OpenStack 最高的时候有 40 多个组件，现在最新版已经缩减到了 [30 个左右](https://www.openstack.org/software/project-navigator/openstack-components)。
+
 - OpenStack 在公有云上无法和 AWS、Azure 等厂商的自有技术抗衡，在私有云上也无法威胁到 VMware。
 - **Kubernetes 的崛起给 OpenStack 着实带来了很大挑战和冲击。**
 
@@ -109,7 +112,7 @@ Mirantis 在那次裁员之后依然没有放弃老本行 OpenStack 的业务，
 
 Mirantis 从外包起家，到及时拥抱 OpenStack，到迅速转型 Kubernetes，每一步似乎都踩得恰到好处。如今 Mirantis 不断推陈出新，影响力越来越大，相信他会不断开创他自己的美好未来！
 
-> 就在笔者这周调研 Mirantis 的期间，俄罗斯 2 月 24 号从乌克兰第二大城市 Kharkiv (哈尔科夫) 对乌克兰发动军事行动，俄乌局势急转直下。而刚好 Mirantis 的创始人是俄罗斯人，他们在 Kharkiv 有办公室，而且一直在招人。我们只能祝愿一切安好！
+> 就在笔者调研 Mirantis 的期间，俄罗斯 2 月 24 号从乌克兰第二大城市 Kharkiv (哈尔科夫) 对乌克兰发动军事行动，俄乌局势急转直下。而刚好 Mirantis 的创始人是俄罗斯人，他们在 Kharkiv 有办公室，而且一直在招人。我们只能祝愿一切安好！
 >
 > ![img](/static/s1/9/kharkiv.png)
 >

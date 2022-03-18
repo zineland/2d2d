@@ -13,7 +13,6 @@ API 网关是企业应用的关键基础组件和流量入口，**目前绝大�
 近几年来，国内在开源社区的影响力越来越显著，其中 Apache APISIX 其背后的公司支流科技便是其中之一。上图中的 **Kong 则是海外另一家独角兽公司，支流科技和 Kong 两者有很多相似之处，他们在云原生网关赛道彼此博弈，算得上是一场国内与海外的较量。**
 
 首先简单介绍一下这两家公司：
-
 ## Kong
 
 [Kong](https://konghq.com/) 的前身是 2010 年成立于意大利的 Mashape，2015 年发布了 Kong 网关这款产品，后来 2017 年转型成现在的 Kong Inc，地点美国加州。算是一家以开源 API 网关产品起家，后续扩展到 Service Mesh，API 工具等产品的 To B SaaS 软件公司。最新一轮融资是 2021 年 2 月份，1 亿美金 D 轮，估值 14 亿美金，投资方包括高盛、A16Z 等知名机构。其主要产品有：
@@ -24,9 +23,9 @@ API 网关是企业应用的关键基础组件和流量入口，**目前绝大�
 - [Kong Konnect](https://konghq.com/kong-konnect/) - 连接 Kong 旗下 Gateway，Mesh 和 Insomnia 的聚合性产品；
 - [Insomnia](https://insomnia.rest/) - Kong 于 2019 年从一位独立开发者那里[收购](https://konghq.com/blog/kong-acquires-insomnia/)的开源 API 调式、测试产品，类似于 Postman。
 
-> 笔者于 2017 年在 IndieHackers 上和 Insomnia 的作者有过关于他的产品名字的交流。作者回复 Insomnia 的产品名是一个双关语。Insomnia 是失眠的意思，而失眠需要休息 (rest)，而 Insomnia 就是一款 REST API 调试工具，域名也是 [https://insomnia.rest](https://insomnia.rest).
->
-> ![img](/static/s1//4/insomnia.png)
+  > 笔者于 2017 年在 IndieHackers 上和 Insomnia 的作者有过关于他的产品名字的交流。作者回复 Insomnia 的产品名是一个双关语。Insomnia 是失眠的意思，而失眠需要休息 (rest)，而 Insomnia 就是一款 REST API 调试工具，域名也是 [https://insomnia.rest](https://insomnia.rest).
+  >
+  > ![img](/static/s1//4/insomnia.png)
 
 ## 支流科技
 
@@ -42,7 +41,7 @@ API 网关是企业应用的关键基础组件和流量入口，**目前绝大�
 
 ![img](/static/s1/4/vs-lite.png)
 
-**Kong 和支流科技有****很多相似****的地方，在这场市场较量中也体现着中美两种开源商业化公司的差异。**
+**Kong 和支流科技有很多相似的地方，在这场市场较量中也体现着中美两种开源商业化公司的差异。**
 
 **相似点：**
 

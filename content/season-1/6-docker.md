@@ -36,6 +36,8 @@
 员工数大于 250 人，营业额大于 1000 万美金，字节跳动每一条都满足。难道说过了 1 月 31 号，我在字节还真不能免费使用 Docker Desktop 了？去 IT Service 应用里搜索暂时还没发现 Docker 包含在里面，难道以后使用 Docker Desktop 还需要去 IT Service 里面申请购买？
 
 > 不知道哎，反正也是年后的事情。**年后的事情等年后再说！**
+>
+> 3 月更新: 在字节内部某位同学的推动下，字节已正在和 Docker 公司在对接了。
 
 ![img](/static/s1/6/docker-desktop.png)
 
