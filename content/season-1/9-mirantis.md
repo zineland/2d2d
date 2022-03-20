@@ -2,7 +2,7 @@
 2019 年 11 月，Docker 公司出售了自己的 Docker Enterprise 业务和整个 300 人的团队，出人意料的是购买方是一家似乎名不见经传的公司 Mirantis。相信绝大多数人（包括笔者本人）之前并未听闻过Mirantis，这家公司是个什么来路？为什么他能收购 Docker 的企业业务？收购之后这家公司目前发展得如何？
 
 <p>
-  <img class="mx-auto" style="height: 280px;" src="/static/s1/9/mirantis-light.png">
+  <img class="mx-auto" style="height: 280px;" src="/static/s1/9/mirantis-light.png"/>
 </p>
 
 ### 外包公司能有什么出息？

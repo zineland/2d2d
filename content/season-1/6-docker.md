@@ -1,5 +1,5 @@
 
-> <img class="mx-auto" style="width: 150px;" src="/static/s1/6/docker-logo.png">
+> <img class="mx-auto" style="width: 150px;" src="/static/s1/6/docker-logo.png"/>
 >
 > 亲爱的开发者，您好，
 >
@@ -9,7 +9,7 @@
 
 啊不对，发错了，赶紧撤回！应该发这封的：
 
-> <img class="mx-auto" style="width: 150px;" src="/static/s1/6/docker-logo.png">
+> <img class="mx-auto" style="width: 150px;" src="/static/s1/6/docker-logo.png"/>
 >
 > Hello,
 >

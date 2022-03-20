@@ -96,7 +96,7 @@
 - [Rancher Desktop](https://rancherdesktop.io/) - 之前介绍过的 Docker Desktop 的一个替代产品，它另外的一个优点是**用户可以在 Rancher Desktop 上非常轻松地切换任何 K8S 的不同版本。**
 - [Epinio](https://epinio.io/) - Rancher 被收购后和 SUSE 一起开发的基于 Kubernetes 的 PaaS 项目，目前还在早期阶段。个人感觉 Rio 被暂停可能跟这个项目有关。
 
-  > <p><img style="width: 380px" src="/static/s1/7/tg-epinio.png"></p>
+  > <p><img style="width: 380px" src="/static/s1/7/tg-epinio.png"/></p>
 
 Rancher 的项目实在是太多了，还有一些项目没有例举出来。Rancher 过去几年深刻洞察行业趋势，发掘客户需求，推出了一个又一个备受欢迎的产品，2020 年被 SUSE 收购后更是强强联合。
 
