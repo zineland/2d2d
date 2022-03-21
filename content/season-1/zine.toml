@@ -88,3 +88,13 @@ cover = "/static/s1/9/mirantis.png"
 pub_date = "2022-02-25"
 publish = true
 featured = true
+
+[[article]]
+slug = "why"
+file = "10-why.md"
+title = "为什么要写《TO-D 杂志》？"
+author = "Folyd"
+cover = "/static/s1/10/why.png"
+pub_date = "2022-03-20"
+publish = true
+featured = true
