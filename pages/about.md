@@ -1,5 +1,5 @@
 
-<h1 class="text-center">关于杂志</h1>
+# 关于杂志
 
 **《TO-D 杂志》** 是一个**专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的开源独立杂志**。
 
@@ -21,7 +21,7 @@
 
 目前责任编辑主要只有一个人，后面如有变动会及时更新：
 
-- [@Folyd](https://twitter.com/_hisriver)
+- [@Folyd](https://folyd.com)
 
 
 ## 常见问题
