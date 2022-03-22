@@ -3,7 +3,7 @@
 
 ## 创立初心
 
-![img](/static/s1/5/garage.png)
+![](/static/s1/5/garage.png)
 
 > CoreOS 成立时的车库。图来源于 Wired 在他们成立没多久时的一篇专访文章：[Linux Hackers Rebuild Internet From Silicon Valley Garage](https://www.wired.com/2013/08/coreos-the-new-linux/)
 
@@ -34,7 +34,7 @@
 - [CNI](https://cni.dev) - **【CNCF 毕业项目】** 之前在 CNCF 那篇文章提到过的通用的容器网络规范，就是由 CoreOS 捐赠的。
 - [Dex](https://dexidp.io/) - **【CNCF 沙盒项目】** 一个 OpenID Connect 协议的 Go 实现库，也捐赠给了 CNCF。
 
-![img](/static/s1/5/product.png)
+![](/static/s1/5/product.png)
 
 另外，CoreOS 是 CNCF 2015 年创立时的最初始成员之一，当时他们公司成立才两年。
 
@@ -50,7 +50,7 @@ CoreOS 的产品非常具有前瞻性，在早期都没多少人知道容器、K
 
 **这三款产品形成了一个完整的容器操作系统、镜像托管、容器编排的链路，商业思路也非常清晰。** CoreOS 在其[四周年的博客](https://web.archive.org/web/20190113053653/https://coreos.com/blog/coreos-fourth-birthday)中提到当时他们有 2000+ 家全球的主要客户 (Key customers)。
 
-![img](/static/s1/5/martix.png)
+![](/static/s1/5/martix.png)
 
 ## 被收购
 
@@ -60,7 +60,7 @@ CoreOS 的产品非常具有前瞻性，在早期都没多少人知道容器、K
 https://www.redhat.com/en/blog/faq-red-hat-acquire-coreos
 ```
 
-![img](/static/s1/5/acquire.png)
+![](/static/s1/5/acquire.png)
 
 被收购前，CoreOS 只经历了三轮融资（种子轮、A 轮和 B 轮），总共融资 4800 万美金，投资机构包括 YC，GV (Google Ventures)，A16Z，Accel 等。
 

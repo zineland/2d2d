@@ -1,5 +1,5 @@
 
-![img](/static/s1/1/retool.png)
+![](/static/s1/1/retool.png)
 
 [Retool](https://retool.com/) 是一家 YC 于 2017 年孵化的硅谷创业公司，专注于企业内部系统的低代码平台。昨天 Retool 官宣 C 轮 2000 万美金融资，估值超过 18亿美金。值得一提的是这篇官宣文非常有意思。
 

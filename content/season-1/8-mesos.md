@@ -3,7 +3,7 @@
 
 ## Mesos 简史
 
-![img](/static/s1/8/mesos.png)
+![](/static/s1/8/mesos.png)
 
 ### 出生名门
 
@@ -11,7 +11,7 @@ Mesos 最初是加州伯克利大学 RAD 实验室 2009 年开始的一个学术
 
 此时的 Twitter 早已进入高速发展的阶段，与之伴随的是 Twitter 频繁宕机的「失败鲸」时光。2010 年，正在 Twitter 苦不堪言的时候，他们看到了 Mesos 这个项目，随后马上应用到了 Twitter，成为 Twitter 自定义 PaaS 的实现基础，管理着 Twitter 超过 30 万台服务器上的应用部署。Benjamin Hindman 当时也加入了 Twitter，负责开发和部署 Mesos。Twitter 的这套基于 Mesos 的 PaaS 解决方案就是后来的 [Apache Aurora](https://aurora.apache.org/)。
 
-![img](/static/s1/8/fall-whale.png)
+![](/static/s1/8/fall-whale.png)
 
 > Twitter 2008 ~ 2013 年宕机时的页面，被海外网友称为「失败鲸」。
 
@@ -23,7 +23,7 @@ Mesos 最初是加州伯克利大学 RAD 实验室 2009 年开始的一个学术
 >
 > 国内青云也有一个专注于 Kubernetes 技术的团队，他们的产品名为 [Kubesphere](https://kubesphere.io/)，估计也是受到 Mesosphere 的启发。
 
-![img](/static/s1/8/mesosphere.png)
+![](/static/s1/8/mesosphere.png)
 
 当时的 Mesosphere 除了 Apache Mesos 外，还有两款主要产品：
 
@@ -63,7 +63,7 @@ Mesos 另外一个 PMC 和提交者也补充道：
 
 ## D2iQ
 
-![img](/static/s1/8/d2iq.png)
+![](/static/s1/8/d2iq.png)
 
 Mesos “死了”，但 Mesosphere 这家公司还得继续活着。**没有成王败寇，新生的 D2iQ 选择拥抱了它曾经的死敌 Kubernetes，往事如烟，重新来过！**
 
@@ -71,7 +71,7 @@ Mesos “死了”，但 Mesosphere 这家公司还得继续活着。**没有成
 >
 > 软件开发生命周期可以划分为 Day 0，Day 1 和 Day 2：
 >
-> ![img](/static/s1/8/day2.png)
+> ![](/static/s1/8/day2.png)
 >
 > - Day 0 通常是指初期的需求明确，架构设计阶段；
 >
@@ -89,6 +89,6 @@ Mesos “死了”，但 Mesosphere 这家公司还得继续活着。**没有成
 - [Kaptain](https://d2iq.com/products/kaptain) -  基于 Kubernetes 和 Kubeflow 的企业级端到端机器学习平台，[前身](https://d2iq.com/blog/kudo-for-kubeflow-the-enterprise-machine-learning-platform)是 KUDO for Kubflow 这个项目；
 - [DKP](https://d2iq.com/kubernetes-platform) (D2iQ Kubernetes Platform) - 将上面的产品打包到一起售卖的 Kubernetes 综合解决方案；
 
-![img](/static/s1/8/dkp.png)
+![](/static/s1/8/dkp.png)
 
 **技术迭代如此之快，市场竞争愈加激烈，没有人能预料到下一个 Kubernetes 会什么时候崛起，唯有勇敢、坚定，跌倒了再重新爬起，像 D2iQ 一样，既往不恋，纵情向前！**

@@ -39,7 +39,7 @@
 >
 > 3 月更新: 在字节内部某位同学的推动下，字节已正在和 Docker 公司在对接了。
 
-![img](/static/s1/6/docker-desktop.png)
+![](/static/s1/6/docker-desktop.png)
 
 > 笔者 Docker Desktop 的截图
 
@@ -51,13 +51,13 @@
 - 2019 年 11 月 13 号，一家当时仅 450 人的公司 Mirantis [收购](https://www.mirantis.com/company/press-center/company-news/mirantis-acquires-docker-enterprise/)了 Docker 的 Enterprise 业务，近 300 名 Docker 员工加入 Mirantis。
 - Docker 公司从 2013 年成立至今更换了 4 任 CEO。
 
-![img](/static/s1/6/au-revoir.png)
+![](/static/s1/6/au-revoir.png)
 
 > 创始人 Solomon Hykes 离开 Docker 公司时的配图。详情见官宣博客：[https://www.docker.com/blog/au-revoir/](https://www.docker.com/blog/au-revoir/)
 
 **现在 Docker 公司还有什么拿得出手的产品吗？似乎没有了，只剩下 Docker Hub 和 Docker Desktop 了。** 实际上 Docker Hub 的私有镜像服务也是打包在 Docker Desktop 里面售卖的。Docker 公司的 [pricing 页面](https://www.docker.com/pricing)现在也非常简单，只有一款产品：Docker Desktop！
 
-![img](/static/s1/6/docker-pricing.png)
+![](/static/s1/6/docker-pricing.png)
 
 **就算这样，社区依然让 Docker 公司不好过**。因为 Rancher 看到 Docker 公司连 Desktop 都不允许免费使用后就推出了 Rancher 版的 Desktop。**2022 年 1 月 26 日，就在 Docker 公司发出上面那封邮件的同一天，Rancher 宣布 Rancher Desktop 1.0 发布！**
 
@@ -71,6 +71,6 @@ https://www.suse.com/c/rancher_blog/rancher-desktop-1-0-0-has-arrived/
 
 说到 Rancher，这家公司也非常值得分享，这将是我们下一期的主题。**刚好要放假了，放假就应该有放假的样子，Rancher 的事也年后再说！**
 
-![img](/static/s1/6/later1.jpg)
+![](/static/s1/6/later1.jpg)
 
-![img](/static/s1/6/later2.png)
+![](/static/s1/6/later2.png)

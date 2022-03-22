@@ -1,6 +1,6 @@
 2013、2014 年开始，国内外开始流行一个 Ruby 编写的开源产品 [Vagrant](https://www.vagrantup.com/)，它是一个主要用来解决本地（特别是多人协作）开发环境配置繁琐、不一致等痛点的项目，深受很多工程师喜欢。难以预测的是， 2016 年 Docker 的大范围普及，让这个产品逐渐没落。更难预测的是，这个 2010 年开发 Vagrant 的作者，多年后成为了一家市值 150 亿美金的 To B SaaS 公司的创始人。这家公司就是我们这一期的主角 —— HashiCorp。上期我们介绍了 CNCF 全景图，而 HashiCorp 有五款产品就在全景图中。
 
-![img](/static/s1/3/thrending.png)
+![](/static/s1/3/thrending.png)
 
 > 上图为 Vagrant 关键字的 Google Trends 图，纵轴代表相对顶峰搜索频次的百分比，而非绝对数字；
 >
@@ -53,7 +53,7 @@ HashiCorp 目前总共有八款主打产品，囊括了从开发 (Packer, Vagran
 - [Boundary](https://www.boundaryproject.io/) - 2020 年 10 月份推出的多云远程访问解决方案，很有创新性，目前也没有很好的竞争产品；
 - [Waypoint](https://www.waypointproject.io/) - HashiCorp 最新的产品（同2020 年 10 月份）。遵循 Intrasturecture as code 的应用构建、部署、上线一站式工具。这个产品感觉潜力也很大。
 
-![img](/static/s1/3/stack.png)
+![](/static/s1/3/stack.png)
 
 HashiCorp 早些年发布了它的 HashiCorp 之道 ([The Tao of HashiCorp](https://www.hashicorp.com/tao-of-hashicorp))，这些产品无一不践行着这一哲学。HashiCorp 同样是 Go 语言的深度使用者，几乎所有产品都是 Go 语言编写，他们甚至把 Go 语言推崇的 [CSP 并发](https://en.wikipedia.org/wiki/Communicating_sequential_processes)理念也写进了他们的道中。
 
@@ -61,7 +61,7 @@ HashiCorp 早些年发布了它的 HashiCorp 之道 ([The Tao of HashiCorp](http
 
 HashiCorp 的商业模式也很有代表性，算是开源软件商业化的经典范例。
 
-![img](/static/s1/3/product.png)
+![](/static/s1/3/product.png)
 
 - **产品全部开源。** 开源是非常好的获客方式，同时也能得到社区检验和快速获取反馈、快速迭代的好途径。
 - **Enterprise 版本收费。** 原则是 technical challenges 都在免费的开源层面解决，针对企业或大团队需要的功能才收费。
@@ -80,4 +80,4 @@ https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ
 
 HashiCorp 是 2012 年创立，CNCF 的云原生在 2015 年才提出来，目前 HashiCorp 有五款产品在 CNCF 的全景图中，分别是 Terraform, Vault, Nomad, Consul, Packer，而这五款产品都是 2015 年之前发布的。从创立到上市的九年时间，HashiCorp 顺应了时代的潮流，而时代也成就了 HashiCorp!
 
-![img](/static//s1/3/ipo.png)
+![](/static//s1/3/ipo.png)

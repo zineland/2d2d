@@ -1,7 +1,7 @@
 
 1999 年 Sun 公司的一名工程师出版了一本书，名为[《The Java Native Interface (JNI)》](https://book.douban.com/subject/3162962/)。这位工程师的名字叫 Sheng Liang（梁胜），他正是 Java 语言 JNI 的作者，在 Sun 公司他还领导过 Java JVM 的开发工作。15 年后的 2014 年，这位曾经的工程师已经成为了一名拥有多次成功创业经验的企业家，在这一年他再度出发，创建了他的第三家公司，也就是本期主题公司 Rancher。
 
-![img](/static/s1/7/jni.png)
+![](/static/s1/7/jni.png)
 
 ## 技术梦想家
 
@@ -21,14 +21,14 @@
 
   > [CloudStack](https://cloudstack.apache.org/) 是云计算领域举足轻重的软件，它的竞品 [OpenStack](http://openstack.org) 于 2011 年才正式推出。2012 年开始 OpenStack 与 CloudStack 竞争异常激烈。2012 年 4 月，在梁胜的推动下，Citrix 将 CloudStack 捐献给了 Apache 基金会，2013 年，CloudStack 正式成为 Apache 的顶级项目。
   >
-  > ![img](/static/s1/7/cloudstack.png)
+  > ![](/static/s1/7/cloudstack.png)
   >
   > 不过 CloudStack 还是太过复杂，在后来的竞争中不敌 OpenStack。
 
 - 2014 年，梁胜创办了 Rancher Lab 并担任 CEO。
 - 2020 年 2 月 4 日，梁胜入选 CNCF 技术监督委员会（[Technical Oversight Committee](https://www.cncf.io/people/technical-oversight-committee/) ，简称TOC）。
 
-  ![img](/static/s1/7/cncf-toc.png)
+  ![](/static/s1/7/cncf-toc.png)
 
 - 2020 年 7 月 8 日，Rancher 被老牌企业级 Linux 提供商 SUSE 收购，梁胜成为 SUSE 工程与创新部总裁。
 
@@ -38,11 +38,11 @@
 
 2014 年，Docker 已经正式发布一年了，CoreOS 也成立了，K8S 正在萌芽中，梁胜博士敏锐的发现一个新的技术变革时代即将到来，未来不可能再是 CloudStack 和 OpenStack 的时代，而将是容器的时代。Rancher 就这样诞生了！
 
-![img](/static/s1/7/liangsheng.png)
+![](/static/s1/7/liangsheng.png)
 
 > 如果把云计算比作是一片大的农场，各种计算资源比作是农场里的“牛”，那 Rancher 想做的就是那个“放牧人”，这也是他们把公司命名为“Rancher（牧场主）”的原因。对于 Rancher 这样的“放牧人”而言，谁家的“牛”都可以放，客户需要什么样的“牛”，Rancher 就会给客户提供相应的“牛”。
 
-![img](/static/s1/7/rancher.png)
+![](/static/s1/7/rancher.png)
 
 > Rancher [创立之初的官网](https://web.archive.org/web/20141201085105/http://www.rancher.com/)。官网背景就是一片充满惬意的云下农场，非常应景。
 
@@ -50,7 +50,7 @@
 
 **Rancher 同样是一个非常具有创造性的公司，他们在不同阶段推出过多款不同产品，这些产品大都数都很成功，当然也有一些产品也并不那么成功。**
 
-![img](/static/s1/7/timeline.png)
+![](/static/s1/7/timeline.png)
 
 - **Rancher** - (特指 Rancher 2.X) 一款口碑非常好的企业级 Kubernetes 管理平台。**Rancher 在全球有好几亿次的下载量，绝对是明星级产品。**
 
@@ -58,7 +58,7 @@
   >
   > 目前 Rancher 的知名对标产品有：Red Hat OpenShift，VMware Tanzu，Google Anthos 等。
   >
-  > ![img](/static/s1/7/rancer-ui.png)
+  > ![](/static/s1/7/rancer-ui.png)
   >
   > 上图为 Rancher 创建 Kubernetes 集群时的选择界面。
 
@@ -77,7 +77,7 @@
 
   > Harvester 是一个完全由 Rancher 中国研发团队设计和开发的开源软件，笔者刚好有一个朋友就在 Harvester 的这个团队。
   >
-  > ![img](/static/s1/7/tg-harvester.png)
+  > ![](/static/s1/7/tg-harvester.png)
 
 - [Fleet](https://github.com/rancher/fleet) - 业界首款**海量 K8S 集群** (up to a million clusters) 管理产品。
 
@@ -89,7 +89,7 @@
 
 - [Rio](https://github.com/rancher/rio) - 基于 Kubernetes 的 MicroPaaS 平台，后来于 2021 年暂停，官方并未给出具体原因。
 
-  > ![img](/static/s1/7/tg-rio.png)
+  > ![](/static/s1/7/tg-rio.png)
   >
   > 3 月更新：有 Twitter 网友问了为什么暂停 Rio 这个项目的问题， Darren Shepherd 给了一个[简短的回答](https://twitter.com/ibuildthecloud/status/1503411799294500866)。
 
@@ -102,7 +102,7 @@ Rancher 的项目实在是太多了，还有一些项目没有例举出来。Ran
 
 ## SUSE + Rancher
 
-![img](/static/s1/7/suse-rancher.png)
+![](/static/s1/7/suse-rancher.png)
 
 2020 年 7 月 8 号，SUSE 和 Rancher 联合宣布，SUSE 将收购 Rancher，不过双方都未透露具体的收购金额。2020 年 12 月 1 号，Rancher 收购案正式完成。
 
@@ -119,4 +119,4 @@ Rancher 在被收购前只进行了 4 轮总共 9500 万美金融资，最后一
 > **后续：**
 >
 > 就在本篇文章发布一天后，Rancher 联合创始人 Darren Shepherd 在推特上[宣布离开](https://twitter.com/ibuildthecloud/status/1492175776057217026) Rancher 和 SUSE。同一天，Rancher 的另外一位核心人物 Vincent Fiduccia 也[宣布退休](https://twitter.com/vincentfiduccia/status/1491851410937303042)。
-> ![img](/static/s1/7/twitter-shepherd.png)
+> ![](/static/s1/7/twitter-shepherd.png)

@@ -23,7 +23,7 @@
 
 在资本的支持下，**Mirantis 发行了自己的商业化 OpenStack 发行版，也成为了全球顶尖的 OpenStack 服务提供商。在 OpenStack 贡献方面，当时的 Mirantis 很长时间一直都能排前三。**
 
-![img](/static/s1/9/openstack-rank.png)
+![](/static/s1/9/openstack-rank.png)
 
 > OpenStack Kilo 版本按 commit 数排名，Mirantis 排名第三 (扇图中最大的绿色部分为其他公司的总和)。数据来源于 Mirantis 维护的网站：[https://www.stackalytics.com](https://www.stackalytics.com)
 >
@@ -40,7 +40,7 @@ OpenStack 的黄金时代才持续几年便开始逐渐没落。其中有很多�
 - OpenStack 在公有云上无法和 AWS、Azure 等厂商的自有技术抗衡，在私有云上也无法威胁到 VMware。
 - **Kubernetes 的崛起给 OpenStack 着实带来了很大挑战和冲击。**
 
-![img](/static/s1/9/openstack-maillist.png)
+![](/static/s1/9/openstack-maillist.png)
 
 > OpenStack邮件列表数量统计图，来源：https://openstack.markmail.org。
 
@@ -61,7 +61,7 @@ Mirantis 在那次裁员之后依然没有放弃老本行 OpenStack 的业务，
 - 2016 年 12 月，就像之前一直搞 OpenStack 的培训一样，Mirantis 又开始搞起了 Kubernetes 和 Docker 的[培训和认证](https://www.networkworld.com/article/3145402/mirantis-moves-deeper-into-the-container-world-launches-certification.html)。
 - 2017 年 4 月，Mirantis [发布](https://www.zdnet.com/article/mirantis-enters-the-kubernetes-game-and-ups-its-openstack-play/)了一款 OpenStack 和 Kubernetes 的结合产品：Mirantis Cloud Platform (MCP)，这款产品至今依然存在，只是改名叫了 [Mirantis OpenStack for Kubernetes](https://www.mirantis.com/software/mirantis-openstack-for-kubernetes/)。
 
-  ![img](/static/s1/9/mcp.png)
+  ![](/static/s1/9/mcp.png)
 
   > MCP 里面包含两款子产品: 
   > - DriveTraint - 提供 CI / CD 功能；
@@ -73,7 +73,7 @@ Mirantis 在那次裁员之后依然没有放弃老本行 OpenStack 的业务，
 
 **到了 2019 年底，Mirantis 终于迎来了他的高光时刻：收购 Docker 的 Enterprise 业务。这部分业务几乎在 Docker 公司所有业务中占比 90%，其他还包括所有相关的知识产权、约 400 名 Docker 员工中的 300 名、750 名企业客户以及所有企业合作伙伴关系。**
 
-![img](/static/s1/9/docker-enterprise.png)
+![](/static/s1/9/docker-enterprise.png)
 
 > 曾经 Docker [公司官网](https://web.archive.org/web/20191106112336/https://www.docker.com/)的 Docker Enterprise 和 Docker Enterprise Solutions 板块。
 
@@ -97,7 +97,7 @@ Mirantis 在那次裁员之后依然没有放弃老本行 OpenStack 的业务，
 
   > Lens 的桌面版 IDE 是开源免费的，但是它提供的团队协作功能 ([Lens Space](https://k8slens.dev/spaces.html)) 则需要订阅付费。
 
-  ![img](/static/s1/9/lens.png)
+  ![](/static/s1/9/lens.png)
 
 - [DevOpsCare](https://www.mirantis.com/software/lens/devopscare/) - Lens 团队被收购后和 Mirantis 一起搞的适用于任何 Kubernetes 环境的 CI / CD 产品。
 
@@ -114,6 +114,6 @@ Mirantis 从外包起家，到及时拥抱 OpenStack，到迅速转型 Kubernete
 
 > 就在笔者调研 Mirantis 的期间，俄罗斯 2 月 24 号从乌克兰第二大城市 Kharkiv (哈尔科夫) 对乌克兰发动军事行动，俄乌局势急转直下。而刚好 Mirantis 的创始人是俄罗斯人，他们在 Kharkiv 有办公室，而且一直在招人。我们只能祝愿一切安好！
 >
-> ![img](/static/s1/9/kharkiv.png)
+> ![](/static/s1/9/kharkiv.png)
 >
 > 后续：在这篇文章发表当天，Mirantis 在官方博客对乌克兰危机[做出了回应](https://www.mirantis.com/blog/mirantis-response-to-ukraine-crisis/)。Mirantis 说乌克兰的 86 名员工目前都安全；因为俄罗斯受到各方面制裁，俄罗斯团队也在紧急制定措施应对制裁，减少对客户的影响。

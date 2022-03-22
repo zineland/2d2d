@@ -1,7 +1,7 @@
 
 API 网关是企业应用的关键基础组件和流量入口，**目前绝大部分 API 网关市场份额都被几大公有云厂商占据**（AWS API Gateway, Google Apigee, 阿里云 API 网关等）。但是公有云厂商的 API 网关不符合 CNCF 的云原生理念，如果你用了阿里云的 API 网关，你就会被被它锁定了，因为网关是流量的入口，你没有办法分发到其它云厂商上。CNCF 全景图的 API Gateway 分类下有数十款产品，但并不包含公有云厂商的那些。
 
-![img](/static/s1//4/api-gateway.png)
+![](/static/s1//4/api-gateway.png)
 
 上图中有一半是大厂的产品，比如 3Scale 是 RedHat 的，Akana 是 Perforce 的闭源商业化产品，MuleSoft 是老牌软件厂商，2018 年被 Salesforce 收购。值得注意的是，来自中国的有四款产品，分别是（按字母序）:
 
@@ -25,7 +25,7 @@ API 网关是企业应用的关键基础组件和流量入口，**目前绝大�
 
   > 笔者于 2017 年在 IndieHackers 上和 Insomnia 的作者有过关于他的产品名字的交流。作者回复 Insomnia 的产品名是一个双关语。Insomnia 是失眠的意思，而失眠需要休息 (rest)，而 Insomnia 就是一款 REST API 调试工具，域名也是 [https://insomnia.rest](https://insomnia.rest).
   >
-  > ![img](/static/s1//4/insomnia.png)
+  > ![](/static/s1//4/insomnia.png)
 
 ## 支流科技
 
@@ -39,7 +39,7 @@ API 网关是企业应用的关键基础组件和流量入口，**目前绝大�
 
 ## 对比
 
-![img](/static/s1/4/vs-lite.png)
+![](/static/s1/4/vs-lite.png)
 
 **Kong 和支流科技有很多相似的地方，在这场市场较量中也体现着中美两种开源商业化公司的差异。**
 

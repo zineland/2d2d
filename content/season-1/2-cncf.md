@@ -1,6 +1,6 @@
 有一张让每个人都眼花缭乱的图，它包含上千张卡片，总市值 16.7 万亿美金，总融资超过规模 273 亿美金；它是人类软件领域的智慧结晶，它代表未来软件技术的新一代潮流，它承担着对抗技术熵增的艰难重任。它就是 **CNCF 全景图** (Landscape)：[https://landscape.cncf.io/](https://landscape.cncf.io/)
 
-![img](/static/s1/2/landscape.png)
+![](/static/s1/2/landscape.png)
 
 CNCF (Cloud Native Computing Foundation) 这个词大家都有所耳闻，Cloud Native (云原生) 的概念在国内外也如火如荼。这家成立于 2015 年的非盈利基金会的愿景是什么？这一期我们来简单探讨一下。
 
@@ -27,7 +27,7 @@ CNCF 的很多项目几乎都是各大云厂商纷纷采用的技术，同时也
 
 事物无序程度的度量被称为熵，而熵增（事物无序程度的增加）是宇宙客观存在的规律。软件技术在不断进化变革的同时，不可避免的也会发生熵增。**这种熵增会体现在很多方面，比如技术复杂度变高、技术规范程度变低、软件间可交互性变难。** CNCF 不仅有引领新的技术变革的产品（Kubernetes, Prometeus)，同样也在孵化一批对抗熵增的项目，那就是这一系列的 **Specification（技术规范）**。 
 
-![img](/static/s1/2/specs.png)
+![](/static/s1/2/specs.png)
 
 - [OpenTelemetry](https://opentelemetry.io/) 制定了软件可观测性 (Observability) 的规范；
 - [CloudEvent](https://cloudevents.io/) 制定了跨云、跨系统、跨平台之间的事件定义与通信的规范；
