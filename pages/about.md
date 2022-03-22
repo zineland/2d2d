@@ -24,6 +24,6 @@
 - [@Folyd](https://twitter.com/_hisriver)
 
 
-## FAQ
+## 常见问题
 
-更多关于本杂志的常见问题，欢迎浏览 [FAQ 页面](/faq)。
+更多关于本杂志的常见问题，欢迎浏览 [常见问题页面](/faq)。
