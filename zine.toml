@@ -7,6 +7,7 @@ description = "专注于探讨全球 To-D 领域相关产品、创业公司、�
 menu = [
   { name = "关于", url = "/about" },
   { name = "博客", url = "/blog" },
+  { name = "赞助", url = "/sponsor" },
   { name = "Github", url = "https://github.com/zineland/2d2d" },
 ]
 
