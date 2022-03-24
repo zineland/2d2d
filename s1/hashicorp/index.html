@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    
+    
+
+
+    <title>时势造英雄-HashiCorp</title>
+    <meta name="description" content="2013、2014 年开始，国内外开始流行一个 Ruby 编写的开源产品 Vagrant，它是一个主要用来解决本地（特别是多人协作）开发环境配置繁琐、不一致等痛点的项目，深受很多工程师喜欢。难以预测的是， 2016 年 Docker 的大范围普及，让这个产品逐渐没落。更难预测的是，这个 2010 年开发 Vagrant 的作者，多年后成为">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="时势造英雄-HashiCorp">
+    <meta property="og:description" content="2013、2014 年开始，国内外开始流行一个 Ruby 编写的开源产品 Vagrant，它是一个主要用来解决本地（特别是多人协作）开发环境配置繁琐、不一致等痛点的项目，深受很多工程师喜欢。难以预测的是， 2016 年 Docker 的大范围普及，让这个产品逐渐没落。更难预测的是，这个 2010 年开发 Vagrant 的作者，多年后成为">
+    <meta name="twitter:title" content="时势造英雄-HashiCorp">
+    <meta name="twitter:description" content="2013、2014 年开始，国内外开始流行一个 Ruby 编写的开源产品 Vagrant，它是一个主要用来解决本地（特别是多人协作）开发环境配置繁琐、不一致等痛点的项目，深受很多工程师喜欢。难以预测的是， 2016 年 Docker 的大范围普及，让这个产品逐渐没落。更难预测的是，这个 2010 年开发 Vagrant 的作者，多年后成为">
+
+
+
+
+    
+        
+    
+
+    <meta property="og:url" content="https://2d2d.io/s1/hashicorp">
+    <meta property="twitter:url" content="https://2d2d.io/s1/hashicorp">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://2d2d.io/static/s1/3/ipo.png">
+    <meta name="twitter:image" content="https://2d2d.io/static/s1/3/ipo.png">
+    
+
+
+
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="/static/zine.css">
+    <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
+    <style>
+      :root {
+          --primary-color: #ffb52f;
+          --main-color: #000;
+          --link-color: #e07312;
+          --secondary-color: #eff3f7;
+      }
+    </style>
+</head>
+
+<body class="h-full bg-secondary">
+    
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
+    
+        <header class="p-8 md:p-10">
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
+
+            <ul>
+                
+                    <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                
+                    <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                
+                    <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
+                
+                    <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
+                
+            </ul>
+        </header>
+        
+        
+        <div class="w-full h-32 md:h-36 lg:h-44 xl:h-48 2xl:h-56"></div>
+    </div>
+
+    <main class="pb-10 -translate-y-32
+                 md:-translate-y-32 lg:-translate-y-36 xl:-translate-y-44 2xl:-translate-y-56
+                 mx-auto sm:max-w-scree-md md:max-w-screen-lg">
+            
+<div class="p-4 pb-10 md:p-8 md:pb-14 mx-4 my-6 bg-white 
+            shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
+    <div class="relative mx-2">
+        <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
+                                transition hover:scale-110 duration-500"
+                        href="/s1">
+            <div class="relative text-main px-4">第一季</div>
+        </a>
+        <span class="ml-2 text-gray-700"> / 第 3 期</span>
+    </div>
+    <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
+    <div class="prose mx-auto">
+        <h1 class="text-center">时势造英雄-HashiCorp</h1>
+        <div class="relative text-sm text-gray-400">
+            <span>发布于 2022-01-06</span>
+            <span class="absolute right-2">作者：Folyd</span>
+        </div>
+    </div>
+    <article class="prose mx-auto my-12">
+        <p>2013、2014 年开始，国内外开始流行一个 Ruby 编写的开源产品 <a href="https://www.vagrantup.com/">Vagrant</a>，它是一个主要用来解决本地（特别是多人协作）开发环境配置繁琐、不一致等痛点的项目，深受很多工程师喜欢。难以预测的是， 2016 年 Docker 的大范围普及，让这个产品逐渐没落。更难预测的是，这个 2010 年开发 Vagrant 的作者，多年后成为了一家市值 150 亿美金的 To B SaaS 公司的创始人。这家公司就是我们这一期的主角 —— HashiCorp。上期我们介绍了 CNCF 全景图，而 HashiCorp 有五款产品就在全景图中。</p>
+<p><img src="/static/s1/3/thrending.png" alt="" /></p>
+<blockquote>
+<p>上图为 Vagrant 关键字的 Google Trends 图，纵轴代表相对顶峰搜索频次的百分比，而非绝对数字；</p>
+<p>Trends 链接：<a href="https://trends.google.com/trends/explore?date=2010-12-04%202022-01-04&amp;q=vagrant">https://trends.google.com/trends/explore?date=2010-12-04%202022-01-04&amp;q=vagrant</a></p>
+</blockquote>
+<h2>多云时代</h2>
+<p>先来看一条充满戏剧性的时间线：</p>
+<ul>
+<li>2021 年 12 月 7 日，AWS 发生了它当月第一次重大线上宕机事故；</li>
+<li>第三天（2021 年 12 月 9 日），一家多云软件提供商和倡导者 HashiCorp 在 Nasdaq <a href="https://www.sec.gov/Archives/edgar/data/0001720671/000119312521352796/d205906d424b4.htm">上市</a>，市值 150 亿美金；</li>
+</ul>
+<div class="url-preview">
+ <div>A New Chapter for HashiCorp</div>
+ <div>As we officially enter the public markets, we plan to continue to do what we think we do best: solving problems for our end users.</div>
+ <a href="https://www.hashicorp.com/blog/a-new-chapter-for-hashicorp">https://www.hashicorp.com/blog/a-new-chapter-for-hashicorp</a>
+</div>
+<ul>
+<li>2021 年 12 月 15 日、2021 年 12 月 23 日，AWS 再次发生当月第二、三次线上宕机事故；</li>
+</ul>
+<p>当月国外<a href="https://www.cnbc.com/2021/12/12/aws-outage-and-hashicorp-ipo-point-to-a-multicloud-future.html">众多媒体</a>趁此机会都在利用这条时间线来大肆宣传多云 (Multi-Cloud) 时代，似乎意味着多云是未来不可避免的趋势？确实如此，2021 年 HashiCorp 发布了一份详细的关于云现状的问卷调查报告。</p>
+<div class="url-preview">
+ <div>HashiCorp State of Cloud Strategy Survey</div>
+ <div>Multi-cloud has become the de facto standard operations model for IT organizations of all sizes, in all regions, and every industry.</div>
+ <a href="https://www.hashicorp.com/state-of-the-cloud">https://www.hashicorp.com/state-of-the-cloud</a>
+</div>
+<p>这篇报告里面有几个重点值得关注：</p>
+<ul>
+<li><strong>76% 的受访者所在公司已经在使用多云，未来两年这个数字将会扩大到 86%；</strong></li>
+<li><strong>Digital transformation (数字化转型), avoid single cloud vendor lock-in (避免云厂商锁定), cost reduction (节省成本) 是企业使用多云的 Top 3 驱动力；</strong></li>
+<li><strong>Skills shortage (技能缺乏) 和 security (安全) 分别是企业拥抱多云的最大挑战和阻力；</strong></li>
+</ul>
+<p>HashiCorp 这家公司以及他的产品，毫无疑问是在这场多云趋势中最大的受益者之一。</p>
+<h2>产品</h2>
+<p>HashiCorp 目前总共有八款主打产品，囊括了从开发 (Packer, Vagrant)、部署 (Terraform)、安全 (Boundary, Vault)、网络 (Consul)、应用 (Nomad, Waypoint)等各个环节。</p>
+<ul>
+<li><a href="https://www.terraform.io/">Terraform</a> - AWS CloudFormation 的多云版开源实现，遵循 Infrastrusture as Code 的理念，编写 Terraform 特定语法的 DSL 配置文件即可轻松部署上百家云厂商的服务；</li>
+<li><a href="https://www.vaultproject.io/">Vault</a> - 密钥管理、敏感数据管理、Encrypt as a Service （加密即服务）的企业级安全类产品；</li>
+</ul>
+<p><strong>Terraform 和 Vault 是 HashiCorp 最杀手锏的产品，市面上几乎没有同类产品能很好地替代它们。</strong></p>
+<ul>
+<li>
+<p><a href="https://www.consul.io/">Consul</a> - 一个服务发现和 Service Mesh 产品，市面上其实有不少替代者。不过这个产品可能是字节跳动工程师最熟悉的 HashiCorp 产品，字节跳动也可能是 HashiCorp Consul 最大的使用者（虽然我们是二次开发）。</p>
+</li>
+<li>
+<p><a href="https://www.packer.io/">Packer</a> - 遵循 Infrastructure as code 理念的多云自动化镜像构建工具；</p>
+</li>
+<li>
+<p><a href="https://www.nomadproject.io/">Nomad</a> - 简单灵活的 (容器化和传统非容器化) 应用部署、调度、管理的解决方案，它可以无缝的和  Terraform, Vault, Consul 结合，是一个轻量级的 Kubernetes 替代产品；</p>
+<div class="url-preview">
+ <div>Nomad vs. Kubernetes | Nomad by HashiCorp</div>
+ <div>Comparison between Nomad and Kubernetes</div>
+ <a href="https://www.nomadproject.io/docs/nomad-vs-kubernetes">https://www.nomadproject.io/docs/nomad-vs-kubernetes</a>
+</div>
+</li>
+<li>
+<p><a href="https://www.boundaryproject.io/">Boundary</a> - 2020 年 10 月份推出的多云远程访问解决方案，很有创新性，目前也没有很好的竞争产品；</p>
+</li>
+<li>
+<p><a href="https://www.waypointproject.io/">Waypoint</a> - HashiCorp 最新的产品（同2020 年 10 月份）。遵循 Intrasturecture as code 的应用构建、部署、上线一站式工具。这个产品感觉潜力也很大。</p>
+</li>
+</ul>
+<p><img src="/static/s1/3/stack.png" alt="" /></p>
+<p>HashiCorp 早些年发布了它的 HashiCorp 之道 (<a href="https://www.hashicorp.com/tao-of-hashicorp">The Tao of HashiCorp</a>)，这些产品无一不践行着这一哲学。HashiCorp 同样是 Go 语言的深度使用者，几乎所有产品都是 Go 语言编写，他们甚至把 Go 语言推崇的 <a href="https://en.wikipedia.org/wiki/Communicating_sequential_processes">CSP 并发</a>理念也写进了他们的道中。</p>
+<h2>商业模式</h2>
+<p>HashiCorp 的商业模式也很有代表性，算是开源软件商业化的经典范例。</p>
+<p><img src="/static/s1/3/product.png" alt="" /></p>
+<ul>
+<li>
+<p><strong>产品全部开源。</strong> 开源是非常好的获客方式，同时也能得到社区检验和快速获取反馈、快速迭代的好途径。</p>
+</li>
+<li>
+<p><strong>Enterprise 版本收费。</strong> 原则是 technical challenges 都在免费的开源层面解决，针对企业或大团队需要的功能才收费。</p>
+<blockquote>
+<p>比如，一般大家会把安全放在 enterprise 版本里面，但是因为 Vault 是一个安全产品，所以“you should not have to pay us to be secure as Vault”。开源版本里面也可以满足非常高的安全要求。但是，是否满足 GDPR，以及各种数据管理法规等等，都不是技术问题，所以放在付费版本里。</p>
+<p>对于 Team，原则就是：个人或者小的 team 应该可以永远免费使用。但是，涉及跨团队协作的功能就要收费，因为这也是典型的 organizational challenges.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>构建社区。</strong> HashiCorp 从创立之初就非常注重开源社区的运营，也收获了非常多的社区粉丝。利用开源形成事实标准，是企业最牢固的隐形护城河。</p>
+</li>
+</ul>
+<blockquote>
+<p>商业模式这部分内容有参考 <strong>M小姐研习录</strong> 的这篇公众号文章，写的非常详细，强烈推荐阅读：</p>
+</blockquote>
+<div class="url-preview">
+ <div>【年度公司】Hashicorp：160亿美金的开源标杆，15000字的研究笔记，2021年不遗憾</div>
+ <div>2021年最后一天，看看Hashicorp怎样用十年的坎坷，打造了一家了不起的公司。产品战略，开源商业化，全球社区，以及，坚持理想主义那些事儿。</div>
+ <a href="https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ">https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ</a>
+</div>
+<p>HashiCorp 是 2012 年创立，CNCF 的云原生在 2015 年才提出来，目前 HashiCorp 有五款产品在 CNCF 的全景图中，分别是 Terraform, Vault, Nomad, Consul, Packer，而这五款产品都是 2015 年之前发布的。从创立到上市的九年时间，HashiCorp 顺应了时代的潮流，而时代也成就了 HashiCorp!</p>
+<p><img src="/static//s1/3/ipo.png" alt="" /></p>
+
+
+        
+    </article>
+    
+        <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
+        <div class="flex flex-col md:flex-row">
+        
+            
+                <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/cncf">
+                    
+                        上一篇：
+                    
+                    CNCF 的愿景：技术变革与对抗熵增
+                </a>
+            
+        
+            
+                <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/kong-vs-apisix">
+                    
+                        下一篇：
+                    
+                    云原生时代的中外 API 网关之争
+                </a>
+            
+        
+        </div>
+    
+</div>
+
+    </main>
+
+    <footer class="relative">
+        
+            
+                <div class="bg-neutral-900 p-10 pt-20 text-slate-300 translate-y-[-8rem]">
+    <div class="flex justify-center mb-28 top-16 font-bold">
+        <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
+            <span class="text-main bg-primary p-4">订阅方式：</span>
+            <span class="px-2 md:px-4">
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
+                <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
+            </span>
+        </div>
+    </div>
+    <div class="container mx-auto flex flex-col sm:flex-row">
+        <div class="text-sm max-w-sm">
+            <div class="bg-primary w-12 h-5 my-4"></div>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
+            <div class="py-6">
+                专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:justify-around grow">
+            <div class="pt-12 sm:pt-0">
+                <div class="bg-primary w-5 h-5 my-4"></div>
+                <div class="text-xl font-bold mb-4">责任编辑</div>
+                <a class="my-2 block hover:underline" href="https://folyd.com">@Folyd</a>
+            </div>
+            <div class="pt-12 sm:pt-0">
+                <div class="bg-primary w-5 h-5 my-4"></div>
+                <div class="text-xl font-bold mb-4">更多</div>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-36 bg-neutral-900">
+    <div class="text-xs text-slate-400 text-center mt-12">
+        Copyright © 2022 TO-D 杂志
+    </div>
+</div>
+<link rel="stylesheet" href="/static/footer.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PFMPLGGJHQ');
+</script>
+            
+        
+        <a href="https://github.com/zineland" 
+           class="absolute z-20 bottom-0 w-full text-center font-bold
+                  md:text-slate-100 md:opacity-10 md:hover:opacity-50 md:bg-transparent
+                  bg-primary p-2 text-main">
+            Proudly powered by Zine.
+        </a>
+        </div>
+    </footer>
+</body>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
+</html>
+
