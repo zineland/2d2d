@@ -83,7 +83,7 @@
 
   > Fleet 是 Rancher 联合创始人 Darren Shepherd 主导的项目，目前正在活跃开发中。细心的读者会发现之前 [CoreOS 那一期](/s1/coreos)介绍过他们也有一款产品叫 Fleet。它是 CoreOS 团队在早期构建的容器编排系统，目前已经停止维护。**Rancher 的 Fleet 正是 Darren Shepherd 为了致敬 CoreOS 的 Fleet 的。**“我一直是它的忠实粉丝，将这一项目命名为 Fleet 也包含了我的私心。所以我希望重新使用 Fleet 这一名字，这是对这个非常出色的容器领域早期项目的致敬。”
 
-- [Submarine](https://submariner.io/) - 在 L3 层支持多个 Kubernetes 集群之间的跨集群连接的网络方案。
+- [Submarine](https://submariner.io/) - 【CNCF 沙盒项目】在 L3 层支持多个 Kubernetes 集群之间的跨集群连接的网络方案。
 
   > Submariner 可以让位于不同 Kubernetes 集群上的容器无需借助 ingress controller 或者节点端口即可直接通信。
 
