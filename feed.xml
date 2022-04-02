@@ -2,17 +2,342 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>TO-D 杂志</title>
     <subtitle>专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。</subtitle>
-    <updated>2022-03-26T16:52:08.489633+08:00</updated>
+    <updated>2022-04-02T19:28:22.487802+08:00</updated>
     <id>https://2d2d.io</id>
     <link href="https://2d2d.io/feed.xml" rel="self" type="application/atom+xml" />
     <link href="https://2d2d.io" rel="alternate" type="text/html" />
-    <generator uri="https://github.com/zineland/zine" version="0.2.1">zine</generator>
+    <generator uri="https://github.com/zineland/zine" version="0.3.0">zine</generator>
     <author>
         <name>TO-D 杂志</name>
         <uri>https://2d2d.io</uri>
     </author>
 
-    
+    <entry>
+        <title>微软 Deis Labs 的故事</title>
+        <link rel="alternate" href="https://2d2d.io/s2/deislabs" type="text/html" title="微软 Deis Labs 的故事" />
+        <published>2022-04-02</published>
+        <updated>2022-04-02</updated>
+        <id>https://2d2d.io/s2/deislabs</id>
+        <content type="html" xml:base="https://2d2d.io/s2/deislabs">
+            <![CDATA[<p>微软历史上收购合并过无数的产品、公司和团队，很多产品或公司甚至在被收购前已经是家喻户晓的品牌（比如 LinkedIn，Github，最近的暴雪动视），而我们这一期的主角 Deis Labs 纯粹是微软这个<a href="https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Microsoft">超长收购清单</a>中普通到不能再普通的一项，当你用手指划过这个清单时，你都丝毫不会注意到有一项写着：<code>Deis, 收购于 2017 年 4 月 10 日</code>。</p>
+<p><img src="/static/s2/1/list.png" alt="" loading="lazy"></p>
+<blockquote>
+<p>微软的收购清单</p>
+</blockquote>
+<p>Deis，就是 DeisLab 的前身，这是一个非常优秀并且充满创造力的团队，也是笔者非常喜欢的团队。今天我们就来分享 DeisLab 的故事。</p>
+<h2 id="paas 与 deis" class="flex group">
+    <span>PaaS 与 Deis</span>
+    <a href="#paas 与 deis" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p>我们的故事要先从 PaaS 开始说起。2007 年，<a href="https://www.heroku.com/">Heroku</a> 成立后开启了 PaaS 的黄金时代。很多人把 Heroku 称为 PaaS “鼻祖”，其实并不准确。比他成立更早的 <a href="https://www.engineyard.com/">Engine Yard</a> 在 2006 年就开始做类似的事情了，只是 Engine Yard 后来发展比 Heroku 差太多，只能算 PaaS 领域的第二梯队。Engine Yard 几乎是一个没人听过的名字，但他与我们今天的主角 DeisLab 息息相关。2015 年 4 月 15 日，Engine Yard <a href="https://web.archive.org/web/20170611174913/https://blog.engineyard.com/2015/engine-yard-joins-forces-with-opdemand">收购</a>了一家名为 OpDemand 的公司，这家公司有一款叫 Deis 的主打产品。Deis 是 OpDemand 受 Heroku 启发，于 2013 年开始开发的 PaaS 产品（那个时候的 Heroku 真的是非常火）。Deis 最早的架构是基于 CoreOS, Fleet 和 Docker，后来被称为 v1 版架构，早已被弃用，不过我们现在依然可以在 Github 上一瞥曾经 Deis v1 的代码 (<a href="https://github.com/deis/deis">https://github.com/deis/deis</a>)。</p>
+<blockquote>
+<p>没错，这里又出现了 Fleet，就是 CoreOS 打造的 Fleet。我们曾经在 <a href="/s1/coreos">CoreOS</a>、<a href="/s1/rancher">Rancher</a> 那两期都提到过它。</p>
+</blockquote>
+<p>OpDemand 在加入 Engine Yard 之后，继续以 Deis 的名义开发维护 Deis 这款产品，他们有自己独立的官网 <a href="https://web.archive.org/web/20170209220933/https://deis.com/">https://deis.com</a> 。2015 年 12 月 30 号，他们发布了基于 Kubernetes 的 Deis 第二代产品 Deis Workflow。当年的 Deis 确实做的很不错的，影响力甚至慢慢的扩散到了中国，知乎上现在还可以看到当年和 Deis 有关的问题。</p>
+<p><img class="mx-auto" style="width: 400px;" src="/static/s2/1/deis-zhihu.png"/></p>
+<p>2017 年已经到了 Kubernetes 风起云涌的阶段，公有云领域的后起之秀微软 Azure 也在为自己的容器服务物色合适的公司或团队，慧眼识珠的 Azure 看中了 Deis 这个团队。2017 年 4 月 10 日，在和 Engine Yard 协商之后，Azure 正式把 Deis 这个团队<a href="https://blogs.microsoft.com/blog/2017/04/10/microsoft-acquire-deis-help-companies-innovate-containers/">收入囊中</a>。Deis 加入 Azure 之后负责 Kubernetes 和容器相关的产品，现在点击 https://deis.com 就会跳转到 Azure Kubernetes Service (AKS) 的产品页面。</p>
+<blockquote>
+<p>在被微软收购几个月后，包括 Deis Workflow 在内的 Deis 之前的项目都不再维护更新：<a href="https://web.archive.org/web/20180626034638/https://deis.com/blog/2017/deis-workflow-final-release/">Deis Workflow Final Release</a></p>
+</blockquote>
+<p><img src="/static/s2/1/deis-legacy.png" alt="" loading="lazy"></p>
+<blockquote>
+<p>Deis 被收购前的<a href="https://web.archive.org/web/20170209220933/https://deis.com/">官网</a>。</p>
+</blockquote>
+<p>让人大跌眼镜的是，就在 Engine Yard 把 Deis 团队卖给微软之后没几天，2017 年 4 月25 号，Engine Yard 宣布被一家叫 <a href="https://www.crossover.com">Crossover</a> 的猎头公司收购。Engine Yard 在<a href="https://web.archive.org/web/20170606120646/http://blog.engineyard.com/2017/crossover-acquisition">这篇被收购文章</a>中给出的卖掉 Deis 团队的理由是：Deis 团队做的 Kubernetes 产品让 Engine Yard 无法专注于 Ruby on Rails 的 PaaS 平台。（最初的几个 PaaS 平台包括 Heroku 都是做 Ruby 起家的）这个理由真的让笔者哭笑不得，好一个不忘初心，似乎用“只见树木不见森林”来评价也不为过。多年后来回看 Ruby 和 Kubernetes 的发展趋势，大家马上就能高下立判了。</p>
+<blockquote>
+<p>而现在的 Engine Yard 也不是在 Crossover 名下，而是在一个叫 Devgraph 的公司名下，具体是不是 Crossover 转卖给 <a href="https://devgraph.com">Devgraph</a> 的就不得而知了。</p>
+</blockquote>
+<h2 id="deis labs" class="flex group">
+    <span>Deis Labs</span>
+    <a href="#deis labs" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p>被微软收购后，所有 Deis 的成员全部加入 Azure，为了致敬曾经的 Deis 团队，他们把自己在微软的新团队取名 Deis Labs，官网：<a href="https://deislabs.io">https://deislabs.io</a>。</p>
+<p><img src="/static/s2/1/deislabs.png" alt="" loading="lazy"></p>
+<p>新的 Deis Labs 主要专注于 Kubernetes 和 WebAssembly 两大领域。微软也给 Deis Labs 提供了一个足够大的平台，激发了 Deis Labs 的无穷创造力。他们在短短几年内除了要顾及 Azure 的容器服务，还推出了很多开源项目。虽然有些项目并没有特别知名，但长远来看很多都是很有意义的项目。在介绍这些项目前，我们不得不先介绍一下 Deis Labs 在老东家 Engine Yard 就推出的项目 <a href="https://helm.sh/">Helm</a>。</p>
+<h3 id="helm" class="flex group">
+    <span>Helm</span>
+    <a href="#helm" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p><img src="/static/s2/1/helm.png" alt="" loading="lazy"></p>
+<p><strong>Helm 是 Deis 团队于 2015 年发布的一个 Kubernetes 的包管理工具，目前是 CNCF 的已毕业项目，也是 Kubernetes 生态里面不可或缺的明星级项目</strong>。Kubernetes 默认需要开发者手动编写、维护数量繁多的 Yaml 文件，并且应用的分发、安装也比较繁琐。Helm 引入了 Charts 的概念，开发者可以把自己的应用配置文件打包成 Charts 格式，发布到 <a href="https://artifacthub.io/">ArtifactHub</a> (取代了之前的 Helm Hub) 后，安装新的 Kubernetes 应用只需要一条 Helm 命令就能搞定，极大程度上解决了 Kubernetes 应用维护、分发、安装等问题。</p>
+<blockquote>
+<p>Helm 创始人 Matt Butcher 在 InfoQ 的<a href="https://www.infoq.com/news/2019/09/helm-butcher/">一次采访</a>中提到：Helm 最初是他和另外几个同事参加 Engine Yard 的一次两天 Hackthon 团建开发的项目，最初是为了解决 Deis Workflow 众多微服务在 Kubernetes 内安装部署繁琐的问题。</p>
+<p>Helm 这个名字也很有意思，Kubernetes 是希腊语“船长”的意思，而 Helm 就是船长掌握航行方向的船舵。</p>
+</blockquote>
+<h3 id="其他项目" class="flex group">
+    <span>其他项目</span>
+    <a href="#其他项目" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p><strong>Deis Labs 团队官网列举了他们的大部分项目，其中有 7 个是 CNCF 项目</strong>。后来笔者调研发现，CNCF 另外几个项目也是 Deis Labs 团队的人和其他公司合作搞的，并没有例举在上面。</p>
+<p><img src="/static/s2/1/projects.png" alt="" loading="lazy"></p>
+<blockquote>
+<p>Deis Labs 官网列出的项目列表，应该是官网没有及时更新，有些项目没有列举上去。</p>
+</blockquote>
+<p>我们重点介绍一下未归档的项目：</p>
+<h4 id="akri" class="flex group">
+    <span>Akri</span>
+    <a href="#akri" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 200px;" src="/static/s2/1/akri.png"/>
+<p><a href="https://github.com/project-akri/akri">Akri</a> 是微软在 2020 年 10 月<a href="https://cloudblogs.microsoft.com/opensource/2020/10/20/announcing-akri-open-source-project-building-connected-edge-kubernetes/">推出</a>的用于帮助 Kubernetes 集群主动发现并利用边缘设备的项目。这里的边缘设备通常是指各种传感器、控制器、相机等 IoT 设备，它们都没办法运行 Kubernetes 充当 Kubernetes 集群的节点。Akri 的目标是想成为边缘 IoT 设备和 Kubernetes 集群交互的标准，所以 Akri 其实是 <code>A Kubernetes Resource Interface</code> 的缩写（同时，Akri 也是希腊语 “Edge” 的意思）。</p>
+<blockquote>
+<p>Akri 是一个 Rust 项目，目前处在 <strong>CNCF 沙盒阶段</strong>。</p>
+</blockquote>
+<h4 id="cnab" class="flex group">
+    <span>CNAB</span>
+    <a href="#cnab" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4>
+<p><a href="https://cnab.io/">CNAB</a> 全名 Cloud Native Application Bundle，是 2018 年 12 月微软联合 Docker、HashiCorp、Bitnami 几个公司<a href="https://cloudblogs.microsoft.com/opensource/2018/12/04/announcing-cnab-cloud-agnostic-format-packaging-running-distributed-applications/">一起搞的</a>新开源包规范。名字看起来高大上，但目前看来，这个规范并没有普及起来，除了微软自己在玩，其他公司很少有在参与。Deis Labs 有一个叫 <a href="https://duffle.sh/">Duffle</a> 的归档项目，其实就是 CNAB 规范的打包工具，至于为什么被标为归档，笔者也不得而知。</p>
+<h4 id="krustlet" class="flex group">
+    <span>Krustlet</span>
+    <a href="#krustlet" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 300px;" src="/static/s2/1/krustlet.png"/>
+<p><a href="https://krustlet.dev/">Krustlet</a> 是 Deis Labs 觉得 Kubernetes 生态里面几乎都是 Go 的项目，这是他们为了探索 Rust 怎样和 Kubernetes 结合起来的实验性项目，<strong>是一个 Rust 编写的的 Kubelet，可以直接用来在 Kubernetes 中跑编译成 WebAssembly 的模块。<strong>所以 Kruslet 这个名字其实是  <strong>K</strong>ubernetes-<strong>rust</strong>-kube</strong>let</strong> 的缩写。 </p>
+<blockquote>
+<p>Kubelet 是 Kubernetes 非常核心的组件，用来调度 Pod 等资源的。</p>
+</blockquote>
+<p>笔者认为 Krustlet 是一个很有创新性的项目，它于 2021 年 7 月份发布了 1.0，并且已经是 <strong>CNCF 的沙盒项目</strong>。</p>
+<h4 id="krator" class="flex group">
+    <span>Krator</span>
+    <a href="#krator" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 80px;" src="/static/s2/1/krator.png"/>
+<p><a href="https://github.com/krator-rs/krator">Krator</a> 是 Deis Labs 在开发 Krustlet 过程中抽出来的一个方便构建 Kubernetes Operator 的 Rust 项目。名字是<strong>K</strong>ubernetes <strong>R</strong>ust st<strong>at</strong>e machine operat<strong>or</strong> 的缩写，目前是 <strong>CNCF 沙盒项目</strong>。</p>
+<h4 id="mystikos" class="flex group">
+    <span>Mystikos</span>
+    <a href="#mystikos" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 200px;" src="/static/s2/1/mystikos.png"/>
+<p><a href="https://github.com/deislabs">Mystikos</a> 是一系列用来帮助在硬件可信执行环境 (Trusted Execution Environment，简称 TEE) 下运行 Linux 容器的运行时和工具。目前仅支持 Intel ® SGX，其他 TEE 硬件将在未来支持。</p>
+<h4 id="bindle" class="flex group">
+    <span>Bindle</span>
+    <a href="#bindle" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4>
+<p><a href="https://github.com/deislabs/bindle">Bindle</a> 并不能算是产品，它是 Deis Labs 发布的一个 Rust 项目，而且非常有意思。简单来说，Bindle 是一套用来描述文件之间逻辑依赖关系的规范。Deis Labs 提供了 server 和 client 的实现，主要应用场景比如网站打包、依赖库或包管理、WebAssembly 等等。详情可以看看 Bindle 的<a href="https://github.com/deislabs/bindle/blob/main/docs/bindle-spec.md">规范文档</a>。</p>
+<h4 id="oras" class="flex group">
+    <span>ORAS</span>
+    <a href="#oras" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 200px;" src="/static/s2/1/oras.png"/>
+<p><a href="https://oras.land/">ORAS</a> 是 OCI Registry As Storage 的缩写，目前也是 <strong>CNCF 沙盒项目</strong>。笔者了解也不多，暂时没办法给出通俗的解释，欢迎大家补充。</p>
+<h4 id="brigade" class="flex group">
+    <span>Brigade</span>
+    <a href="#brigade" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 200px;" src="/static/s2/1/brigade.png"/>
+<p><a href="https://brigade.sh/">Brigade</a> 是微软在 2017 年底推出的一个借助 Kubernetes 来实现事件驱动、事务处理编排的工具，可以使用在 CI / CD 环节。目前也是 <strong>CNCF 沙盒项目</strong>，但是看起来在国内毫无用户。</p>
+<h4 id="hippo" class="flex group">
+    <span>Hippo</span>
+    <a href="#hippo" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4>
+<p><a href="https://github.com/deislabs/hippo">Hippo</a> 是 Deis Labs 推出的一个 WebAssembly PaaS 平台，很有创意，笔者个人非常喜欢这个产品。顺便说一下 Hippo 用到的技术就包括前面提到的 Bindle。详细信息可以了解一下 Hippo 的官宣博客。</p>
+<div class="url-preview">
+ <div>Introduction to Hippo: the WebAssembly PaaS</div>
+ <div>Hippo makes it easy to run applications and services at scale</div>
+ <a href="https://deislabs.io/posts/introducing-hippo/">https://deislabs.io/posts/introducing-hippo/</a>
+</div>
+<h4 id="porter" class="flex group">
+    <span>Porter</span>
+    <a href="#porter" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 200px;" src="/static/s2/1/porter.png"/>
+<p><a href="https://porter.sh">Porter</a> 是微软 2020 年初推出的实现前面说过的 CNAB 规范的打包工具，目前是 <strong>CNCF 的沙盒项目</strong>。笔者没有具体用过，大家感兴趣可以自行了解。</p>
+<h4 id="wagi" class="flex group">
+    <span>WAGI</span>
+    <a href="#wagi" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4>
+<p><a href="https://github.com/deislabs/wagi">WAGI</a> (WebAssembly Gateway Interface) 是 Deis Labs 在 WebAssembly 领域的一个很有创新性的实验性项目，于  2020 年 10 月发布。简单来说就是任何编译成 WASI 格式的 WebAssembly 模块，都可以用来处理 HTTP 请求。</p>
+<blockquote>
+<p><a href="https://github.com/WebAssembly/WASI">WASI</a> (WebAssembly System Interface Resources) 可以简单理解为 WebAssembly 在浏览器之外（主要是服务端）的规范。</p>
+<p>WebAssembly 正处在蓬勃发展的阶段，Deis Labs 最近几年在 WebAssembly 领域做了非常多的创新性尝试，但很多尝试都失败了，为数不多目前有不错进展的大概只有 Krustlet 和 WAGI 了。</p>
+</blockquote>
+<h4 id="vscode 插件" class="flex group">
+    <span>VSCode 插件</span>
+    <a href="#vscode 插件" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4>
+<p>另外，Deis Labs 还参与开发了<a href="https://github.com/deislabs?q=vscode">一系列</a>和 Kubernetes 有关的 VSCode 插件，比如 VSCode 的 <a href="https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools">Kubernetes 插件</a>。</p>
+<p>总的来说，<strong>Deis Labs 是真的超级富有创造力，几年时间里给 CNCF 贡献了 7 个项目（还不包括合作的项目）</strong>。给人的感觉是成为 CNCF 项目似乎对他们来说是一件轻而易举的事情。<strong>当然不得不说，Deis Labs 的大部分项目都比较超前，比如 Krustlet，Bindle，WAGI，想法真的都很棒，但是目前受众还不是很多，知道这些项目的人也不多，我们只能用长远的眼光去看待这些项目未来的潜力和价值。</strong></p>
+<h3 id="合作的项目" class="flex group">
+    <span>合作的项目</span>
+    <a href="#合作的项目" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p>Deis Labs 的项目我们已经在上面讲了十几个了，但还不止如此，其他几个 Deis Labs 参与合作过的项目也非常值得一提：</p>
+<ul>
+<li><a href="https://smi-spec.io/">Service</a><a href="https://smi-spec.io/"> Mesh Interface</a> - 【CNCF 项目】我们之前在第一季第二期提到过的 Kubernetes Service Mesh 统一规范，这个规范主要由微软牵头和各大 Service Mesh 厂商联合制定的，微软这边主要就是 Deis Labs 团队的人在参与。</li>
+<li><a href="https://openservicemesh.io/">Open Service Mesh</a> - 【CNCF 项目】这个也是微软和其他公司一起遵循 Service Mesh Interface 规范实现的轻量级 Service Mesh 产品，微软这边同样也是 Deis Labs 团队的人在参与。</li>
+<li><a href="https://oam.dev">Open Application Model</a> (OAM) - 这是一个微软在 2019 年联合阿里巴巴一起发布的开放应用模型规范，微软这边主要是 Deis Labs 团队的人在参与。这个规范比较抽象，大家感兴趣可以看看<a href="https://mp.weixin.qq.com/s/SNNrnlSyZQkiSRe2n3k3Aw">这篇</a><a href="https://mp.weixin.qq.com/s/SNNrnlSyZQkiSRe2n3k3Aw">公众号文章</a>。</li>
+</ul>
+<p>不知道大家有有没有注意，Service Mesh Interface、Open Service Mesh 这些项目的官网和 Deis Labs 的很多网页风格都非常类似。没错，这些都是 Deis Labs 设计的，他们的风格都是非常清新活泼，充满活力的感觉。</p>
+<h2 id="核心人物" class="flex group">
+    <span>核心人物</span>
+    <a href="#核心人物" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p>前面讲了那么多 Deis Labs 的项目，接下来重点介绍一下 Deis Labs 的两位核心人物。</p>
+<h3 id="gabe monroy" class="flex group">
+    <span>Gabe Monroy</span>
+    <a href="#gabe monroy" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p>Gabe Monroy 从 OpDemand 到 Engine Yard 的 Deis 一直都是担任 CTO 角色，当初的 Deis 项目主要也是由他在主导。也是他不错的眼光看到了 Matt Butcher 几个人在 Hackthon 上做的那款产品的潜力，在他的推动下才有了后来的 Helm。</p>
+<p>加入微软后，Gabe Monroy 从 Azure 的首席项目经理 (Partner Program Manager) 升到了产品管理副总裁 (Vice President Of Product Management)。</p>
+<p>不过，在 2021 年 10 月份，他以 CPO (Chief Product Officer) 的角色<a href="https://investors.digitalocean.com/news/news-details/2021/DigitalOcean-Names-Gabe-Monroy-as-Chief-Product-Officer/default.aspx">加入了 DigitalOcean</a>，并承担了 DigitalOcean 2024 年第一个 10 亿美金营收的重任 (our first billion in revenue in 2024)，还有 2030 年 4000 万社区新开发者的重任。一个月多前，Gabe Monroy 在 ProductHunt 上举行了一场 <a href="https://www.producthunt.com/discussions/i-m-gabe-monroy-chief-product-officer-for-digitalocean-ama">Ask Me Anything 的问答活动</a>，他在上面透露他现在是业余农民，现在住在科罗拉多州一个 35 英亩的农场，他和妻子在那里养了很多鸡和家畜。也算是一个充满传奇的人物！</p>
+<blockquote>
+<p>前不久，DigitalOcean <a href="https://www.digitalocean.com/blog/css-tricks-joins-digitalocean">收购了 CSS-Tricks.com</a> 可能也是 Gabe Monroy 在主导推动。</p>
+</blockquote>
+<p><img src="/static/s2/1/gabe-monroy.png" alt="" loading="lazy"></p>
+<h3 id="matt butcher" class="flex group">
+    <span>Matt Butcher</span>
+    <a href="#matt butcher" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p>Matt Butcher 是一个非常极客的工程师，他早期是 Deis 项目的核心贡献者，后来是 Helm，Brigade, Krustlet 等项目的主要作者，也是 Deis Labs 的灵魂人物。上面提到的 CNAB，OAM 等规范也是 Matt Butcher 在主导推动。</p>
+<p>除了在软件项目上非常高产之外，Matt Butcher 还出过很多书！2016 年一本《给孩子讲 Kubernetes 是什么》（原名 The Illustrated Children’s Guide to Kubernetes）的插画书在国内外开始火起来了，其作者就是 Matt Butcher，现在这本书在 CNCF 官网就<a href="https://www.cncf.io/phippy/the-childrens-illustrated-guide-to-kubernetes/">可以看到</a>。其他的书包括：</p>
+<ul>
+<li>《Mastering OpenLDAP》</li>
+<li>Maning 出版的 《Go In Practice》</li>
+<li>O’Reilly 出版的《Learning Helm》</li>
+</ul>
+<p>更多书可以看 Matt Butcher 的<a href="http://technosophos.com/">博客</a>。非常有意思的是，Matt Butcher 本科、硕士、博士都是哲学专业，并没有主修过计算机相关专业，也是一个非常传奇的人物！</p>
+<p><img src="/static/s2/1/matt-butcher.png" alt="" loading="lazy"></p>
+<blockquote>
+<p>还有一个叫 <a href="http://www.mattfarina.com/">Matt Farina</a> 的人也非常值得介绍，虽然他不在 Deis Labs，但是他和 Matt Butcher 很早就在惠普相识，后来两人合作开发过很多开源项目，还和一起出版过至少 3 本书，上面提到的 《Go In Practice》和 《Learning Helm》主要就是他们俩一起写的。</p>
+<p><img style="width: 380px" src="/static/s2/1/helm-book.png"/></p>
+<p>Matt Farina 早期也参与 Helm 的开发，是 Helm 的主要贡献者之一。说来真的很巧，Matt Farina 后来加入了 Rancher，被 Rancher 老板梁胜安排做一个新项目，这个新项目就叫 Rancher Desktop！Matt Farina 现在就是 Rancher Desktop 的主要负责人，目前他还是 CNCF TOC 的成员。</p>
+</blockquote>
+<h2 id="新未来" class="flex group">
+    <span>新未来</span>
+    <a href="#新未来" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/1/fermyon.png" alt="" loading="lazy"></p>
+<p>2022 年 1 月，一家名叫 <a href="https://www.fermyon.com/">Fermyon</a> 的新公司成立了，首轮融资 400 万美金，团队将近 10 位创始成员都来自 Deis Labs，CEO 就是 Matt Butcher。从 Engine Yard 到微软，现在又离开了微软重新开始他们新的征程，几乎还是原班人马，大家都是早已共事多年的好伙伴。过去他们在容器领域崭露头角，这次他们看中的是 WebAssembly 的未来，Fermyon 就是一家全面押注 WebAssembly 的公司，他们把 WebAssembly 称之为云计算的下一波浪潮 (the next wave of cloud computing)。由衷的祝愿他们继续在新的领域开拓创新，取得更大的成就！</p>
+<blockquote>
+<p>随着 Deis Labs 大部分核心成员都离职了，Deis Labs 未来的命运就不得而知了。</p>
+</blockquote>
+]]>
+        </content>
+
+        <author>
+            <name>Folyd</name>
+        </author>
+    </entry>
     <entry>
         <title>为什么要写《TO-D 杂志》？</title>
         <link rel="alternate" href="https://2d2d.io/s1/why" type="text/html" title="为什么要写《TO-D 杂志》？" />
@@ -21,27 +346,63 @@
         <id>https://2d2d.io/s1/why</id>
         <content type="html" xml:base="https://2d2d.io/s1/why">
             <![CDATA[<p>2021 年 11 月底开始，我在字节跳动内部跟一位同事经常沟通探讨全球开发者领域的事情，这位同事发现我对这一领域比较有研究，建议我开一个 To-D 专栏分享一下这方面的内容。之前从未有过专栏经验的我，抱着试一下的态度欣然接受了这个提议。2021 年 12 月 23 号，一份名为 <strong>《To-D 观察室》</strong> 的飞书文档诞生，并以每周一篇的频率更新。两个多月后，这份文档累计达到了 <strong>14000</strong> 多字，获得了超过 <strong>1200</strong> 人数的阅读（不包括匿名访问），接近 <strong>100</strong> 个点赞和部分同学的直接肯定。</p>
-<p><img src="/static/s1/10/praise.png" alt="" /></p>
-<p><img src="/static/s1/10/praise2.png" alt="" /></p>
+<p><img src="/static/s1/10/praise.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/10/praise2.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>有机会我会再写一篇<code>我是怎样调研的</code>的文章来详细说明</p>
 </blockquote>
 <p>看到这些数据和大家的肯定，我内心确实也充满喜悦，所以经过一番思考后，我决定把这些内容对外发布出来，同时考虑长期更新下去。主要有几个原因：</p>
-<h2>兴趣使然</h2>
+<h2 id="兴趣使然" class="flex group">
+    <span>兴趣使然</span>
+    <a href="#兴趣使然" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p><strong>首先是兴趣使然</strong>。我好几年前（可能大学时代）就开始关注这方面的信息，不管是新的技术，还是新的产品，或者是 HackerNews 上突然火起来的新闻，只要我发现了，我都会及时去了解。比如，我应该 15 年左右就发现了 <a href="https://github.com/hashicorp/vagrant">Vagrant</a> 这样的一款产品，并且也亲自使用过一段时间，当时深挖这款产品了解到了背后的作者，也就是 HashiCorp 的创始人 <a href="https://github.com/mitchellh">Mitchell Hashimoto</a>，于是我很早就在 Github 上 follow 他了，完全让我没有想到的是，HashiCorp 后来竟然取得了如此成就！</p>
 <p>不过以前往往是自己主动去发现，并未想过要总结分享，也没想过这些信息对其他人是否会有帮助。《TO-D 观察室》的这次尝试让我意识到，这是一件很有意义的事情。<strong>一方面，把自己所掌握的信息很好的总结沉淀下来，是一个对个人很有裨益的提升手段，另一方面，这些内容也能帮助到同样感兴趣的朋友，两全其美，何乐不为？</strong></p>
-<h2>分享故事</h2>
+<h2 id="分享故事" class="flex group">
+    <span>分享故事</span>
+    <a href="#分享故事" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>另一个主要原因是<strong>关于故事</strong>。</p>
 <p><strong>人与生俱来就是一种喜欢聆听故事的生物。</strong> 从小时候父母或老师讲的童话故事，到长大后学习阅读过程中领会的历史典故、名人励志故事，到某个普通人平凡真实的感人故事，每一种故事或多或少都能触动不同人的内心，让人记忆尤深，甚至受此影响。就我个人而言，可能和很多 80、90 后一样，从小就听过微软比尔盖茨的故事，所以初中开始我对计算机的兴趣就开始萌芽，到最后义无反顾选择了计算机这个行业。<strong>在我个人看来，故事的力量是不容小觑的。</strong></p>
 <p>纵观人类社会，各个行业有着各个行业的故事。就计算机和互联网行业来说，上个世纪八九十年代以来的故事大部分都被大家所熟知，这要感谢很多科普人和作家的努力，比如深受大家喜欢的 <strong>《浪潮之巅》</strong>。而<strong>开发者领域其实是上层互联网行业的基石，没有开发者这样一群通过双手编写代码创造世界的人，就不会有如今的互联网。</strong> 但是开发者领域又是一个很专业的行业，不仅充满着技术术语、而且这些技术更新迭代异常之快，所以这一领域的故事没有太多人讲述，往往也不太被人熟知。<strong>如果没有人去记录和分享这些故事，这些故事就可能会以很快的速度被人遗忘。</strong></p>
 <p>以 Mesos 来举例：<strong>Mesos 没落了，与之伴随的是过去它的辉煌，那段与 Kubernetes 较量的战争，随着时间的推移，越来越不被新一代工程师所熟知</strong>。试着去问一下今年刚毕业的学生，有多少人听过它的故事？而它刚好是我毕业工作那几年如日中天的技术，<strong>它的故事和最后的反思其实非常值得我们去了解学习。</strong></p>
 <p>《TO-D 杂志》的第一季里面大部分文章都充满故事性，我想这可能也是这些文章深受大家喜欢的原因之一。就像我上面截图里面解答那位同学的问题一样，<strong>我希望这个杂志的文章能做到保持干货的同时不丧失趣味性</strong>。</p>
-<h2>激发创造</h2>
+<h2 id="激发创造" class="flex group">
+    <span>激发创造</span>
+    <a href="#激发创造" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>最后一个原因是<strong>关于创造力</strong>。</p>
 <p>我非常喜欢看魔术表演，虽然明明知道它是一门视觉 + 骗人的艺术，但是<strong>我却非常痴迷这些魔术师富有创造力的脑洞，就像痴迷国外最新的技术和产品一样</strong>。我常常惊叹为什么他们这么具有创造力，能做出这么让人眼前一亮的产品？而为什么我在国内很少看到？我怎样才能像他们那样做出一些具有创造力的产品？</p>
 <p>出于这个原因，我一直都很有动力去了解、调研这些技术和产品，我想的是<strong>只有多学习，多了解，才能激发自己的创造力。希望在这个学习了解过程中总结下来的内容，或多或少也能过激发到 《TO-D 杂志》的每一位读者。</strong></p>
 <p>以上就是我的初衷。至于对外发布的方式为什么不选择微信公众号、知乎专栏，主要在于我想来一次乌托邦的尝试。</p>
-<h2>一场乌托邦实验</h2>
+<h2 id="一场乌托邦实验" class="flex group">
+    <span>一场乌托邦实验</span>
+    <a href="#一场乌托邦实验" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>纵观全球，中国互联网内容是非常封闭的，不管是阅读全文需要下载 App，还是微信公众号文章禁止其他搜索引擎检索，网页链接不能在各大 App 之间正常分享，<strong>这些都是非常畸形的行为，不仅完全违背开创 WWW 互联网那代科学家的初衷，而且也极度缺乏那代科学家的胸怀</strong>。笔者个人不想把这些内容封闭在这些孤岛中，不想被这些中心化的大平台束缚捆绑，所以我选择与之抗争，<strong>来一场乌托邦式的实验</strong>。</p>
 <p>为了发布《TO-D 杂志》，笔者<strong>专门使用 Rust 开发了一个帮助每个人构建一份属于自己的杂志的开源软件 <a href="https://github.com/zineland/zine">Zine</a></strong>。《TO-D 杂志》就是这样的一份完全基于 <code>Zine</code> 编写的开源独立杂志。</p>
 <div class="url-preview">
@@ -58,7 +419,16 @@
 <blockquote>
 <p>目前不支持邮件订阅，希望能得到大家的赞助。</p>
 </blockquote>
-<h2>总结</h2>
+<h2 id="总结" class="flex group">
+    <span>总结</span>
+    <a href="#总结" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p><strong>《TO-D 杂志》是一份开源独立的杂志</strong>，虽然目前只有我一个人在写文章，但一个人的能力是非常有限的，欢迎每个感兴趣的朋友投稿贡献。只需要遵循一个最重要的原则就行：<code>保持干货的同时不丧失趣味性</code>！如果大家有发现好的新公司，新产品，欢迎推荐给我。</p>
 <img style="width: 350px" src="/static/s1/10/whiteboard.jpg" />
 <blockquote>
@@ -72,7 +442,6 @@
             <name>Folyd</name>
         </author>
     </entry>
-    
     <entry>
         <title>收购 Docker 企业业务的 Mirantis 是什么来路？</title>
         <link rel="alternate" href="https://2d2d.io/s1/mirantis" type="text/html" title="收购 Docker 企业业务的 Mirantis 是什么来路？" />
@@ -84,25 +453,52 @@
 <p>
   <img class="mx-auto" style="height: 280px;" src="/static/s1/9/mirantis-light.png"/>
 </p>
-<h3>外包公司能有什么出息？</h3>
+<h3 id="外包公司能有什么出息？" class="flex group">
+    <span>外包公司能有什么出息？</span>
+    <a href="#外包公司能有什么出息？" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>2010 年 NASA 和 Rackspace <a href="https://web.archive.org/web/20171026111206/https://www.openstack.org/blog/2010/07/introducing-openstack/">联合发布</a>了私有云解决方案 OpenStack，很快便吸引了一家外包公司的注意，该公司在 2011 年就开始给 OpenStack 做贡献。2012 年，OpenStack 发布才两年多，NASA 就抛弃了 OpenStack 选择<a href="https://www.wired.com/2012/06/nasa-web-services-openstack/">拥抱公有云 AWS</a>。而这家外包公司也在这一年华丽转型全面投入 OpenStack，变成了一家纯 OpenStack 公司。这家外包公司就是 Mirantis，它于 1999 年在俄罗斯成立（后来把总部定在了美国加州）。</p>
 <blockquote>
 <p>NASA 抛弃 OpenStack  转而采用 AWS 核心原因是：<strong>NASA 是政府部门，不是商业机构，采用亚马逊的云计算，NASA 每年可以节省 100 万美元的成本。</strong></p>
 </blockquote>
 <p>关于 Mirantis 转型 OpenStack 之前的外包经历 Mirantis 自己好像从来不愿提起，网上几乎也没有什么资料。不过互联网还是有记忆的，2013 年一家专注于俄罗斯和东欧市场的科技媒体刚好报道了 Mirantis A 轮融资的消息，标题就是“<a href="http://web.archive.org/web/20131211151032/http://goaleurope.com/2013/06/24/russian-former-outsourcing-mirantis-announces-10-million-series-a-round/">Russian former outsourcing Mirantis Announces $10 Million Series A Round</a>“。</p>
 <p>我们大概都有一个刻板印象，<strong>外包公司能有什么大出息？这句话可能对绝大多数外包公司都适用，但是对 Mirantis 却不适用。在转型 OpenStack 公司之后，Mirantis 融资顺畅，一路高歌，在随后的几年里成为了 OpenStack 领域数一数二的公司。</strong></p>
-<h3>OpenStack 的时代</h3>
+<h3 id="openstack 的时代" class="flex group">
+    <span>OpenStack 的时代</span>
+    <a href="#openstack 的时代" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>2012 年 OpenStack 基金会<a href="https://www.businesswire.com/news/home/20120919005997/en/OpenStack-Launches-Independent-Foundation-Begins-Work-Protecting">成立</a>，OpenStack 的黄金时代到来。而 Mirantis 也成为了这个基金会的创始成员之一，Mirantis 的创始人也当选了基金会的董事会成员。从 2013 年到 2015 年，Mirantis 分别完成了 2000 万美金的 A 轮和 2 亿美金的 B 轮融资，投资方不仅有 Intel、RedHat 和爱立信，还有一家来自中国的<a href="https://www.westsummitcap.com/zh/">华山资本</a>。</p>
 <blockquote>
 <p>Mirantis 在<a href="http://web.archive.org/web/20130916010432/http://www.mirantis.com/company/press-release/mirantis-receives-10-million-from-intel-capital-westsummit-capital-and-dell-ventures-to-accelerate-its-openstack-game/">官方博客</a>中也提到之所以接受华山资本的投资是<strong>因为<a href="http://OpenStack.org">openstack.org</a>访问量最大的国家是中国， 中国拥有世界上最大的云部署和 OpenStack 需求</strong>，华山资本可以帮助 Mirantis 在中国更好的拓展市场和客户。</p>
 </blockquote>
 <p>在资本的支持下，<strong>Mirantis 发行了自己的商业化 OpenStack 发行版，也成为了全球顶尖的 OpenStack 服务提供商。在 OpenStack 贡献方面，当时的 Mirantis 很长时间一直都能排前三。</strong></p>
-<p><img src="/static/s1/9/openstack-rank.png" alt="" /></p>
+<p><img src="/static/s1/9/openstack-rank.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>OpenStack Kilo 版本按 commit 数排名，Mirantis 排名第三 (扇图中最大的绿色部分为其他公司的总和)。数据来源于 Mirantis 维护的网站：<a href="https://www.stackalytics.com">https://www.stackalytics.com</a></p>
 <p>OpenStack 的版本命名和 Android 类似，从字母 A 开始命名，每一个版本换一个字母，截止到目前最新的版本是 Wallaby。</p>
 </blockquote>
-<h3>OpenStack 的没落</h3>
+<h3 id="openstack 的没落" class="flex group">
+    <span>OpenStack 的没落</span>
+    <a href="#openstack 的没落" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>OpenStack 的黄金时代才持续几年便开始逐渐没落。其中有很多原因：</p>
 <ul>
 <li><strong>随着 OpenStack 不断发展，组件越来越多，整个项目越来越复杂。</strong> 甚至到后期很多组件都成为了缺少维护的状态。</li>
@@ -114,7 +510,7 @@
 <li>OpenStack 在公有云上无法和 AWS、Azure 等厂商的自有技术抗衡，在私有云上也无法威胁到 VMware。</li>
 <li><strong>Kubernetes 的崛起给 OpenStack 着实带来了很大挑战和冲击。</strong></li>
 </ul>
-<p><img src="/static/s1/9/openstack-maillist.png" alt="" /></p>
+<p><img src="/static/s1/9/openstack-maillist.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>OpenStack邮件列表数量统计图，来源：https://openstack.markmail.org。</p>
 </blockquote>
@@ -129,7 +525,16 @@
 <blockquote>
 <p>后来，Open Stack 基金会改名 <a href="https://openinfra.dev/">Open Infrastructure 基金会</a>，不再专注于 OpenStack，也孵化了像 <a href="https://katacontainers.io/">Kata Container</a> 这样的明星项目。</p>
 </blockquote>
-<h3>高光时刻</h3>
+<h3 id="高光时刻" class="flex group">
+    <span>高光时刻</span>
+    <a href="#高光时刻" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>Mirantis 在那次裁员之后依然没有放弃老本行 OpenStack 的业务，但是他把重心调整到了 Kubernetes 上，不再是一家纯 OpenStack 公司了。</p>
 <ul>
 <li>
@@ -137,7 +542,7 @@
 </li>
 <li>
 <p>2017 年 4 月，Mirantis <a href="https://www.zdnet.com/article/mirantis-enters-the-kubernetes-game-and-ups-its-openstack-play/">发布</a>了一款 OpenStack 和 Kubernetes 的结合产品：Mirantis Cloud Platform (MCP)，这款产品至今依然存在，只是改名叫了 <a href="https://www.mirantis.com/software/mirantis-openstack-for-kubernetes/">Mirantis OpenStack for Kubernetes</a>。</p>
-<p><img src="/static/s1/9/mcp.png" alt="" /></p>
+<p><img src="/static/s1/9/mcp.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>MCP 里面包含两款子产品: </p>
 <ul>
@@ -154,7 +559,7 @@
 </li>
 </ul>
 <p><strong>到了 2019 年底，Mirantis 终于迎来了他的高光时刻：收购 Docker 的 Enterprise 业务。这部分业务几乎在 Docker 公司所有业务中占比 90%，其他还包括所有相关的知识产权、约 400 名 Docker 员工中的 300 名、750 名企业客户以及所有企业合作伙伴关系。</strong></p>
-<p><img src="/static/s1/9/docker-enterprise.png" alt="" /></p>
+<p><img src="/static/s1/9/docker-enterprise.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>曾经 Docker <a href="https://web.archive.org/web/20191106112336/https://www.docker.com/">公司官网</a>的 Docker Enterprise 和 Docker Enterprise Solutions 板块。</p>
 </blockquote>
@@ -170,7 +575,16 @@
 <blockquote>
 <p>这里的一亿美金是年营收 (Annual Run Rate)，并非 ARR。</p>
 </blockquote>
-<h3>开创未来</h3>
+<h3 id="开创未来" class="flex group">
+    <span>开创未来</span>
+    <a href="#开创未来" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>可以说 Mirantis 收购 Docker 企业业务这笔交易是相当成功的，现在的 Mirantis 已经不是当年 OpenStack 时代的 Mirantis 了，更不是十年前的那家外包公司了。<strong>如今的 Mirantis 是一个办公地点包括美国、加拿大、欧洲、中国、印度、日本等十几个国家和城市的跨国公司，也是一家业务从 OpenStack，到 Kubernetes、Docker，再到 DevOps、Data Center 等覆盖面非常广的公司。</strong> 这几年除了继续经营传统的 OpenStack 和 Docker 相关业务外，Mirantis 持续收购和开辟了新的产品线和业务：</p>
 <ul>
 <li>
@@ -178,7 +592,7 @@
 <blockquote>
 <p>Lens 的桌面版 IDE 是开源免费的，但是它提供的团队协作功能 (<a href="https://k8slens.dev/spaces.html">Lens Space</a>) 则需要订阅付费。</p>
 </blockquote>
-<p><img src="/static/s1/9/lens.png" alt="" /></p>
+<p><img src="/static/s1/9/lens.png" alt="" loading="lazy"></p>
 </li>
 <li>
 <p><a href="https://www.mirantis.com/software/lens/devopscare/">DevOpsCare</a> - Lens 团队被收购后和 Mirantis 一起搞的适用于任何 Kubernetes 环境的 CI / CD 产品。</p>
@@ -200,7 +614,7 @@
 <p>Mirantis 从外包起家，到及时拥抱 OpenStack，到迅速转型 Kubernetes，每一步似乎都踩得恰到好处。如今 Mirantis 不断推陈出新，影响力越来越大，相信他会不断开创他自己的美好未来！</p>
 <blockquote>
 <p>就在笔者调研 Mirantis 的期间，俄罗斯 2 月 24 号从乌克兰第二大城市 Kharkiv (哈尔科夫) 对乌克兰发动军事行动，俄乌局势急转直下。而刚好 Mirantis 的创始人是俄罗斯人，他们在 Kharkiv 有办公室，而且一直在招人。我们只能祝愿一切安好！</p>
-<p><img src="/static/s1/9/kharkiv.png" alt="" /></p>
+<p><img src="/static/s1/9/kharkiv.png" alt="" loading="lazy"></p>
 <p>后续：在这篇文章发表当天，Mirantis 在官方博客对乌克兰危机<a href="https://www.mirantis.com/blog/mirantis-response-to-ukraine-crisis/">做出了回应</a>。Mirantis 说乌克兰的 86 名员工目前都安全；因为俄罗斯受到各方面制裁，俄罗斯团队也在紧急制定措施应对制裁，减少对客户的影响。</p>
 </blockquote>
 ]]>
@@ -210,7 +624,6 @@
             <name>Folyd</name>
         </author>
     </entry>
-    
     <entry>
         <title>曾经 Mesos 背后的公司，如今在干嘛?</title>
         <link rel="alternate" href="https://2d2d.io/s1/mesos" type="text/html" title="曾经 Mesos 背后的公司，如今在干嘛?" />
@@ -219,22 +632,49 @@
         <id>https://2d2d.io/s1/mesos</id>
         <content type="html" xml:base="https://2d2d.io/s1/mesos">
             <![CDATA[<p>我们之前曾多次提到历史上竞争激烈的容器编排之战 (The Container Orchestration Wars)，而 Kubernetes 最有力的竞争者 Mesos 以及其背后的公司当时也算是风光无限，不仅是资本的宠儿，也是被众人看好的明日之星。好景不长，短短三年便改天换地，胜者 Kubernetes 自不必说，Docker 虽败，但开发者依然离不开他。Fleet 背后的 CoreOS，Cattle 背后的 Rancher 也都一直不断创新，备受瞩目。唯独 Mesos 似乎很惨，是早已沉寂，被人淡忘？还是已低调转型，等待厚积薄发？也不知道还有多少人会关心：之前 Mesos 背后的公司是谁？如今尚且安好？</p>
-<h2>Mesos 简史</h2>
-<p><img src="/static/s1/8/mesos.png" alt="" /></p>
-<h3>出生名门</h3>
+<h2 id="mesos 简史" class="flex group">
+    <span>Mesos 简史</span>
+    <a href="#mesos 简史" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s1/8/mesos.png" alt="" loading="lazy"></p>
+<h3 id="出生名门" class="flex group">
+    <span>出生名门</span>
+    <a href="#出生名门" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>Mesos 最初是加州伯克利大学 RAD 实验室 2009 年开始的一个学术研究项目，当时项目的主要负责人是 Mesos <a href="https://people.eecs.berkeley.edu/%7Ealig/papers/mesos.pdf">这篇论文</a>的第一作者 Benjamin Hindman，他是 RAD 实验室的一名博士研究生。<strong>加州伯克利大学是现代计算机技术领域的一朵皇冠，里面诞生了非常多至今影响深远的技术，从 RISC 指令集、RAID（冗余磁盘阵列），到 PostgreSQL、Log-Structure Filesystem，再到 Spark 和 Ray，甚至连 eBPF 里面的 B 都是 Berkeley。</strong> 毫无疑问，Mesos 就是这样一个出生名门的项目。</p>
 <p>此时的 Twitter 早已进入高速发展的阶段，与之伴随的是 Twitter 频繁宕机的「失败鲸」时光。2010 年，正在 Twitter 苦不堪言的时候，他们看到了 Mesos 这个项目，随后马上应用到了 Twitter，成为 Twitter 自定义 PaaS 的实现基础，管理着 Twitter 超过 30 万台服务器上的应用部署。Benjamin Hindman 当时也加入了 Twitter，负责开发和部署 Mesos。Twitter 的这套基于 Mesos 的 PaaS 解决方案就是后来的 <a href="https://aurora.apache.org/">Apache Aurora</a>。</p>
-<p><img src="/static/s1/8/fall-whale.png" alt="" /></p>
+<p><img src="/static/s1/8/fall-whale.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>Twitter 2008 ~ 2013 年宕机时的页面，被海外网友称为「失败鲸」。</p>
 </blockquote>
-<h3>Mesosphere 成立</h3>
+<h3 id="mesosphere 成立" class="flex group">
+    <span>Mesosphere 成立</span>
+    <a href="#mesosphere 成立" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>2013 年，Benjamin Hindman 离开 Twitter 成立了一个名为 <a href="https://web.archive.org/web/20140903015326/http://mesosphere.com/">Mesosphere</a> 的公司，专注于打造生产级商业化 Mesos 平台。<strong>Mesosphere 正式成为 Mesos 背后的公司，在后期的 Mesos 开发，商业化运营，与 Kubernetes 的竞争中几乎都由 Mesosphere 在主导和支撑。</strong></p>
 <blockquote>
 <p>Mesos 一词来源于希腊语，是 middle (中间) 的意思，英语里面甚至有一个 <em>meso-</em> 的词根。Sphere 则表示某个领域或范围，而 Mesosphere 既指地球大气层的中流层（介于平流层和热流层中间），也可以表示 Mesos 这个领域。</p>
 <p>国内青云也有一个专注于 Kubernetes 技术的团队，他们的产品名为 <a href="https://kubesphere.io/">Kubesphere</a>，估计也是受到 Mesosphere 的启发。</p>
 </blockquote>
-<p><img src="/static/s1/8/mesosphere.png" alt="" /></p>
+<p><img src="/static/s1/8/mesosphere.png" alt="" loading="lazy"></p>
 <p>当时的 Mesosphere 除了 Apache Mesos 外，还有两款主要产品：</p>
 <ul>
 <li>
@@ -247,17 +687,44 @@
 <p><a href="http://mesosphere.github.io/marathon/">Marathon</a> - Mesos 底层的容器编排框架，也正是 Mesos 与 Kubernetes 抗衡的核心组件。</p>
 </li>
 </ul>
-<h3>备受追捧</h3>
+<h3 id="备受追捧" class="flex group">
+    <span>备受追捧</span>
+    <a href="#备受追捧" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>Mesosphere 成立后就备受资本的追捧，自 2014 年 6 月至 2018 年 5 月共完成 A 到 D 轮四轮融资，金额分别为 1050 万美元、3600 万美元、7350 万美元和 1.25 亿美元，投资方包括 A16Z、Fuel Capital、微软等。Mesosphere 最高估值是 D 轮之后达到 7.75 亿美金。</p>
 <p>Mesos 在 Twitter 的成功应用后，也吸引了全世界其他知名公司的采纳，比如 Airbnb、eBay 和 Netflix 等等，甚至 2015 年 Apple 的 Siri 就是运行在 Mesos 上，Mesos 也因此曾经火极一时。至于微软，他不仅投资了 Mesosphere，还让他的 Azure 平台率先<a href="https://www.zdnet.com/article/new-azure-container-service-to-bring-together-mesos-docker-and-azure-cloud/">支持</a>了 Mesos。</p>
-<h3>黯然退场</h3>
+<h3 id="黯然退场" class="flex group">
+    <span>黯然退场</span>
+    <a href="#黯然退场" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>辉煌是短暂的，Kubernetes 来势汹汹，Mesos 却节节败退。起初 Mesosphere 的一部分人还认为这两款编排工具完全可以并行存在，但残酷的现实把他们的这个美好梦想击得粉碎。一山不容二虎，容器编排领域似乎也容不下我 Mesos 了。心有不甘，我好想再做一次最后的挣扎，但是似乎已经于事无补。</p>
 <ul>
 <li>2019 年 8 月 5 号，Mesosphere <a href="https://d2iq.com/blog/mesosphere-is-now-d2iq">宣布改名</a>为 D2iQ，开启新的重生之旅。</li>
 <li>2020 年 4 月 27 号，外媒报道 Google <a href="https://www.axios.com/google-talks-to-acquire-enterprise-software-startup-d2iq-mesosphere-a0d428bf-2382-4ec6-8941-9e580e36086e.html">计划收购</a> D2iQ，报价是 2.5 亿美金，比最高时的 7.75 亿跌了近 7 成，但最后的结果好像是无疾而终。</li>
 <li>2021 年 4 月 21 号，Apache 成员投票通过计划将 Mesos 移入 <a href="https://attic.apache.org/">Attic</a> (阁楼)，正式结束这个项目的生命。不过两天之后这个决定被撤回，Mesos 依然继续残喘存活。</li>
 </ul>
-<h3>复盘</h3>
+<h3 id="复盘" class="flex group">
+    <span>复盘</span>
+    <a href="#复盘" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>Mesos 可能是计算机历史上最短命的技术栈，Benjamin Hindman 在 HackerNews <a href="https://news.ycombinator.com/item?id=26713082">关于 Mesos 被移入 Attic 的帖子</a>上做了复盘：<strong>“Mesos 的失败是种必然”</strong>。</p>
 <blockquote>
 <ul>
@@ -276,13 +743,22 @@
 <blockquote>
 <p>Kubernetes 成功的另一个原因，可能在于 golang  的生态。在 Mesos 中，由于采用独特的线程模型，我们耗费了大量精力在 C++ 中构建基础 HTTP 层。<strong>如果能够重新选择，真希望能把这些时间花在开发点真实有用的功能上。</strong></p>
 </blockquote>
-<h2>D2iQ</h2>
-<p><img src="/static/s1/8/d2iq.png" alt="" /></p>
+<h2 id="d2iq" class="flex group">
+    <span>D2iQ</span>
+    <a href="#d2iq" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s1/8/d2iq.png" alt="" loading="lazy"></p>
 <p>Mesos “死了”，但 Mesosphere 这家公司还得继续活着。<strong>没有成王败寇，新生的 D2iQ 选择拥抱了它曾经的死敌 Kubernetes，往事如烟，重新来过！</strong></p>
 <blockquote>
 <p>新名字 D2iQ 初看起来非常奇怪，但把它拆开后就可以发现里面的用意：<strong>D2iQ 里面的 D2 是指 Day 2，iQ 就是大家平时所指的那个 IQ (智商) 。</strong></p>
 <p>软件开发生命周期可以划分为 Day 0，Day 1 和 Day 2：</p>
-<p><img src="/static/s1/8/day2.png" alt="" /></p>
+<p><img src="/static/s1/8/day2.png" alt="" loading="lazy"></p>
 <ul>
 <li>
 <p>Day 0 通常是指初期的需求明确，架构设计阶段；</p>
@@ -304,7 +780,7 @@
 <li><a href="https://d2iq.com/products/kaptain">Kaptain</a> -  基于 Kubernetes 和 Kubeflow 的企业级端到端机器学习平台，<a href="https://d2iq.com/blog/kudo-for-kubeflow-the-enterprise-machine-learning-platform">前身</a>是 KUDO for Kubflow 这个项目；</li>
 <li><a href="https://d2iq.com/kubernetes-platform">DKP</a> (D2iQ Kubernetes Platform) - 将上面的产品打包到一起售卖的 Kubernetes 综合解决方案；</li>
 </ul>
-<p><img src="/static/s1/8/dkp.png" alt="" /></p>
+<p><img src="/static/s1/8/dkp.png" alt="" loading="lazy"></p>
 <p><strong>技术迭代如此之快，市场竞争愈加激烈，没有人能预料到下一个 Kubernetes 会什么时候崛起，唯有勇敢、坚定，跌倒了再重新爬起，像 D2iQ 一样，既往不恋，纵情向前！</strong></p>
 ]]>
         </content>
@@ -313,7 +789,6 @@
             <name>Folyd</name>
         </author>
     </entry>
-    
     <entry>
         <title>云农场的放牧人 Rancher</title>
         <link rel="alternate" href="https://2d2d.io/s1/rancher" type="text/html" title="云农场的放牧人 Rancher" />
@@ -322,8 +797,17 @@
         <id>https://2d2d.io/s1/rancher</id>
         <content type="html" xml:base="https://2d2d.io/s1/rancher">
             <![CDATA[<p>1999 年 Sun 公司的一名工程师出版了一本书，名为<a href="https://book.douban.com/subject/3162962/">《The Java Native Interface (JNI)》</a>。这位工程师的名字叫 Sheng Liang（梁胜），他正是 Java 语言 JNI 的作者，在 Sun 公司他还领导过 Java JVM 的开发工作。15 年后的 2014 年，这位曾经的工程师已经成为了一名拥有多次成功创业经验的企业家，在这一年他再度出发，创建了他的第三家公司，也就是本期主题公司 Rancher。</p>
-<p><img src="/static/s1/7/jni.png" alt="" /></p>
-<h2>技术梦想家</h2>
+<p><img src="/static/s1/7/jni.png" alt="" loading="lazy"></p>
+<h2 id="技术梦想家" class="flex group">
+    <span>技术梦想家</span>
+    <a href="#技术梦想家" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>梁胜这个名字可能并不被大家所熟知，但是他过去的人生履历和所取得的成就无一不值得我们敬佩和赞叹。</p>
 <ul>
 <li>
@@ -348,7 +832,7 @@
 <p>2011 年 Cloud.com 又被 Citrix 以 2 亿美金的价格收购，梁胜博士成为 Citrix 公司首位华人 CTO。</p>
 <blockquote>
 <p><a href="https://cloudstack.apache.org/">CloudStack</a> 是云计算领域举足轻重的软件，它的竞品 <a href="http://openstack.org">OpenStack</a> 于 2011 年才正式推出。2012 年开始 OpenStack 与 CloudStack 竞争异常激烈。2012 年 4 月，在梁胜的推动下，Citrix 将 CloudStack 捐献给了 Apache 基金会，2013 年，CloudStack 正式成为 Apache 的顶级项目。</p>
-<p><img src="/static/s1/7/cloudstack.png" alt="" /></p>
+<p><img src="/static/s1/7/cloudstack.png" alt="" loading="lazy"></p>
 <p>不过 CloudStack 还是太过复杂，在后来的竞争中不敌 OpenStack。</p>
 </blockquote>
 </li>
@@ -357,33 +841,42 @@
 </li>
 <li>
 <p>2020 年 2 月 4 日，梁胜入选 CNCF 技术监督委员会（<a href="https://www.cncf.io/people/technical-oversight-committee/">Technical Oversight Committee</a> ，简称TOC）。</p>
-<p><img src="/static/s1/7/cncf-toc.png" alt="" /></p>
+<p><img src="/static/s1/7/cncf-toc.png" alt="" loading="lazy"></p>
 </li>
 <li>
 <p>2020 年 7 月 8 日，Rancher 被老牌企业级 Linux 提供商 SUSE 收购，梁胜成为 SUSE 工程与创新部总裁。</p>
 </li>
 </ul>
 <p>作为一名连续创业者，<strong>梁博士是一位标准的技术梦想家，也是一位具有开拓精神的优秀创业者和企业家。</strong> 作为华人工程师的泰斗，梁博士<a href="https://mp.weixin.qq.com/s/3hXMvQa7IO3zS-7JfxRhiQ">勉励国内工程师</a>：<strong>不要相信程序员只能吃青春饭，绝对没有任何其它职业比编程序更能体现个人创造力和技能的价值，程序员就像艺术家，要努力成为世界一流。</strong></p>
-<h2>Rancher</h2>
+<h2 id="rancher" class="flex group">
+    <span>Rancher</span>
+    <a href="#rancher" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>2014 年，Docker 已经正式发布一年了，CoreOS 也成立了，K8S 正在萌芽中，梁胜博士敏锐的发现一个新的技术变革时代即将到来，未来不可能再是 CloudStack 和 OpenStack 的时代，而将是容器的时代。Rancher 就这样诞生了！</p>
-<p><img src="/static/s1/7/liangsheng.png" alt="" /></p>
+<p><img src="/static/s1/7/liangsheng.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>如果把云计算比作是一片大的农场，各种计算资源比作是农场里的“牛”，那 Rancher 想做的就是那个“放牧人”，这也是他们把公司命名为“Rancher（牧场主）”的原因。对于 Rancher 这样的“放牧人”而言，谁家的“牛”都可以放，客户需要什么样的“牛”，Rancher 就会给客户提供相应的“牛”。</p>
 </blockquote>
-<p><img src="/static/s1/7/rancher.png" alt="" /></p>
+<p><img src="/static/s1/7/rancher.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>Rancher <a href="https://web.archive.org/web/20141201085105/http://www.rancher.com/">创立之初的官网</a>。官网背景就是一片充满惬意的云下农场，非常应景。</p>
 </blockquote>
 <p>刚开始 Rancher 这款产品的前身是 Rancher 联合创始人 Darren Shepherd 的个人项目 <a href="https://github.com/cattleio/stampede">stampede</a>，这是一个基于 CoreOS 的混合 IaaS / Docker 编排工具。后来 stampede 重命名为 Rancher，并于 2014 年 11 月 14 号<a href="https://web.archive.org/web/20150911135907/http://rancher.com/announcing-rancher-io-portable-infrastructure-services-for-docker/">正式发布</a>。这个版本的 Rancher 算是 1.X 版本，它底层的核心项目是一个叫 <a href="https://github.com/rancher/cattle">Cattle</a> 的编排工具。不过没多久 K8S 发展迅猛，容器编排战争开始打响，Rancher 也跟进支持另外三大编排项目， Rancher 自身的 Cattle 在这场战争最终也是落败给 K8S。这场战争尘埃落定之后，2018 年 Rancher 正式推出只支持 Kubernetes 的 Rancher 2.0 版本，一直到现在都是 Rancher 公司的主打产品。</p>
 <p><strong>Rancher 同样是一个非常具有创造性的公司，他们在不同阶段推出过多款不同产品，这些产品大都数都很成功，当然也有一些产品也并不那么成功。</strong></p>
-<p><img src="/static/s1/7/timeline.png" alt="" /></p>
+<p><img src="/static/s1/7/timeline.png" alt="" loading="lazy"></p>
 <ul>
 <li>
 <p><strong>Rancher</strong> - (特指 Rancher 2.X) 一款口碑非常好的企业级 Kubernetes 管理平台。<strong>Rancher 在全球有好几亿次的下载量，绝对是明星级产品。</strong></p>
 <blockquote>
 <p>Rancher 的理念是开源开放，简单易用，并且是支持多云的 100% 云原生产品。Rancher 不仅支持自身的 RKE，也支持主流公有云厂商的 Kubernetes 托管版，比如 AWS 的 EKS，Google 的 GKE 等等。</p>
 <p>目前 Rancher 的知名对标产品有：Red Hat OpenShift，VMware Tanzu，Google Anthos 等。</p>
-<p><img src="/static/s1/7/rancer-ui.png" alt="" /></p>
+<p><img src="/static/s1/7/rancer-ui.png" alt="" loading="lazy"></p>
 <p>上图为 Rancher 创建 Kubernetes 集群时的选择界面。</p>
 </blockquote>
 </li>
@@ -412,7 +905,7 @@
 <p><a href="https://harvesterhci.io/">Harvester</a> - 一款通过 Kubernetes 构建的超融合基础架构（hyperconverged infrastructure，简称 HCI）软件。</p>
 <blockquote>
 <p>Harvester 是一个完全由 Rancher 中国研发团队设计和开发的开源软件，笔者刚好有一个朋友就在 Harvester 的这个团队。</p>
-<p><img src="/static/s1/7/tg-harvester.png" alt="" /></p>
+<p><img src="/static/s1/7/tg-harvester.png" alt="" loading="lazy"></p>
 </blockquote>
 </li>
 <li>
@@ -422,7 +915,7 @@
 </blockquote>
 </li>
 <li>
-<p><a href="https://submariner.io/">Submarine</a> - 在 L3 层支持多个 Kubernetes 集群之间的跨集群连接的网络方案。</p>
+<p><a href="https://submariner.io/">Submarine</a> - 【CNCF 沙盒项目】在 L3 层支持多个 Kubernetes 集群之间的跨集群连接的网络方案。</p>
 <blockquote>
 <p>Submariner 可以让位于不同 Kubernetes 集群上的容器无需借助 ingress controller 或者节点端口即可直接通信。</p>
 </blockquote>
@@ -430,7 +923,7 @@
 <li>
 <p><a href="https://github.com/rancher/rio">Rio</a> - 基于 Kubernetes 的 MicroPaaS 平台，后来于 2021 年暂停，官方并未给出具体原因。</p>
 <blockquote>
-<p><img src="/static/s1/7/tg-rio.png" alt="" /></p>
+<p><img src="/static/s1/7/tg-rio.png" alt="" loading="lazy"></p>
 <p>3 月更新：有 Twitter 网友问了为什么暂停 Rio 这个项目的问题， Darren Shepherd 给了一个<a href="https://twitter.com/ibuildthecloud/status/1503411799294500866">简短的回答</a>。</p>
 </blockquote>
 </li>
@@ -445,8 +938,17 @@
 </li>
 </ul>
 <p>Rancher 的项目实在是太多了，还有一些项目没有例举出来。Rancher 过去几年深刻洞察行业趋势，发掘客户需求，推出了一个又一个备受欢迎的产品，2020 年被 SUSE 收购后更是强强联合。</p>
-<h2>SUSE + Rancher</h2>
-<p><img src="/static/s1/7/suse-rancher.png" alt="" /></p>
+<h2 id="suse + rancher" class="flex group">
+    <span>SUSE + Rancher</span>
+    <a href="#suse + rancher" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s1/7/suse-rancher.png" alt="" loading="lazy"></p>
 <p>2020 年 7 月 8 号，SUSE 和 Rancher 联合宣布，SUSE 将收购 Rancher，不过双方都未透露具体的收购金额。2020 年 12 月 1 号，Rancher 收购案正式完成。</p>
 <div class="url-preview">
  <div>SUSE Enters Into Definitive Agreement to Acquire Rancher Labs | SUSE Communities</div>
@@ -459,7 +961,7 @@
 <blockquote>
 <p><strong>后续：</strong></p>
 <p>就在本篇文章发布一天后，Rancher 联合创始人 Darren Shepherd 在推特上<a href="https://twitter.com/ibuildthecloud/status/1492175776057217026">宣布离开</a> Rancher 和 SUSE。同一天，Rancher 的另外一位核心人物 Vincent Fiduccia 也<a href="https://twitter.com/vincentfiduccia/status/1491851410937303042">宣布退休</a>。
-<img src="/static/s1/7/twitter-shepherd.png" alt="" /></p>
+<img src="/static/s1/7/twitter-shepherd.png" alt="" loading="lazy"></p>
 </blockquote>
 ]]>
         </content>
@@ -468,7 +970,6 @@
             <name>Folyd</name>
         </author>
     </entry>
-    
     <entry>
         <title>一封 Docker 公司的来信</title>
         <link rel="alternate" href="https://2d2d.io/s1/docker" type="text/html" title="一封 Docker 公司的来信" />
@@ -510,7 +1011,7 @@
 <p>不知道哎，反正也是年后的事情。<strong>年后的事情等年后再说！</strong></p>
 <p>3 月更新: 在字节内部某位同学的推动下，字节已正在和 Docker 公司在对接了。</p>
 </blockquote>
-<p><img src="/static/s1/6/docker-desktop.png" alt="" /></p>
+<p><img src="/static/s1/6/docker-desktop.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>笔者 Docker Desktop 的截图</p>
 </blockquote>
@@ -522,12 +1023,12 @@
 <li>2019 年 11 月 13 号，一家当时仅 450 人的公司 Mirantis <a href="https://www.mirantis.com/company/press-center/company-news/mirantis-acquires-docker-enterprise/">收购</a>了 Docker 的 Enterprise 业务，近 300 名 Docker 员工加入 Mirantis。</li>
 <li>Docker 公司从 2013 年成立至今更换了 4 任 CEO。</li>
 </ul>
-<p><img src="/static/s1/6/au-revoir.png" alt="" /></p>
+<p><img src="/static/s1/6/au-revoir.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>创始人 Solomon Hykes 离开 Docker 公司时的配图。详情见官宣博客：<a href="https://www.docker.com/blog/au-revoir/">https://www.docker.com/blog/au-revoir/</a></p>
 </blockquote>
 <p><strong>现在 Docker 公司还有什么拿得出手的产品吗？似乎没有了，只剩下 Docker Hub 和 Docker Desktop 了。</strong> 实际上 Docker Hub 的私有镜像服务也是打包在 Docker Desktop 里面售卖的。Docker 公司的 <a href="https://www.docker.com/pricing">pricing 页面</a>现在也非常简单，只有一款产品：Docker Desktop！</p>
-<p><img src="/static/s1/6/docker-pricing.png" alt="" /></p>
+<p><img src="/static/s1/6/docker-pricing.png" alt="" loading="lazy"></p>
 <p><strong>就算这样，社区依然让 Docker 公司不好过</strong>。因为 Rancher 看到 Docker 公司连 Desktop 都不允许免费使用后就推出了 Rancher 版的 Desktop。<strong>2022 年 1 月 26 日，就在 Docker 公司发出上面那封邮件的同一天，Rancher 宣布 Rancher Desktop 1.0 发布！</strong></p>
 <blockquote>
 <p>Rancher Desktop 的官网：<a href="https://rancherdesktop.io/">https://rancherdesktop.io/</a></p>
@@ -539,8 +1040,8 @@
 </div>
 <p>虽然 Rancher Desktop 还没有 Docker Desktop 那么成熟，但他确实是一个值得期待的 Docker Desktop 免费替代品！</p>
 <p>说到 Rancher，这家公司也非常值得分享，这将是我们下一期的主题。<strong>刚好要放假了，放假就应该有放假的样子，Rancher 的事也年后再说！</strong></p>
-<p><img src="/static/s1/6/later1.jpg" alt="" /></p>
-<p><img src="/static/s1/6/later2.png" alt="" /></p>
+<p><img src="/static/s1/6/later1.jpg" alt="" loading="lazy"></p>
+<p><img src="/static/s1/6/later2.png" alt="" loading="lazy"></p>
 ]]>
         </content>
 
@@ -548,7 +1049,6 @@
             <name>Folyd</name>
         </author>
     </entry>
-    
     <entry>
         <title>云原生的一代传奇 CoreOS</title>
         <link rel="alternate" href="https://2d2d.io/s1/coreos" type="text/html" title="云原生的一代传奇 CoreOS" />
@@ -557,8 +1057,17 @@
         <id>https://2d2d.io/s1/coreos</id>
         <content type="html" xml:base="https://2d2d.io/s1/coreos">
             <![CDATA[<p>除了云原生领域的开发者和从业者之外，其他人几乎很少听过 CoreOS 这家公司，未来这个名字估计会越来越少被人听到。2020 年这家公司的官网 (<a href="https://coreos.com">https://coreos.com</a>) 全面下线，消失在互联网中，甚至在 Google 上也不留痕迹。现在我们只能在<a href="https://web.archive.org/web/20170920080743/https://coreos.com/">互联网档案馆</a>上一瞥他曾经的辉煌和荣耀。CoreOS 是一家什么样的公司？他曾经塑造了什么样的传奇？</p>
-<h2>创立初心</h2>
-<p><img src="/static/s1/5/garage.png" alt="" /></p>
+<h2 id="创立初心" class="flex group">
+    <span>创立初心</span>
+    <a href="#创立初心" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s1/5/garage.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>CoreOS 成立时的车库。图来源于 Wired 在他们成立没多久时的一篇专访文章：<a href="https://www.wired.com/2013/08/coreos-the-new-linux/">Linux Hackers Rebuild Internet From Silicon Valley Garage</a></p>
 </blockquote>
@@ -571,7 +1080,16 @@
 <p>CoreOS 的设计初衷之一就是“解决互联网上普遍存在的服务器系统及软件由于没有及时升级和应用补丁，造成已知漏洞被恶意利用导致的安全性问题”。</p>
 <p>值得一提的是 Brandon Philips 在创立 CoreOS 之前已经在 SUSE Linux 作为一名内核工程师工作了 4 年多了。而当时另外一名资深的 Linux 内核维护者  <a href="http://en.wikipedia.org/wiki/Greg_Kroah-Hartman">Greg Kroah-Hartman</a> 则是他们的技术顾问。2021 年 4 月，明尼苏达大学的教授故意向 Linux 提交漏洞代码来做研究，就是被 Greg Kroah-Hartman 给封禁的。</p>
 </blockquote>
-<h2>一路开挂</h2>
+<h2 id="一路开挂" class="flex group">
+    <span>一路开挂</span>
+    <a href="#一路开挂" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>自创立 CoreOS 之后，这家公司的产出和取得的成就只能用<strong>一路开挂</strong>这个词来形容：</p>
 <ul>
 <li>
@@ -608,10 +1126,19 @@
 <p><a href="https://dexidp.io/">Dex</a> - <strong>【CNCF 沙盒项目】</strong> 一个 OpenID Connect 协议的 Go 实现库，也捐赠给了 CNCF。</p>
 </li>
 </ul>
-<p><img src="/static/s1/5/product.png" alt="" /></p>
+<p><img src="/static/s1/5/product.png" alt="" loading="lazy"></p>
 <p>另外，CoreOS 是 CNCF 2015 年创立时的最初始成员之一，当时他们公司成立才两年。</p>
 <p>上述这些产品在现在依然影响深远，可以毫不夸张的说：<strong>云原生领域的半壁江山都是构建在这些产品的基础上的，这种一路开挂的操作在世界上恐怕没有几家创业公司可以与之匹敌。</strong></p>
-<h2>商业化</h2>
+<h2 id="商业化" class="flex group">
+    <span>商业化</span>
+    <a href="#商业化" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>CoreOS 的产品非常具有前瞻性，在早期都没多少人知道容器、Kubernets 是啥的时候，他们已经开始做商业化了。当时他们最主要的商业化产品有三款：</p>
 <ul>
 <li>Container Linux - 商业化版本的 Container Linux 是专门为容器打造的操作系统，客户可以在各大公有云厂商 Marketplace 上购买，也有其他云厂商跟他们合作，比如 DigitalOcean。并且提供付费客户支持和培训。</li>
@@ -619,15 +1146,24 @@
 <li>Tectonic - 企业级的 Kubernetes 容器编排产品。</li>
 </ul>
 <p><strong>这三款产品形成了一个完整的容器操作系统、镜像托管、容器编排的链路，商业思路也非常清晰。</strong> CoreOS 在其<a href="https://web.archive.org/web/20190113053653/https://coreos.com/blog/coreos-fourth-birthday">四周年的博客</a>中提到当时他们有 2000+ 家全球的主要客户 (Key customers)。</p>
-<p><img src="/static/s1/5/martix.png" alt="" /></p>
-<h2>被收购</h2>
+<p><img src="/static/s1/5/martix.png" alt="" loading="lazy"></p>
+<h2 id="被收购" class="flex group">
+    <span>被收购</span>
+    <a href="#被收购" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>2014 年 RedHat 看到了 CoreOS 的崛起，推出了对标 CoreOS 的项目 - <a href="https://projectatomic.io/">Atomic</a>。同时，RedHat 的另一款商业产品 OpenShift 跟 CoreOS 的 Tectonic 也存在非常大的竞争关系。经过几年的相爱相杀，RedHat 和 CoreOS 达成共识。<strong>2018 年 1 月 30 号，RedHat 以 25 亿美金的价格全资收购 CoreOS（<em>当时 CoreOS 的员工才 130 人</em>）。</strong> 收购后，CoreOS 的 Container Linux 和 Atomic 合并进 Red Hat Enterprise Linux，CoreOS 的 Tectonic 合入 OpenShift，Quay.io 则作为 RedHat 的子产品继续存在。</p>
 <div class="url-preview">
  <div>FAQ: Red Hat to acquire CoreOS</div>
  <div>What is being announced?On Jan. 30, 2018, Red Hat announced that it has signed a definitive agreement to acquire CoreOS, Inc. The acquisition is subject to certain customary closing conditions.Q. </div>
  <a href="https://www.redhat.com/en/blog/faq-red-hat-acquire-coreos">https://www.redhat.com/en/blog/faq-red-hat-acquire-coreos</a>
 </div>
-<p><img src="/static/s1/5/acquire.png" alt="" /></p>
+<p><img src="/static/s1/5/acquire.png" alt="" loading="lazy"></p>
 <p>被收购前，CoreOS 只经历了三轮融资（种子轮、A 轮和 B 轮），总共融资 4800 万美金，投资机构包括 YC，GV (Google Ventures)，A16Z，Accel 等。</p>
 <p>被收购后，经过差不多两年的整合，两位创始人也相继离开了 RedHat，然后出现了开头提到的那一幕：CoreOS 网站全部下线，所有 CoreOS 相关产品镜像也全部下线。<strong>短短五年时间里，CoreOS 可谓是创造了传奇，他们虽然没有走向独立 IPO 这条路，但是被巨头收购也算是不错的归宿。</strong></p>
 <p>CoreOS 的创始人和这家公司都非常低调，在网上很难找到跟他们有关的资料。2021 年 GV 对 CoreOS 两位创始人的采访视频算是为数不多的宝贵资料。这篇采访的主题是：谈论他们是如何抓住巨大机会的。</p>
@@ -647,7 +1183,6 @@
             <name>Folyd</name>
         </author>
     </entry>
-    
     <entry>
         <title>云原生时代的中外 API 网关之争</title>
         <link rel="alternate" href="https://2d2d.io/s1/kong-vs-apisix" type="text/html" title="云原生时代的中外 API 网关之争" />
@@ -656,7 +1191,7 @@
         <id>https://2d2d.io/s1/kong-vs-apisix</id>
         <content type="html" xml:base="https://2d2d.io/s1/kong-vs-apisix">
             <![CDATA[<p>API 网关是企业应用的关键基础组件和流量入口，<strong>目前绝大部分 API 网关市场份额都被几大公有云厂商占据</strong>（AWS API Gateway, Google Apigee, 阿里云 API 网关等）。但是公有云厂商的 API 网关不符合 CNCF 的云原生理念，如果你用了阿里云的 API 网关，你就会被被它锁定了，因为网关是流量的入口，你没有办法分发到其它云厂商上。CNCF 全景图的 API Gateway 分类下有数十款产品，但并不包含公有云厂商的那些。</p>
-<p><img src="/static/s1//4/api-gateway.png" alt="" /></p>
+<p><img src="/static/s1//4/api-gateway.png" alt="" loading="lazy"></p>
 <p>上图中有一半是大厂的产品，比如 3Scale 是 RedHat 的，Akana 是 Perforce 的闭源商业化产品，MuleSoft 是老牌软件厂商，2018 年被 Salesforce 收购。值得注意的是，来自中国的有四款产品，分别是（按字母序）:</p>
 <ul>
 <li><a href="http://apioak.com/">Apioak</a> - 国内的开源项目，背后似乎并没有商业化公司。</li>
@@ -666,7 +1201,16 @@
 </ul>
 <p>近几年来，国内在开源社区的影响力越来越显著，其中 Apache APISIX 其背后的公司支流科技便是其中之一。上图中的 <strong>Kong 则是海外另一家独角兽公司，支流科技和 Kong 两者有很多相似之处，他们在云原生网关赛道彼此博弈，算得上是一场国内与海外的较量。</strong></p>
 <p>首先简单介绍一下这两家公司：</p>
-<h2>Kong</h2>
+<h2 id="kong" class="flex group">
+    <span>Kong</span>
+    <a href="#kong" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p><a href="https://konghq.com/">Kong</a> 的前身是 2010 年成立于意大利的 Mashape，2015 年发布了 Kong 网关这款产品，后来 2017 年转型成现在的 Kong Inc，地点美国加州。算是一家以开源 API 网关产品起家，后续扩展到 Service Mesh，API 工具等产品的 To B SaaS 软件公司。最新一轮融资是 2021 年 2 月份，1 亿美金 D 轮，估值 14 亿美金，投资方包括高盛、A16Z 等知名机构。其主要产品有：</p>
 <ul>
 <li>
@@ -685,11 +1229,20 @@
 <p><a href="https://insomnia.rest/">Insomnia</a> - Kong 于 2019 年从一位独立开发者那里<a href="https://konghq.com/blog/kong-acquires-insomnia/">收购</a>的开源 API 调式、测试产品，类似于 Postman。</p>
 <blockquote>
 <p>笔者于 2017 年在 IndieHackers 上和 Insomnia 的作者有过关于他的产品名字的交流。作者回复 Insomnia 的产品名是一个双关语。Insomnia 是失眠的意思，而失眠需要休息 (rest)，而 Insomnia 就是一款 REST API 调试工具，域名也是 <a href="https://insomnia.rest">https://insomnia.rest</a>.</p>
-<p><img src="/static/s1//4/insomnia.png" alt="" /></p>
+<p><img src="/static/s1//4/insomnia.png" alt="" loading="lazy"></p>
 </blockquote>
 </li>
 </ul>
-<h2>支流科技</h2>
+<h2 id="支流科技" class="flex group">
+    <span>支流科技</span>
+    <a href="#支流科技" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p><a href="https://www.apiseven.com/">支流科技</a>是一家于 2019 年 4 月在深圳成立的开源商业化公司，他们的开源产品名叫 APISIX。支流科技获得真格基金、顺为资本、经纬中国等知名机构的投资，最新一轮为 2021 年 6 月经纬中国的数百万美元 A+ 轮融资。目前他们的主要产品有：</p>
 <ul>
 <li><a href="https://apisix.apache.org/">Apache APISIX</a> - 支流科技捐赠给 Apache 的开源 API 网关项目。APISIX 于 2019 年 6 月份开源，7 月份加入到 CNCF 全景图，10 月份进入 Apache 孵化器。2020 年 Apache APISIX 毕业，成为中国最快毕业的 Apache 顶级项目。</li>
@@ -699,8 +1252,17 @@
 <blockquote>
 <p>很有意思的是支流科技的产品叫 APISIX，而他们公司英文名叫 Apiseven，域名是 <a href="http://apiseven.com">apiseven.com</a>。</p>
 </blockquote>
-<h2>对比</h2>
-<p><img src="/static/s1/4/vs-lite.png" alt="" /></p>
+<h2 id="对比" class="flex group">
+    <span>对比</span>
+    <a href="#对比" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s1/4/vs-lite.png" alt="" loading="lazy"></p>
 <p><strong>Kong 和支流科技有很多相似的地方，在这场市场较量中也体现着中美两种开源商业化公司的差异。</strong></p>
 <p><strong>相似点：</strong></p>
 <ul>
@@ -722,7 +1284,6 @@
             <name>Folyd</name>
         </author>
     </entry>
-    
     <entry>
         <title>时势造英雄-HashiCorp</title>
         <link rel="alternate" href="https://2d2d.io/s1/hashicorp" type="text/html" title="时势造英雄-HashiCorp" />
@@ -731,12 +1292,21 @@
         <id>https://2d2d.io/s1/hashicorp</id>
         <content type="html" xml:base="https://2d2d.io/s1/hashicorp">
             <![CDATA[<p>2013、2014 年开始，国内外开始流行一个 Ruby 编写的开源产品 <a href="https://www.vagrantup.com/">Vagrant</a>，它是一个主要用来解决本地（特别是多人协作）开发环境配置繁琐、不一致等痛点的项目，深受很多工程师喜欢。难以预测的是， 2016 年 Docker 的大范围普及，让这个产品逐渐没落。更难预测的是，这个 2010 年开发 Vagrant 的作者，多年后成为了一家市值 150 亿美金的 To B SaaS 公司的创始人。这家公司就是我们这一期的主角 —— HashiCorp。上期我们介绍了 CNCF 全景图，而 HashiCorp 有五款产品就在全景图中。</p>
-<p><img src="/static/s1/3/thrending.png" alt="" /></p>
+<p><img src="/static/s1/3/thrending.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>上图为 Vagrant 关键字的 Google Trends 图，纵轴代表相对顶峰搜索频次的百分比，而非绝对数字；</p>
 <p>Trends 链接：<a href="https://trends.google.com/trends/explore?date=2010-12-04%202022-01-04&amp;q=vagrant">https://trends.google.com/trends/explore?date=2010-12-04%202022-01-04&amp;q=vagrant</a></p>
 </blockquote>
-<h2>多云时代</h2>
+<h2 id="多云时代" class="flex group">
+    <span>多云时代</span>
+    <a href="#多云时代" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>先来看一条充满戏剧性的时间线：</p>
 <ul>
 <li>2021 年 12 月 7 日，AWS 发生了它当月第一次重大线上宕机事故；</li>
@@ -763,7 +1333,16 @@
 <li><strong>Skills shortage (技能缺乏) 和 security (安全) 分别是企业拥抱多云的最大挑战和阻力；</strong></li>
 </ul>
 <p>HashiCorp 这家公司以及他的产品，毫无疑问是在这场多云趋势中最大的受益者之一。</p>
-<h2>产品</h2>
+<h2 id="产品" class="flex group">
+    <span>产品</span>
+    <a href="#产品" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>HashiCorp 目前总共有八款主打产品，囊括了从开发 (Packer, Vagrant)、部署 (Terraform)、安全 (Boundary, Vault)、网络 (Consul)、应用 (Nomad, Waypoint)等各个环节。</p>
 <ul>
 <li><a href="https://www.terraform.io/">Terraform</a> - AWS CloudFormation 的多云版开源实现，遵循 Infrastrusture as Code 的理念，编写 Terraform 特定语法的 DSL 配置文件即可轻松部署上百家云厂商的服务；</li>
@@ -792,11 +1371,20 @@
 <p><a href="https://www.waypointproject.io/">Waypoint</a> - HashiCorp 最新的产品（同2020 年 10 月份）。遵循 Intrasturecture as code 的应用构建、部署、上线一站式工具。这个产品感觉潜力也很大。</p>
 </li>
 </ul>
-<p><img src="/static/s1/3/stack.png" alt="" /></p>
+<p><img src="/static/s1/3/stack.png" alt="" loading="lazy"></p>
 <p>HashiCorp 早些年发布了它的 HashiCorp 之道 (<a href="https://www.hashicorp.com/tao-of-hashicorp">The Tao of HashiCorp</a>)，这些产品无一不践行着这一哲学。HashiCorp 同样是 Go 语言的深度使用者，几乎所有产品都是 Go 语言编写，他们甚至把 Go 语言推崇的 <a href="https://en.wikipedia.org/wiki/Communicating_sequential_processes">CSP 并发</a>理念也写进了他们的道中。</p>
-<h2>商业模式</h2>
+<h2 id="商业模式" class="flex group">
+    <span>商业模式</span>
+    <a href="#商业模式" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>HashiCorp 的商业模式也很有代表性，算是开源软件商业化的经典范例。</p>
-<p><img src="/static/s1/3/product.png" alt="" /></p>
+<p><img src="/static/s1/3/product.png" alt="" loading="lazy"></p>
 <ul>
 <li>
 <p><strong>产品全部开源。</strong> 开源是非常好的获客方式，同时也能得到社区检验和快速获取反馈、快速迭代的好途径。</p>
@@ -821,7 +1409,7 @@
  <a href="https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ">https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ</a>
 </div>
 <p>HashiCorp 是 2012 年创立，CNCF 的云原生在 2015 年才提出来，目前 HashiCorp 有五款产品在 CNCF 的全景图中，分别是 Terraform, Vault, Nomad, Consul, Packer，而这五款产品都是 2015 年之前发布的。从创立到上市的九年时间，HashiCorp 顺应了时代的潮流，而时代也成就了 HashiCorp!</p>
-<p><img src="/static//s1/3/ipo.png" alt="" /></p>
+<p><img src="/static//s1/3/ipo.png" alt="" loading="lazy"></p>
 ]]>
         </content>
 
@@ -829,7 +1417,6 @@
             <name>Folyd</name>
         </author>
     </entry>
-    
     <entry>
         <title>CNCF 的愿景：技术变革与对抗熵增</title>
         <link rel="alternate" href="https://2d2d.io/s1/cncf" type="text/html" title="CNCF 的愿景：技术变革与对抗熵增" />
@@ -838,7 +1425,7 @@
         <id>https://2d2d.io/s1/cncf</id>
         <content type="html" xml:base="https://2d2d.io/s1/cncf">
             <![CDATA[<p>有一张让每个人都眼花缭乱的图，它包含上千张卡片，总市值 16.7 万亿美金，总融资超过规模 273 亿美金；它是人类软件领域的智慧结晶，它代表未来软件技术的新一代潮流，它承担着对抗技术熵增的艰难重任。它就是 <strong>CNCF 全景图</strong> (Landscape)：<a href="https://landscape.cncf.io/">https://landscape.cncf.io/</a></p>
-<p><img src="/static/s1/2/landscape.png" alt="" /></p>
+<p><img src="/static/s1/2/landscape.png" alt="" loading="lazy"></p>
 <p>CNCF (Cloud Native Computing Foundation) 这个词大家都有所耳闻，Cloud Native (云原生) 的概念在国内外也如火如荼。这家成立于 2015 年的非盈利基金会的愿景是什么？这一期我们来简单探讨一下。</p>
 <p>CNCF 的官方章程 (charter) 写的是：<strong>The Foundation’s mission is to make cloud native computing ubiquitous…</strong> 那云原生 (Cloud Native) 具体是指什么？官方给了一个<a href="https://www.cncf.io/about/who-we-are/">定义</a>： </p>
 <blockquote>
@@ -846,7 +1433,16 @@
 </blockquote>
 <p>为了让日益复杂的现代化软件能够更加流畅的在云上构建、云上部署、云上运行的一系列技术都算云原生技术。而这里所指的云不特指公有云、私有云或混合云，也不特指公有云中哪朵云。因为云原生的另一大理念就是避免厂商锁定：<strong>Vendor-neutral</strong> (厂商中立) 。你部署在 AWS 上的应用应该能无缝或者花很小代价能够迁移至其他使用云原生技术的平台。</p>
 <p>目前 CNCF 旗下的众多项目中，有 16 个已毕业 (Graduated)，26 个孵化中 (Incubating)，69 个处在沙盒阶段 (Sandbox)，在对大部分项目有个基本了解之后，我觉得可以把 CNCF 的愿景概括为两个词：<strong>技术变革</strong>与<strong>对抗熵增</strong>。</p>
-<h2>技术变革</h2>
+<h2 id="技术变革" class="flex group">
+    <span>技术变革</span>
+    <a href="#技术变革" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>过去 20 多年，Apache 基金会的项目在 Java、大数据等领域影响深远，推动着当时的技术变革。从 CNCF 的第一个项目 Kubernetes 开始，CNCF 似乎就在引领着新的技术领域的革新之路。</p>
 <ul>
 <li><a href="https://kubernetes.io/">Kubernetes</a> - 在与 Docker Swarm，Apache Mesos 的竞争中脱颖而出，成为容器编排调度的事实标准</li>
@@ -855,9 +1451,18 @@
 <li><a href="https://prometheus.io/">Prometheus</a> - 时序数据监控报警必备组件；</li>
 </ul>
 <p>CNCF 的很多项目几乎都是各大云厂商纷纷采用的技术，同时也有源源不断的厂商给 CNCF 捐赠新的项目。CNCF 这一套成熟的孵化机制让他能够推动技术革新，在新技术领域 (WebAssembly，eBPF) 也不会落后，或许关于 CNCF  的下一轮的技术变革也在悄悄的发生着。</p>
-<h2>对抗熵增</h2>
+<h2 id="对抗熵增" class="flex group">
+    <span>对抗熵增</span>
+    <a href="#对抗熵增" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
 <p>事物无序程度的度量被称为熵，而熵增（事物无序程度的增加）是宇宙客观存在的规律。软件技术在不断进化变革的同时，不可避免的也会发生熵增。<strong>这种熵增会体现在很多方面，比如技术复杂度变高、技术规范程度变低、软件间可交互性变难。</strong> CNCF 不仅有引领新的技术变革的产品（Kubernetes, Prometeus)，同样也在孵化一批对抗熵增的项目，那就是这一系列的 <strong>Specification（技术规范）</strong>。 </p>
-<p><img src="/static/s1/2/specs.png" alt="" /></p>
+<p><img src="/static/s1/2/specs.png" alt="" loading="lazy"></p>
 <ul>
 <li><a href="https://opentelemetry.io/">OpenTelemetry</a> 制定了软件可观测性 (Observability) 的规范；</li>
 <li><a href="https://cloudevents.io/">CloudEvent</a> 制定了跨云、跨系统、跨平台之间的事件定义与通信的规范；</li>
@@ -878,7 +1483,6 @@
             <name>Folyd</name>
         </author>
     </entry>
-    
     <entry>
         <title>Retool: Raising less money at lower valuations</title>
         <link rel="alternate" href="https://2d2d.io/s1/retool" type="text/html" title="Retool: Raising less money at lower valuations" />
@@ -886,7 +1490,7 @@
         <updated>2021-12-23</updated>
         <id>https://2d2d.io/s1/retool</id>
         <content type="html" xml:base="https://2d2d.io/s1/retool">
-            <![CDATA[<p><img src="/static/s1/1/retool.png" alt="" /></p>
+            <![CDATA[<p><img src="/static/s1/1/retool.png" alt="" loading="lazy"></p>
 <p><a href="https://retool.com/">Retool</a> 是一家 YC 于 2017 年孵化的硅谷创业公司，专注于企业内部系统的低代码平台。昨天 Retool 官宣 C 轮 2000 万美金融资，估值超过 18亿美金。值得一提的是这篇官宣文非常有意思。</p>
 <div class="url-preview">
  <div>Series C: Raising less money at lower valuations</div>
@@ -909,5 +1513,4 @@
             <name>Folyd</name>
         </author>
     </entry>
-    
-</feed>
+    </feed>

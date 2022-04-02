@@ -5,41 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-
-    
-    
-
-
-    <title>曾经 Mesos 背后的公司，如今在干嘛?</title>
-    <meta name="description" content="我们之前曾多次提到历史上竞争激烈的容器编排之战 (The Container Orchestration Wars)，而 Kubernetes 最有力的竞争者 Mesos 以及其背后的公司当时也算是风光无限，不仅是资本的宠儿，也是被众人看好的明日之星。好景不长，短短三年便改天换地，胜者 Kubernetes 自不必说，Docker 虽败，但开发者依然离不开他。Fleet 背后的 CoreOS，C">
+<title>曾经 Mesos 背后的公司，如今在干嘛?</title>
+    <meta name="description" content="我们之前曾多次提到历史上竞争激烈的容器编排之战 (The Container Orchestration Wars)，而 Kubernetes 最有力的竞争者 Mesos 以及其背后的公司当时也算是风光无限，不仅是资本的宠儿，也是被众人看好的明日之星。好景不长，短短三年便改天换地，胜者 Kubernetes 自不必说，Docker 虽败，但开发者依然离不开他。Fleet 背后的 CoreOS，Ca">
     <meta property="og:type" content="website">
     <meta property="og:title" content="曾经 Mesos 背后的公司，如今在干嘛?">
-    <meta property="og:description" content="我们之前曾多次提到历史上竞争激烈的容器编排之战 (The Container Orchestration Wars)，而 Kubernetes 最有力的竞争者 Mesos 以及其背后的公司当时也算是风光无限，不仅是资本的宠儿，也是被众人看好的明日之星。好景不长，短短三年便改天换地，胜者 Kubernetes 自不必说，Docker 虽败，但开发者依然离不开他。Fleet 背后的 CoreOS，C">
+    <meta property="og:description" content="我们之前曾多次提到历史上竞争激烈的容器编排之战 (The Container Orchestration Wars)，而 Kubernetes 最有力的竞争者 Mesos 以及其背后的公司当时也算是风光无限，不仅是资本的宠儿，也是被众人看好的明日之星。好景不长，短短三年便改天换地，胜者 Kubernetes 自不必说，Docker 虽败，但开发者依然离不开他。Fleet 背后的 CoreOS，Ca">
     <meta name="twitter:title" content="曾经 Mesos 背后的公司，如今在干嘛?">
-    <meta name="twitter:description" content="我们之前曾多次提到历史上竞争激烈的容器编排之战 (The Container Orchestration Wars)，而 Kubernetes 最有力的竞争者 Mesos 以及其背后的公司当时也算是风光无限，不仅是资本的宠儿，也是被众人看好的明日之星。好景不长，短短三年便改天换地，胜者 Kubernetes 自不必说，Docker 虽败，但开发者依然离不开他。Fleet 背后的 CoreOS，C">
+    <meta name="twitter:description" content="我们之前曾多次提到历史上竞争激烈的容器编排之战 (The Container Orchestration Wars)，而 Kubernetes 最有力的竞争者 Mesos 以及其背后的公司当时也算是风光无限，不仅是资本的宠儿，也是被众人看好的明日之星。好景不长，短短三年便改天换地，胜者 Kubernetes 自不必说，Docker 虽败，但开发者依然离不开他。Fleet 背后的 CoreOS，Ca">
 
-
-
-
-    
-        
-    
-
-    <meta property="og:url" content="https://2d2d.io/s1/mesos">
+<meta property="og:url" content="https://2d2d.io/s1/mesos">
     <meta property="twitter:url" content="https://2d2d.io/s1/mesos">
 
-    
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="https://2d2d.io/static/s1/8/d2iq.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s1/8/d2iq.png">
-    
-
-
-
-    
     <link rel="icon" type="image/png" href="/favicon.ico">
-    
-    <link rel="stylesheet" href="/static/zine.css">
+    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -52,69 +33,85 @@
 </head>
 
 <body class="h-full bg-secondary">
-    
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
-    
-        <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <header class="p-8 md:p-10">
+            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
 
             <ul>
-                
-                    <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
-                
-                    <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
-                
-                    <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
-                
-                    <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
-                
-            </ul>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
+                </ul>
         </header>
-        
-        
         <div class="w-full h-32 md:h-36 lg:h-44 xl:h-48 2xl:h-56"></div>
     </div>
 
     <main class="pb-10 -translate-y-32
                  md:-translate-y-32 lg:-translate-y-36 xl:-translate-y-44 2xl:-translate-y-56
                  mx-auto sm:max-w-scree-md md:max-w-screen-lg">
-            
-<div class="p-4 pb-10 md:p-8 md:pb-14 mx-4 my-6 bg-white 
+            <div class="p-4 pb-10 md:p-8 md:pb-14 mx-4 my-6 bg-white 
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition hover:scale-110 duration-500"
-                        href="/s1">
+                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s1">
             <div class="relative text-main px-4">第一季</div>
         </a>
-        <span class="ml-2 text-gray-700"> / 第 8 期</span>
+        <span class="ml-2 text-gray-700"> /  第 ⁨8⁩ 篇</span>
     </div>
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">曾经 Mesos 背后的公司，如今在干嘛?</h1>
         <div class="relative text-sm text-gray-400">
-            <span>发布于 2022-02-18</span>
-            <span class="absolute right-2">作者：Folyd</span>
+            <span>2022-02-18</span>
+            <span class="absolute right-2">Folyd</span>
         </div>
     </div>
     <article class="prose mx-auto my-12">
         <p>我们之前曾多次提到历史上竞争激烈的容器编排之战 (The Container Orchestration Wars)，而 Kubernetes 最有力的竞争者 Mesos 以及其背后的公司当时也算是风光无限，不仅是资本的宠儿，也是被众人看好的明日之星。好景不长，短短三年便改天换地，胜者 Kubernetes 自不必说，Docker 虽败，但开发者依然离不开他。Fleet 背后的 CoreOS，Cattle 背后的 Rancher 也都一直不断创新，备受瞩目。唯独 Mesos 似乎很惨，是早已沉寂，被人淡忘？还是已低调转型，等待厚积薄发？也不知道还有多少人会关心：之前 Mesos 背后的公司是谁？如今尚且安好？</p>
-<h2>Mesos 简史</h2>
-<p><img src="/static/s1/8/mesos.png" alt="" /></p>
-<h3>出生名门</h3>
+<h2 id="mesos 简史" class="flex group">
+    <span>Mesos 简史</span>
+    <a href="#mesos 简史" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="https://2d2d.io/static/s1/8/mesos.png" alt="" loading="lazy"></p>
+<h3 id="出生名门" class="flex group">
+    <span>出生名门</span>
+    <a href="#出生名门" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>Mesos 最初是加州伯克利大学 RAD 实验室 2009 年开始的一个学术研究项目，当时项目的主要负责人是 Mesos <a href="https://people.eecs.berkeley.edu/%7Ealig/papers/mesos.pdf">这篇论文</a>的第一作者 Benjamin Hindman，他是 RAD 实验室的一名博士研究生。<strong>加州伯克利大学是现代计算机技术领域的一朵皇冠，里面诞生了非常多至今影响深远的技术，从 RISC 指令集、RAID（冗余磁盘阵列），到 PostgreSQL、Log-Structure Filesystem，再到 Spark 和 Ray，甚至连 eBPF 里面的 B 都是 Berkeley。</strong> 毫无疑问，Mesos 就是这样一个出生名门的项目。</p>
 <p>此时的 Twitter 早已进入高速发展的阶段，与之伴随的是 Twitter 频繁宕机的「失败鲸」时光。2010 年，正在 Twitter 苦不堪言的时候，他们看到了 Mesos 这个项目，随后马上应用到了 Twitter，成为 Twitter 自定义 PaaS 的实现基础，管理着 Twitter 超过 30 万台服务器上的应用部署。Benjamin Hindman 当时也加入了 Twitter，负责开发和部署 Mesos。Twitter 的这套基于 Mesos 的 PaaS 解决方案就是后来的 <a href="https://aurora.apache.org/">Apache Aurora</a>。</p>
-<p><img src="/static/s1/8/fall-whale.png" alt="" /></p>
+<p><img src="https://2d2d.io/static/s1/8/fall-whale.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>Twitter 2008 ~ 2013 年宕机时的页面，被海外网友称为「失败鲸」。</p>
 </blockquote>
-<h3>Mesosphere 成立</h3>
+<h3 id="mesosphere 成立" class="flex group">
+    <span>Mesosphere 成立</span>
+    <a href="#mesosphere 成立" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>2013 年，Benjamin Hindman 离开 Twitter 成立了一个名为 <a href="https://web.archive.org/web/20140903015326/http://mesosphere.com/">Mesosphere</a> 的公司，专注于打造生产级商业化 Mesos 平台。<strong>Mesosphere 正式成为 Mesos 背后的公司，在后期的 Mesos 开发，商业化运营，与 Kubernetes 的竞争中几乎都由 Mesosphere 在主导和支撑。</strong></p>
 <blockquote>
 <p>Mesos 一词来源于希腊语，是 middle (中间) 的意思，英语里面甚至有一个 <em>meso-</em> 的词根。Sphere 则表示某个领域或范围，而 Mesosphere 既指地球大气层的中流层（介于平流层和热流层中间），也可以表示 Mesos 这个领域。</p>
 <p>国内青云也有一个专注于 Kubernetes 技术的团队，他们的产品名为 <a href="https://kubesphere.io/">Kubesphere</a>，估计也是受到 Mesosphere 的启发。</p>
 </blockquote>
-<p><img src="/static/s1/8/mesosphere.png" alt="" /></p>
+<p><img src="https://2d2d.io/static/s1/8/mesosphere.png" alt="" loading="lazy"></p>
 <p>当时的 Mesosphere 除了 Apache Mesos 外，还有两款主要产品：</p>
 <ul>
 <li>
@@ -127,17 +124,44 @@
 <p><a href="http://mesosphere.github.io/marathon/">Marathon</a> - Mesos 底层的容器编排框架，也正是 Mesos 与 Kubernetes 抗衡的核心组件。</p>
 </li>
 </ul>
-<h3>备受追捧</h3>
+<h3 id="备受追捧" class="flex group">
+    <span>备受追捧</span>
+    <a href="#备受追捧" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>Mesosphere 成立后就备受资本的追捧，自 2014 年 6 月至 2018 年 5 月共完成 A 到 D 轮四轮融资，金额分别为 1050 万美元、3600 万美元、7350 万美元和 1.25 亿美元，投资方包括 A16Z、Fuel Capital、微软等。Mesosphere 最高估值是 D 轮之后达到 7.75 亿美金。</p>
 <p>Mesos 在 Twitter 的成功应用后，也吸引了全世界其他知名公司的采纳，比如 Airbnb、eBay 和 Netflix 等等，甚至 2015 年 Apple 的 Siri 就是运行在 Mesos 上，Mesos 也因此曾经火极一时。至于微软，他不仅投资了 Mesosphere，还让他的 Azure 平台率先<a href="https://www.zdnet.com/article/new-azure-container-service-to-bring-together-mesos-docker-and-azure-cloud/">支持</a>了 Mesos。</p>
-<h3>黯然退场</h3>
+<h3 id="黯然退场" class="flex group">
+    <span>黯然退场</span>
+    <a href="#黯然退场" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>辉煌是短暂的，Kubernetes 来势汹汹，Mesos 却节节败退。起初 Mesosphere 的一部分人还认为这两款编排工具完全可以并行存在，但残酷的现实把他们的这个美好梦想击得粉碎。一山不容二虎，容器编排领域似乎也容不下我 Mesos 了。心有不甘，我好想再做一次最后的挣扎，但是似乎已经于事无补。</p>
 <ul>
 <li>2019 年 8 月 5 号，Mesosphere <a href="https://d2iq.com/blog/mesosphere-is-now-d2iq">宣布改名</a>为 D2iQ，开启新的重生之旅。</li>
 <li>2020 年 4 月 27 号，外媒报道 Google <a href="https://www.axios.com/google-talks-to-acquire-enterprise-software-startup-d2iq-mesosphere-a0d428bf-2382-4ec6-8941-9e580e36086e.html">计划收购</a> D2iQ，报价是 2.5 亿美金，比最高时的 7.75 亿跌了近 7 成，但最后的结果好像是无疾而终。</li>
 <li>2021 年 4 月 21 号，Apache 成员投票通过计划将 Mesos 移入 <a href="https://attic.apache.org/">Attic</a> (阁楼)，正式结束这个项目的生命。不过两天之后这个决定被撤回，Mesos 依然继续残喘存活。</li>
 </ul>
-<h3>复盘</h3>
+<h3 id="复盘" class="flex group">
+    <span>复盘</span>
+    <a href="#复盘" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
 <p>Mesos 可能是计算机历史上最短命的技术栈，Benjamin Hindman 在 HackerNews <a href="https://news.ycombinator.com/item?id=26713082">关于 Mesos 被移入 Attic 的帖子</a>上做了复盘：<strong>“Mesos 的失败是种必然”</strong>。</p>
 <blockquote>
 <ul>
@@ -156,13 +180,22 @@
 <blockquote>
 <p>Kubernetes 成功的另一个原因，可能在于 golang  的生态。在 Mesos 中，由于采用独特的线程模型，我们耗费了大量精力在 C++ 中构建基础 HTTP 层。<strong>如果能够重新选择，真希望能把这些时间花在开发点真实有用的功能上。</strong></p>
 </blockquote>
-<h2>D2iQ</h2>
-<p><img src="/static/s1/8/d2iq.png" alt="" /></p>
+<h2 id="d2iq" class="flex group">
+    <span>D2iQ</span>
+    <a href="#d2iq" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="https://2d2d.io/static/s1/8/d2iq.png" alt="" loading="lazy"></p>
 <p>Mesos “死了”，但 Mesosphere 这家公司还得继续活着。<strong>没有成王败寇，新生的 D2iQ 选择拥抱了它曾经的死敌 Kubernetes，往事如烟，重新来过！</strong></p>
 <blockquote>
 <p>新名字 D2iQ 初看起来非常奇怪，但把它拆开后就可以发现里面的用意：<strong>D2iQ 里面的 D2 是指 Day 2，iQ 就是大家平时所指的那个 IQ (智商) 。</strong></p>
 <p>软件开发生命周期可以划分为 Day 0，Day 1 和 Day 2：</p>
-<p><img src="/static/s1/8/day2.png" alt="" /></p>
+<p><img src="https://2d2d.io/static/s1/8/day2.png" alt="" loading="lazy"></p>
 <ul>
 <li>
 <p>Day 0 通常是指初期的需求明确，架构设计阶段；</p>
@@ -184,51 +217,32 @@
 <li><a href="https://d2iq.com/products/kaptain">Kaptain</a> -  基于 Kubernetes 和 Kubeflow 的企业级端到端机器学习平台，<a href="https://d2iq.com/blog/kudo-for-kubeflow-the-enterprise-machine-learning-platform">前身</a>是 KUDO for Kubflow 这个项目；</li>
 <li><a href="https://d2iq.com/kubernetes-platform">DKP</a> (D2iQ Kubernetes Platform) - 将上面的产品打包到一起售卖的 Kubernetes 综合解决方案；</li>
 </ul>
-<p><img src="/static/s1/8/dkp.png" alt="" /></p>
+<p><img src="https://2d2d.io/static/s1/8/dkp.png" alt="" loading="lazy"></p>
 <p><strong>技术迭代如此之快，市场竞争愈加激烈，没有人能预料到下一个 Kubernetes 会什么时候崛起，唯有勇敢、坚定，跌倒了再重新爬起，像 D2iQ 一样，既往不恋，纵情向前！</strong></p>
 
 
-        
-    </article>
-    
-        <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
+        </article>
+    <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        
-            
-                <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
-                    href="/s1/rancher">
-                    
-                        上一篇：
-                    
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/rancher">
+                    上一篇：
                     云农场的放牧人 Rancher
                 </a>
-            
-        
-            
-                <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
-                    href="/s1/mirantis">
-                    
-                        下一篇：
-                    
+            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/mirantis">
+                    下一篇：
                     收购 Docker 企业业务的 Mirantis 是什么来路？
                 </a>
-            
-        
-        </div>
-    
-</div>
-
-    </main>
+            </div>
+    </div>
+</main>
 
     <footer class="relative">
-        
-            
-                <div class="bg-neutral-900 p-10 pt-20 text-slate-300 translate-y-[-8rem]">
+        <div class="bg-neutral-900 p-10 pt-20 text-slate-300 translate-y-[-8rem]">
     <div class="flex justify-center mb-28 top-16 font-bold">
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="/feed.xml">RSS</a>、
+                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -236,7 +250,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -250,10 +264,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="/blog">博客</a>
-                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -264,7 +278,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="/static/footer.css">
+<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -275,9 +289,7 @@
     gtag('js', new Date());
     gtag('config', 'G-PFMPLGGJHQ');
 </script>
-            
-        
-        <a href="https://github.com/zineland" 
+            <a href="https://github.com/zineland" 
            class="absolute z-20 bottom-0 w-full text-center font-bold
                   md:text-slate-100 md:opacity-10 md:hover:opacity-50 md:bg-transparent
                   bg-primary p-2 text-main">
@@ -286,7 +298,7 @@
         </div>
     </footer>
 </body>
-<script src="/static/medium-zoom.min.js"></script>
-<script src="/static/zine.js"></script>
+<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
+<script src="https://2d2d.io/static/zine.js"></script>
 </html>
 
