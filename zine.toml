@@ -2,7 +2,6 @@
 [site]
 url = "https://2d2d.io"
 name = "TO-D 杂志"
-title = "TO-D 杂志"
 description = "专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。"
 locale = "zh"
 menu = [
