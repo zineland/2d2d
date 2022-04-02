@@ -4,6 +4,7 @@ url = "https://2d2d.io"
 name = "TO-D 杂志"
 title = "TO-D 杂志"
 description = "专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。"
+locale = "zh"
 menu = [
   { name = "关于", url = "/about" },
   { name = "博客", url = "/blog" },
@@ -24,3 +25,9 @@ number = 1
 title = "第一季"
 path = "content/season-1"
 intro = "content/season-1/intro.md"
+
+[[season]]
+slug = "s2"
+number = 2
+title = "第二季"
+path = "content/season-2"

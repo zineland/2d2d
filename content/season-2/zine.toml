@@ -1,8 +1,9 @@
 [[article]]
-slug = ""
-file = ""
-title = ""
-author = ""
-cover = ""
-pub_date = ""
+slug = "deislabs"
+file = "1-deislabs.md"
+title = "微软 Deis Labs 的故事"
+author = "Folyd"
+cover = "/static/s2/1/deislabs.png"
+pub_date = "2022-04-02"
+featured = true
 publish = false

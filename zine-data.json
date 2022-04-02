@@ -1,5 +1,9 @@
 {
   "urlPreviews": {
+    "https://deislabs.io/posts/introducing-hippo/": [
+      "Introduction to Hippo: the WebAssembly PaaS",
+      "Hippo makes it easy to run applications and services at scale"
+    ],
     "https://github.com/zineland/zine": [
       "Zine - an simple and opinionated tool to build your own magazine.",
       "GitHub - zineland/zine: Zine - an simple and opinionated tool to build your own magazine."
