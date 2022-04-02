@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<title>微软 Deis Labs 的故事</title>
+    <meta name="description" content="微软历史上收购合并过无数的产品、公司和团队，很多产品或公司甚至在被收购前已经是家喻户晓的品牌（比如 LinkedIn，Github，最近的暴雪动视），而我们这一期的主角 Deis Labs 纯粹是微软这个超长收购清单中普通到不能再普通的一项，当你用手指划过这个清单时，你都丝毫不会注意到有一项写着：Deis, 收购于 2017 年 4 月 10 日。">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="微软 Deis Labs 的故事">
+    <meta property="og:description" content="微软历史上收购合并过无数的产品、公司和团队，很多产品或公司甚至在被收购前已经是家喻户晓的品牌（比如 LinkedIn，Github，最近的暴雪动视），而我们这一期的主角 Deis Labs 纯粹是微软这个超长收购清单中普通到不能再普通的一项，当你用手指划过这个清单时，你都丝毫不会注意到有一项写着：Deis, 收购于 2017 年 4 月 10 日。">
+    <meta name="twitter:title" content="微软 Deis Labs 的故事">
+    <meta name="twitter:description" content="微软历史上收购合并过无数的产品、公司和团队，很多产品或公司甚至在被收购前已经是家喻户晓的品牌（比如 LinkedIn，Github，最近的暴雪动视），而我们这一期的主角 Deis Labs 纯粹是微软这个超长收购清单中普通到不能再普通的一项，当你用手指划过这个清单时，你都丝毫不会注意到有一项写着：Deis, 收购于 2017 年 4 月 10 日。">
+
+<meta property="og:url" content="https://2d2d.io/s2/deislabs">
+    <meta property="twitter:url" content="https://2d2d.io/s2/deislabs">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://2d2d.io/static/s2/1/deislabs.png">
+    <meta name="twitter:image" content="https://2d2d.io/static/s2/1/deislabs.png">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
+    <style>
+      :root {
+          --primary-color: #ffb52f;
+          --main-color: #000;
+          --link-color: #e07312;
+          --secondary-color: #eff3f7;
+      }
+    </style>
+</head>
+
+<body class="h-full bg-secondary">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <header class="p-8 md:p-10">
+            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+
+            <ul>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
+                </ul>
+        </header>
+        <div class="w-full h-32 md:h-36 lg:h-44 xl:h-48 2xl:h-56"></div>
+    </div>
+
+    <main class="pb-10 -translate-y-32
+                 md:-translate-y-32 lg:-translate-y-36 xl:-translate-y-44 2xl:-translate-y-56
+                 mx-auto sm:max-w-scree-md md:max-w-screen-lg">
+            <div class="p-4 pb-10 md:p-8 md:pb-14 mx-4 my-6 bg-white 
+            shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
+    <div class="relative mx-2">
+        <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
+                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s2">
+            <div class="relative text-main px-4">第二季</div>
+        </a>
+        <span class="ml-2 text-gray-700"> /  第 ⁨1⁩ 篇</span>
+    </div>
+    <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
+    <div class="prose mx-auto">
+        <h1 class="text-center">微软 Deis Labs 的故事</h1>
+        <div class="relative text-sm text-gray-400">
+            <span>2022-04-02</span>
+            <span class="absolute right-2">Folyd</span>
+        </div>
+    </div>
+    <article class="prose mx-auto my-12">
+        <p>微软历史上收购合并过无数的产品、公司和团队，很多产品或公司甚至在被收购前已经是家喻户晓的品牌（比如 LinkedIn，Github，最近的暴雪动视），而我们这一期的主角 Deis Labs 纯粹是微软这个<a href="https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Microsoft">超长收购清单</a>中普通到不能再普通的一项，当你用手指划过这个清单时，你都丝毫不会注意到有一项写着：<code>Deis, 收购于 2017 年 4 月 10 日</code>。</p>
+<p><img src="https://2d2d.io/static/s2/1/list.png" alt="" loading="lazy"></p>
+<blockquote>
+<p>微软的收购清单</p>
+</blockquote>
+<p>Deis，就是 DeisLab 的前身，这是一个非常优秀并且充满创造力的团队，也是笔者非常喜欢的团队。今天我们就来分享 DeisLab 的故事。</p>
+<h2 id="paas 与 deis" class="flex group">
+    <span>PaaS 与 Deis</span>
+    <a href="#paas 与 deis" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p>我们的故事要先从 PaaS 开始说起。2007 年，<a href="https://www.heroku.com/">Heroku</a> 成立后开启了 PaaS 的黄金时代。很多人把 Heroku 称为 PaaS “鼻祖”，其实并不准确。比他成立更早的 <a href="https://www.engineyard.com/">Engine Yard</a> 在 2006 年就开始做类似的事情了，只是 Engine Yard 后来发展比 Heroku 差太多，只能算 PaaS 领域的第二梯队。Engine Yard 几乎是一个没人听过的名字，但他与我们今天的主角 DeisLab 息息相关。2015 年 4 月 15 日，Engine Yard <a href="https://web.archive.org/web/20170611174913/https://blog.engineyard.com/2015/engine-yard-joins-forces-with-opdemand">收购</a>了一家名为 OpDemand 的公司，这家公司有一款叫 Deis 的主打产品。Deis 是 OpDemand 受 Heroku 启发，于 2013 年开始开发的 PaaS 产品（那个时候的 Heroku 真的是非常火）。Deis 最早的架构是基于 CoreOS, Fleet 和 Docker，后来被称为 v1 版架构，早已被弃用，不过我们现在依然可以在 Github 上一瞥曾经 Deis v1 的代码 (<a href="https://github.com/deis/deis">https://github.com/deis/deis</a>)。</p>
+<blockquote>
+<p>没错，这里又出现了 Fleet，就是 CoreOS 打造的 Fleet。我们曾经在 <a href="https://2d2d.io/s1/coreos">CoreOS</a>、<a href="https://2d2d.io/s1/rancher">Rancher</a> 那两期都提到过它。</p>
+</blockquote>
+<p>OpDemand 在加入 Engine Yard 之后，继续以 Deis 的名义开发维护 Deis 这款产品，他们有自己独立的官网 <a href="https://web.archive.org/web/20170209220933/https://deis.com/">https://deis.com</a> 。2015 年 12 月 30 号，他们发布了基于 Kubernetes 的 Deis 第二代产品 Deis Workflow。当年的 Deis 确实做的很不错的，影响力甚至慢慢的扩散到了中国，知乎上现在还可以看到当年和 Deis 有关的问题。</p>
+<p><img class="mx-auto" style="width: 400px;" src="https://2d2d.io/static/s2/1/deis-zhihu.png" /></p>
+<p>2017 年已经到了 Kubernetes 风起云涌的阶段，公有云领域的后起之秀微软 Azure 也在为自己的容器服务物色合适的公司或团队，慧眼识珠的 Azure 看中了 Deis 这个团队。2017 年 4 月 10 日，在和 Engine Yard 协商之后，Azure 正式把 Deis 这个团队<a href="https://blogs.microsoft.com/blog/2017/04/10/microsoft-acquire-deis-help-companies-innovate-containers/">收入囊中</a>。Deis 加入 Azure 之后负责 Kubernetes 和容器相关的产品，现在点击 https://deis.com 就会跳转到 Azure Kubernetes Service (AKS) 的产品页面。</p>
+<blockquote>
+<p>在被微软收购几个月后，包括 Deis Workflow 在内的 Deis 之前的项目都不再维护更新：<a href="https://web.archive.org/web/20180626034638/https://deis.com/blog/2017/deis-workflow-final-release/">Deis Workflow Final Release</a></p>
+</blockquote>
+<p><img src="https://2d2d.io/static/s2/1/deis-legacy.png" alt="" loading="lazy"></p>
+<blockquote>
+<p>Deis 被收购前的<a href="https://web.archive.org/web/20170209220933/https://deis.com/">官网</a>。</p>
+</blockquote>
+<p>让人大跌眼镜的是，就在 Engine Yard 把 Deis 团队卖给微软之后没几天，2017 年 4 月25 号，Engine Yard 宣布被一家叫 <a href="https://www.crossover.com">Crossover</a> 的猎头公司收购。Engine Yard 在<a href="https://web.archive.org/web/20170606120646/http://blog.engineyard.com/2017/crossover-acquisition">这篇被收购文章</a>中给出的卖掉 Deis 团队的理由是：Deis 团队做的 Kubernetes 产品让 Engine Yard 无法专注于 Ruby on Rails 的 PaaS 平台。（最初的几个 PaaS 平台包括 Heroku 都是做 Ruby 起家的）这个理由真的让笔者哭笑不得，好一个不忘初心，似乎用“只见树木不见森林”来评价也不为过。多年后来回看 Ruby 和 Kubernetes 的发展趋势，大家马上就能高下立判了。</p>
+<blockquote>
+<p>而现在的 Engine Yard 也不是在 Crossover 名下，而是在一个叫 Devgraph 的公司名下，具体是不是 Crossover 转卖给 <a href="https://devgraph.com">Devgraph</a> 的就不得而知了。</p>
+</blockquote>
+<h2 id="deis labs" class="flex group">
+    <span>Deis Labs</span>
+    <a href="#deis labs" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p>被微软收购后，所有 Deis 的成员全部加入 Azure，为了致敬曾经的 Deis 团队，他们把自己在微软的新团队取名 Deis Labs，官网：<a href="https://deislabs.io">https://deislabs.io</a>。</p>
+<p><img src="https://2d2d.io/static/s2/1/deislabs.png" alt="" loading="lazy"></p>
+<p>新的 Deis Labs 主要专注于 Kubernetes 和 WebAssembly 两大领域。微软也给 Deis Labs 提供了一个足够大的平台，激发了 Deis Labs 的无穷创造力。他们在短短几年内除了要顾及 Azure 的容器服务，还推出了很多开源项目。虽然有些项目并没有特别知名，但长远来看很多都是很有意义的项目。在介绍这些项目前，我们不得不先介绍一下 Deis Labs 在老东家 Engine Yard 就推出的项目 <a href="https://helm.sh/">Helm</a>。</p>
+<h3 id="helm" class="flex group">
+    <span>Helm</span>
+    <a href="#helm" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p><img src="https://2d2d.io/static/s2/1/helm.png" alt="" loading="lazy"></p>
+<p><strong>Helm 是 Deis 团队于 2015 年发布的一个 Kubernetes 的包管理工具，目前是 CNCF 的已毕业项目，也是 Kubernetes 生态里面不可或缺的明星级项目</strong>。Kubernetes 默认需要开发者手动编写、维护数量繁多的 Yaml 文件，并且应用的分发、安装也比较繁琐。Helm 引入了 Charts 的概念，开发者可以把自己的应用配置文件打包成 Charts 格式，发布到 <a href="https://artifacthub.io/">ArtifactHub</a> (取代了之前的 Helm Hub) 后，安装新的 Kubernetes 应用只需要一条 Helm 命令就能搞定，极大程度上解决了 Kubernetes 应用维护、分发、安装等问题。</p>
+<blockquote>
+<p>Helm 创始人 Matt Butcher 在 InfoQ 的<a href="https://www.infoq.com/news/2019/09/helm-butcher/">一次采访</a>中提到：Helm 最初是他和另外几个同事参加 Engine Yard 的一次两天 Hackthon 团建开发的项目，最初是为了解决 Deis Workflow 众多微服务在 Kubernetes 内安装部署繁琐的问题。</p>
+<p>Helm 这个名字也很有意思，Kubernetes 是希腊语“船长”的意思，而 Helm 就是船长掌握航行方向的船舵。</p>
+</blockquote>
+<h3 id="其他项目" class="flex group">
+    <span>其他项目</span>
+    <a href="#其他项目" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p><strong>Deis Labs 团队官网列举了他们的大部分项目，其中有 7 个是 CNCF 项目</strong>。后来笔者调研发现，CNCF 另外几个项目也是 Deis Labs 团队的人和其他公司合作搞的，并没有例举在上面。</p>
+<p><img src="https://2d2d.io/static/s2/1/projects.png" alt="" loading="lazy"></p>
+<blockquote>
+<p>Deis Labs 官网列出的项目列表，应该是官网没有及时更新，有些项目没有列举上去。</p>
+</blockquote>
+<p>我们重点介绍一下未归档的项目：</p>
+<h4 id="akri" class="flex group">
+    <span>Akri</span>
+    <a href="#akri" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 200px;" src="https://2d2d.io/static/s2/1/akri.png" />
+<p><a href="https://github.com/project-akri/akri">Akri</a> 是微软在 2020 年 10 月<a href="https://cloudblogs.microsoft.com/opensource/2020/10/20/announcing-akri-open-source-project-building-connected-edge-kubernetes/">推出</a>的用于帮助 Kubernetes 集群主动发现并利用边缘设备的项目。这里的边缘设备通常是指各种传感器、控制器、相机等 IoT 设备，它们都没办法运行 Kubernetes 充当 Kubernetes 集群的节点。Akri 的目标是想成为边缘 IoT 设备和 Kubernetes 集群交互的标准，所以 Akri 其实是 <code>A Kubernetes Resource Interface</code> 的缩写（同时，Akri 也是希腊语 “Edge” 的意思）。</p>
+<blockquote>
+<p>Akri 是一个 Rust 项目，目前处在 <strong>CNCF 沙盒阶段</strong>。</p>
+</blockquote>
+<h4 id="cnab" class="flex group">
+    <span>CNAB</span>
+    <a href="#cnab" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4>
+<p><a href="https://cnab.io/">CNAB</a> 全名 Cloud Native Application Bundle，是 2018 年 12 月微软联合 Docker、HashiCorp、Bitnami 几个公司<a href="https://cloudblogs.microsoft.com/opensource/2018/12/04/announcing-cnab-cloud-agnostic-format-packaging-running-distributed-applications/">一起搞的</a>新开源包规范。名字看起来高大上，但目前看来，这个规范并没有普及起来，除了微软自己在玩，其他公司很少有在参与。Deis Labs 有一个叫 <a href="https://duffle.sh/">Duffle</a> 的归档项目，其实就是 CNAB 规范的打包工具，至于为什么被标为归档，笔者也不得而知。</p>
+<h4 id="krustlet" class="flex group">
+    <span>Krustlet</span>
+    <a href="#krustlet" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 300px;" src="https://2d2d.io/static/s2/1/krustlet.png" />
+<p><a href="https://krustlet.dev/">Krustlet</a> 是 Deis Labs 觉得 Kubernetes 生态里面几乎都是 Go 的项目，这是他们为了探索 Rust 怎样和 Kubernetes 结合起来的实验性项目，<strong>是一个 Rust 编写的的 Kubelet，可以直接用来在 Kubernetes 中跑编译成 WebAssembly 的模块。<strong>所以 Kruslet 这个名字其实是  <strong>K</strong>ubernetes-<strong>rust</strong>-kube</strong>let</strong> 的缩写。 </p>
+<blockquote>
+<p>Kubelet 是 Kubernetes 非常核心的组件，用来调度 Pod 等资源的。</p>
+</blockquote>
+<p>笔者认为 Krustlet 是一个很有创新性的项目，它于 2021 年 7 月份发布了 1.0，并且已经是 <strong>CNCF 的沙盒项目</strong>。</p>
+<h4 id="krator" class="flex group">
+    <span>Krator</span>
+    <a href="#krator" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 80px;" src="https://2d2d.io/static/s2/1/krator.png" />
+<p><a href="https://github.com/krator-rs/krator">Krator</a> 是 Deis Labs 在开发 Krustlet 过程中抽出来的一个方便构建 Kubernetes Operator 的 Rust 项目。名字是<strong>K</strong>ubernetes <strong>R</strong>ust st<strong>at</strong>e machine operat<strong>or</strong> 的缩写，目前是 <strong>CNCF 沙盒项目</strong>。</p>
+<h4 id="mystikos" class="flex group">
+    <span>Mystikos</span>
+    <a href="#mystikos" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 200px;" src="https://2d2d.io/static/s2/1/mystikos.png" />
+<p><a href="https://github.com/deislabs">Mystikos</a> 是一系列用来帮助在硬件可信执行环境 (Trusted Execution Environment，简称 TEE) 下运行 Linux 容器的运行时和工具。目前仅支持 Intel ® SGX，其他 TEE 硬件将在未来支持。</p>
+<h4 id="bindle" class="flex group">
+    <span>Bindle</span>
+    <a href="#bindle" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4>
+<p><a href="https://github.com/deislabs/bindle">Bindle</a> 并不能算是产品，它是 Deis Labs 发布的一个 Rust 项目，而且非常有意思。简单来说，Bindle 是一套用来描述文件之间逻辑依赖关系的规范。Deis Labs 提供了 server 和 client 的实现，主要应用场景比如网站打包、依赖库或包管理、WebAssembly 等等。详情可以看看 Bindle 的<a href="https://github.com/deislabs/bindle/blob/main/docs/bindle-spec.md">规范文档</a>。</p>
+<h4 id="oras" class="flex group">
+    <span>ORAS</span>
+    <a href="#oras" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 200px;" src="https://2d2d.io/static/s2/1/oras.png" />
+<p><a href="https://oras.land/">ORAS</a> 是 OCI Registry As Storage 的缩写，目前也是 <strong>CNCF 沙盒项目</strong>。笔者了解也不多，暂时没办法给出通俗的解释，欢迎大家补充。</p>
+<h4 id="brigade" class="flex group">
+    <span>Brigade</span>
+    <a href="#brigade" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 200px;" src="https://2d2d.io/static/s2/1/brigade.png" />
+<p><a href="https://brigade.sh/">Brigade</a> 是微软在 2017 年底推出的一个借助 Kubernetes 来实现事件驱动、事务处理编排的工具，可以使用在 CI / CD 环节。目前也是 <strong>CNCF 沙盒项目</strong>，但是看起来在国内毫无用户。</p>
+<h4 id="hippo" class="flex group">
+    <span>Hippo</span>
+    <a href="#hippo" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4>
+<p><a href="https://github.com/deislabs/hippo">Hippo</a> 是 Deis Labs 推出的一个 WebAssembly PaaS 平台，很有创意，笔者个人非常喜欢这个产品。顺便说一下 Hippo 用到的技术就包括前面提到的 Bindle。详细信息可以了解一下 Hippo 的官宣博客。</p>
+<div class="url-preview">
+ <div>Introduction to Hippo: the WebAssembly PaaS</div>
+ <div>Hippo makes it easy to run applications and services at scale</div>
+ <a href="https://deislabs.io/posts/introducing-hippo/">https://deislabs.io/posts/introducing-hippo/</a>
+</div>
+<h4 id="porter" class="flex group">
+    <span>Porter</span>
+    <a href="#porter" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4><img class="mx-auto" style="width: 200px;" src="https://2d2d.io/static/s2/1/porter.png" />
+<p><a href="https://porter.sh">Porter</a> 是微软 2020 年初推出的实现前面说过的 CNAB 规范的打包工具，目前是 <strong>CNCF 的沙盒项目</strong>。笔者没有具体用过，大家感兴趣可以自行了解。</p>
+<h4 id="wagi" class="flex group">
+    <span>WAGI</span>
+    <a href="#wagi" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4>
+<p><a href="https://github.com/deislabs/wagi">WAGI</a> (WebAssembly Gateway Interface) 是 Deis Labs 在 WebAssembly 领域的一个很有创新性的实验性项目，于  2020 年 10 月发布。简单来说就是任何编译成 WASI 格式的 WebAssembly 模块，都可以用来处理 HTTP 请求。</p>
+<blockquote>
+<p><a href="https://github.com/WebAssembly/WASI">WASI</a> (WebAssembly System Interface Resources) 可以简单理解为 WebAssembly 在浏览器之外（主要是服务端）的规范。</p>
+<p>WebAssembly 正处在蓬勃发展的阶段，Deis Labs 最近几年在 WebAssembly 领域做了非常多的创新性尝试，但很多尝试都失败了，为数不多目前有不错进展的大概只有 Krustlet 和 WAGI 了。</p>
+</blockquote>
+<h4 id="vscode 插件" class="flex group">
+    <span>VSCode 插件</span>
+    <a href="#vscode 插件" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h4>
+<p>另外，Deis Labs 还参与开发了<a href="https://github.com/deislabs?q=vscode">一系列</a>和 Kubernetes 有关的 VSCode 插件，比如 VSCode 的 <a href="https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools">Kubernetes 插件</a>。</p>
+<p>总的来说，<strong>Deis Labs 是真的超级富有创造力，几年时间里给 CNCF 贡献了 7 个项目（还不包括合作的项目）</strong>。给人的感觉是成为 CNCF 项目似乎对他们来说是一件轻而易举的事情。<strong>当然不得不说，Deis Labs 的大部分项目都比较超前，比如 Krustlet，Bindle，WAGI，想法真的都很棒，但是目前受众还不是很多，知道这些项目的人也不多，我们只能用长远的眼光去看待这些项目未来的潜力和价值。</strong></p>
+<h3 id="合作的项目" class="flex group">
+    <span>合作的项目</span>
+    <a href="#合作的项目" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p>Deis Labs 的项目我们已经在上面讲了十几个了，但还不止如此，其他几个 Deis Labs 参与合作过的项目也非常值得一提：</p>
+<ul>
+<li><a href="https://smi-spec.io/">Service</a><a href="https://smi-spec.io/"> Mesh Interface</a> - 【CNCF 项目】我们之前在第一季第二期提到过的 Kubernetes Service Mesh 统一规范，这个规范主要由微软牵头和各大 Service Mesh 厂商联合制定的，微软这边主要就是 Deis Labs 团队的人在参与。</li>
+<li><a href="https://openservicemesh.io/">Open Service Mesh</a> - 【CNCF 项目】这个也是微软和其他公司一起遵循 Service Mesh Interface 规范实现的轻量级 Service Mesh 产品，微软这边同样也是 Deis Labs 团队的人在参与。</li>
+<li><a href="https://oam.dev">Open Application Model</a> (OAM) - 这是一个微软在 2019 年联合阿里巴巴一起发布的开放应用模型规范，微软这边主要是 Deis Labs 团队的人在参与。这个规范比较抽象，大家感兴趣可以看看<a href="https://mp.weixin.qq.com/s/SNNrnlSyZQkiSRe2n3k3Aw">这篇</a><a href="https://mp.weixin.qq.com/s/SNNrnlSyZQkiSRe2n3k3Aw">公众号文章</a>。</li>
+</ul>
+<p>不知道大家有有没有注意，Service Mesh Interface、Open Service Mesh 这些项目的官网和 Deis Labs 的很多网页风格都非常类似。没错，这些都是 Deis Labs 设计的，他们的风格都是非常清新活泼，充满活力的感觉。</p>
+<h2 id="核心人物" class="flex group">
+    <span>核心人物</span>
+    <a href="#核心人物" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p>前面讲了那么多 Deis Labs 的项目，接下来重点介绍一下 Deis Labs 的两位核心人物。</p>
+<h3 id="gabe monroy" class="flex group">
+    <span>Gabe Monroy</span>
+    <a href="#gabe monroy" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p>Gabe Monroy 从 OpDemand 到 Engine Yard 的 Deis 一直都是担任 CTO 角色，当初的 Deis 项目主要也是由他在主导。也是他不错的眼光看到了 Matt Butcher 几个人在 Hackthon 上做的那款产品的潜力，在他的推动下才有了后来的 Helm。</p>
+<p>加入微软后，Gabe Monroy 从 Azure 的首席项目经理 (Partner Program Manager) 升到了产品管理副总裁 (Vice President Of Product Management)。</p>
+<p>不过，在 2021 年 10 月份，他以 CPO (Chief Product Officer) 的角色<a href="https://investors.digitalocean.com/news/news-details/2021/DigitalOcean-Names-Gabe-Monroy-as-Chief-Product-Officer/default.aspx">加入了 DigitalOcean</a>，并承担了 DigitalOcean 2024 年第一个 10 亿美金营收的重任 (our first billion in revenue in 2024)，还有 2030 年 4000 万社区新开发者的重任。一个月多前，Gabe Monroy 在 ProductHunt 上举行了一场 <a href="https://www.producthunt.com/discussions/i-m-gabe-monroy-chief-product-officer-for-digitalocean-ama">Ask Me Anything 的问答活动</a>，他在上面透露他现在是业余农民，现在住在科罗拉多州一个 35 英亩的农场，他和妻子在那里养了很多鸡和家畜。也算是一个充满传奇的人物！</p>
+<blockquote>
+<p>前不久，DigitalOcean <a href="https://www.digitalocean.com/blog/css-tricks-joins-digitalocean">收购了 CSS-Tricks.com</a> 可能也是 Gabe Monroy 在主导推动。</p>
+</blockquote>
+<p><img src="https://2d2d.io/static/s2/1/gabe-monroy.png" alt="" loading="lazy"></p>
+<h3 id="matt butcher" class="flex group">
+    <span>Matt Butcher</span>
+    <a href="#matt butcher" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p>Matt Butcher 是一个非常极客的工程师，他早期是 Deis 项目的核心贡献者，后来是 Helm，Brigade, Krustlet 等项目的主要作者，也是 Deis Labs 的灵魂人物。上面提到的 CNAB，OAM 等规范也是 Matt Butcher 在主导推动。</p>
+<p>除了在软件项目上非常高产之外，Matt Butcher 还出过很多书！2016 年一本《给孩子讲 Kubernetes 是什么》（原名 The Illustrated Children’s Guide to Kubernetes）的插画书在国内外开始火起来了，其作者就是 Matt Butcher，现在这本书在 CNCF 官网就<a href="https://www.cncf.io/phippy/the-childrens-illustrated-guide-to-kubernetes/">可以看到</a>。其他的书包括：</p>
+<ul>
+<li>《Mastering OpenLDAP》</li>
+<li>Maning 出版的 《Go In Practice》</li>
+<li>O’Reilly 出版的《Learning Helm》</li>
+</ul>
+<p>更多书可以看 Matt Butcher 的<a href="http://technosophos.com/">博客</a>。非常有意思的是，Matt Butcher 本科、硕士、博士都是哲学专业，并没有主修过计算机相关专业，也是一个非常传奇的人物！</p>
+<p><img src="https://2d2d.io/static/s2/1/matt-butcher.png" alt="" loading="lazy"></p>
+<blockquote>
+<p>还有一个叫 <a href="http://www.mattfarina.com/">Matt Farina</a> 的人也非常值得介绍，虽然他不在 Deis Labs，但是他和 Matt Butcher 很早就在惠普相识，后来两人合作开发过很多开源项目，还和一起出版过至少 3 本书，上面提到的 《Go In Practice》和 《Learning Helm》主要就是他们俩一起写的。</p>
+<p><img style="width: 380px" src="https://2d2d.io/static/s2/1/helm-book.png" /></p>
+<p>Matt Farina 早期也参与 Helm 的开发，是 Helm 的主要贡献者之一。说来真的很巧，Matt Farina 后来加入了 Rancher，被 Rancher 老板梁胜安排做一个新项目，这个新项目就叫 Rancher Desktop！Matt Farina 现在就是 Rancher Desktop 的主要负责人，目前他还是 CNCF TOC 的成员。</p>
+</blockquote>
+<h2 id="新未来" class="flex group">
+    <span>新未来</span>
+    <a href="#新未来" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="https://2d2d.io/static/s2/1/fermyon.png" alt="" loading="lazy"></p>
+<p>2022 年 1 月，一家名叫 <a href="https://www.fermyon.com/">Fermyon</a> 的新公司成立了，首轮融资 400 万美金，团队将近 10 位创始成员都来自 Deis Labs，CEO 就是 Matt Butcher。从 Engine Yard 到微软，现在又离开了微软重新开始他们新的征程，几乎还是原班人马，大家都是早已共事多年的好伙伴。过去他们在容器领域崭露头角，这次他们看中的是 WebAssembly 的未来，Fermyon 就是一家全面押注 WebAssembly 的公司，他们把 WebAssembly 称之为云计算的下一波浪潮 (the next wave of cloud computing)。由衷的祝愿他们继续在新的领域开拓创新，取得更大的成就！</p>
+<blockquote>
+<p>随着 Deis Labs 大部分核心成员都离职了，Deis Labs 未来的命运就不得而知了。</p>
+</blockquote>
+
+
+        </article>
+    </div>
+</main>
+
+    <footer class="relative">
+        <div class="bg-neutral-900 p-10 pt-20 text-slate-300 translate-y-[-8rem]">
+    <div class="flex justify-center mb-28 top-16 font-bold">
+        <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
+            <span class="text-main bg-primary p-4">订阅方式：</span>
+            <span class="px-2 md:px-4">
+                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
+            </span>
+        </div>
+    </div>
+    <div class="container mx-auto flex flex-col sm:flex-row">
+        <div class="text-sm max-w-sm">
+            <div class="bg-primary w-12 h-5 my-4"></div>
+            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <div class="py-6">
+                专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:justify-around grow">
+            <div class="pt-12 sm:pt-0">
+                <div class="bg-primary w-5 h-5 my-4"></div>
+                <div class="text-xl font-bold mb-4">责任编辑</div>
+                <a class="my-2 block hover:underline" href="https://folyd.com">@Folyd</a>
+            </div>
+            <div class="pt-12 sm:pt-0">
+                <div class="bg-primary w-5 h-5 my-4"></div>
+                <div class="text-xl font-bold mb-4">更多</div>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-36 bg-neutral-900">
+    <div class="text-xs text-slate-400 text-center mt-12">
+        Copyright © 2022 TO-D 杂志
+    </div>
+</div>
+<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PFMPLGGJHQ');
+</script>
+            <a href="https://github.com/zineland" 
+           class="absolute z-20 bottom-0 w-full text-center font-bold
+                  md:text-slate-100 md:opacity-10 md:hover:opacity-50 md:bg-transparent
+                  bg-primary p-2 text-main">
+            Proudly powered by Zine.
+        </a>
+        </div>
+    </footer>
+</body>
+<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
+<script src="https://2d2d.io/static/zine.js"></script>
+</html>
+
