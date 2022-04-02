@@ -1,9 +1,14 @@
 
 # 赞助支持
 
-如果你觉得《TO-D 杂志》对你有帮助，请考虑赞助支持我们，让这份杂志可以持久的更新下去。
+如果你觉得《TO-D 杂志》对你有帮助，希望考虑赞助支持我们，让这份杂志可以持久的更新下去。
 
 目前我们支持的赞助方式有如下几种：
+
+## 个人赞助
+
+- 爱发电：[https://afdian.net/@folyd](https://afdian.net/@folyd)
+- Paypal: [https://paypal.me/wichna](https://paypal.me/wichna)
 
 ## 资源赞助
 
