@@ -185,6 +185,13 @@ Matt Butcher 是一个非常极客的工程师，他早期是 Deis 项目的核�
 
 ![](/static/s2/1/fermyon.png)
 
-2022 年 1 月，一家名叫 [Fermyon](https://www.fermyon.com/) 的新公司成立了，首轮融资 400 万美金，团队将近 10 位创始成员都来自 Deis Labs，CEO 就是 Matt Butcher。从 Engine Yard 到微软，现在又离开了微软重新开始他们新的征程，几乎还是原班人马，大家都是早已共事多年的好伙伴。过去他们在容器领域崭露头角，这次他们看中的是 WebAssembly 的未来，Fermyon 就是一家全面押注 WebAssembly 的公司，他们把 WebAssembly 称之为云计算的下一波浪潮 (the next wave of cloud computing)。由衷的祝愿他们继续在新的领域开拓创新，取得更大的成就！
+2022 年 1 月，一家名叫 [Fermyon](https://www.fermyon.com/) 的新公司成立了，首轮融资 400 万美金，团队将近 10 位创始成员都来自 Deis Labs，CEO 就是 Matt Butcher。
+
+> 关于 Fermyon 这个词的含义，官方暂时没有给出具体解答，我和 [@zhanghandong](https://github.com/zhanghandong) 有一个初步探讨，猜测应该和基本粒子`费米子` 有关：
+> `费米子`和`玻色子`都是宇宙基本粒子，都有**自旋** (Spin) 属性。但是`费米子`喜欢独来独往，而`玻色子`喜欢共享，用`费米子`来对应 WebAssembly 的沙盒隔离性非常恰到。
+> 前几天 Fermyon 发布了他们的 WebAssembly 框架，就叫 [spin](https://github.com/fermyon/spin)。
+
+从 Engine Yard 到微软，现在又离开了微软重新开始他们新的征程，几乎还是原班人马，大家都是早已共事多年的好伙伴。过去他们在容器领域崭露头角，这次他们看中的是 WebAssembly 的未来，Fermyon 就是一家全面押注 WebAssembly 的公司，他们把 WebAssembly 称之为云计算的下一波浪潮 (the next wave of cloud computing)。由衷的祝愿他们继续在新的领域开拓创新，取得更大的成就！
+
 
 > 随着 Deis Labs 大部分核心成员都离职了，Deis Labs 未来的命运就不得而知了。
