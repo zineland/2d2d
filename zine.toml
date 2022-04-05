@@ -7,6 +7,7 @@ locale = "zh"
 menu = [
   { name = "关于", url = "/about" },
   { name = "博客", url = "/blog" },
+  { name = "读者好评", url = "/testimonial" },
   { name = "赞助", url = "/sponsor" },
   { name = "Github", url = "https://github.com/zineland/2d2d" },
 ]
