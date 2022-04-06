@@ -2,16 +2,244 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>TO-D 杂志</title>
     <subtitle>专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。</subtitle>
-    <updated>2022-04-03T22:57:28.664179+08:00</updated>
+    <updated>2022-04-06T11:56:38.182176332+00:00</updated>
     <id>https://2d2d.io</id>
     <link href="https://2d2d.io/feed.xml" rel="self" type="application/atom+xml" />
     <link href="https://2d2d.io" rel="alternate" type="text/html" />
-    <generator uri="https://github.com/zineland/zine" version="0.3.0">zine</generator>
+    <generator uri="https://github.com/zineland/zine" version="0.3.1">zine</generator>
     <author>
         <name>TO-D 杂志</name>
         <uri>https://2d2d.io</uri>
     </author>
 
+    <entry>
+        <title>YC 2022 冬季营 DevTools 公司一览</title>
+        <link rel="alternate" href="https://2d2d.io/s2/yc-w22" type="text/html" title="YC 2022 冬季营 DevTools 公司一览" />
+        <published>2022-04-06</published>
+        <updated>2022-04-06</updated>
+        <id>https://2d2d.io/s2/yc-w22</id>
+        <content type="html" xml:base="https://2d2d.io/s2/yc-w22">
+            <![CDATA[<p>上周 (2022 年 3 月 29 号) YC Winter 2022 Batch 举行了 <a href="https://www.ycombinator.com/blog/meet-the-yc-winter-2022-batch">Demo Day</a>。此次亮相的 startup 数量也创下了 398 家的新高。Developer Tools 向来是 YC 项目里的热门赛道，这次也不例外，总共有 <a href="https://www.ycombinator.com/companies?batch=W22&amp;tags=Developer%20Tools">30 家</a> 。</p>
+<blockquote>
+<p>编者注：YC 的投资方式非常特别，每年分为两期，分别是上半年的<code>冬季营</code> (Winter Batch) 和下半年的<code>夏季营</code> (Summer Batch)，一般缩写成 W 或 S 加年份，比如今年<code>冬季营</code>是 W22。<code>Demo Day</code> 是指获投公司在几分钟内给投资人展示自己产品的路演活动，持续两天，参加 Demo Day 的主要是 YC 邀请的全球各大知名投资机构。</p>
+</blockquote>
+<table><thead><tr><th>分类</th><th>数量</th></tr></thead><tbody>
+<tr><td>SaaS</td><td>112</td></tr>
+<tr><td>Fintech</td><td>103</td></tr>
+<tr><td>B2B</td><td>98</td></tr>
+<tr><td>Marketplace</td><td>45</td></tr>
+<tr><td>Consumer</td><td>39</td></tr>
+<tr><td>Ecommerce</td><td>32</td></tr>
+<tr><td><strong>Developer Tools</strong></td><td><strong>30</strong></td></tr>
+<tr><td>Machine Learning</td><td>30</td></tr>
+<tr><td>Climate</td><td>27</td></tr>
+<tr><td>Artifical Intelligence</td><td>22</td></tr>
+<tr><td>Data Engineering</td><td>21</td></tr>
+</tbody></table>
+<blockquote>
+<p>W22 部分投资领域，其中 <code>Developer Tools</code> 占比大概 7%。</p>
+</blockquote>
+<p>下面我们就按照字母顺序简单介绍一下其中的一些公司。</p>
+<h2 id="botcity" class="flex group">
+    <span>BotCity</span>
+    <a href="#botcity" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/botcity.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://botcity.dev">https://botcity.dev</a></p>
+<p>BotCity 是一家成立于巴西，对标 <a href="https://www.uipath.com">UiPath</a> 的 RPA 软件公司，官方的简介是 <code>UiPath for developers</code>。他的亮点是结合了计算机视觉来识别用户 UI 操作交互，帮助用户自动生成 RPA 代码。
+和 Excel 的宏录制 (Macro Recorder) 也比较像，不过借助于 Computer Vision，就可以做一个更加通用的方案。</p>
+<blockquote>
+<p>编者注：UiPath 是 RPA 软件独角兽，已于 2021 年上市。RPA 是 Robotic Process Automation 的缩写，简单来说 RPA 软件可以帮助用户生成一个类似按键精灵的机器人，替代重复繁琐的手工操作。但编者认为 RPA 市场相对来说不算特别大，而且近年来一定程度上受到了低代码和无代码技术的影响。国内目前还没有诞生一家类似 UiPath 这样的公司，预计应该也很难诞生。</p>
+</blockquote>
+<h2 id="brainboard" class="flex group">
+    <span>Brainboard</span>
+    <a href="#brainboard" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/brainboard.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://www.brainboard.co">https://www.brainboard.co</a></p>
+<p>Brainboard 是一家成立于法国的公司。鉴于 HashiCorp 的 Terraform 已经成为了多云部署的业界标准，但手动编写 Terraform 文件也算是一个比较繁琐的过程。Brainboard 的产品则完全是基于 Terraform，他们提供一个可视化设计 Cloud Infra 的平台，然后把设计好的架构图自动生成 Terraform 文件（术语叫 reverse terraform）。这种方式类似于 Design-to-Code，从 Figma 生成 React 代码。但在 infra 领域，反 Terraform 的思路笔者持保留态度。或许聚焦在基于 Terraform 文件做可视化展示的切入会更好一些，类似于可视化展示网络拓扑，数据库 Schema。</p>
+<blockquote>
+<p>W22 这一期的另外一家叫 <a href="https://www.massdriver.cloud/">Massdriver</a> 的公司也是在做类似的事情。</p>
+</blockquote>
+<h2 id="cogram" class="flex group">
+    <span>Cogram</span>
+    <a href="#cogram" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/cogram.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://cogram.com">https://cogram.com</a></p>
+<p>Cogram 是一家硅谷创业公司，他们的产品是可以让用户使用自然语言来生成 SQL。这个挺有用的，因为有些复杂的 SQL 语句，即使让熟悉 SQL 的工程师，数据分析师来写也是挺困难的。</p>
+<p>Cogram 也让笔者联想到了 AppleScript，差别在于前者是 AI based，而后者是 rule based，这就是时代的演进吧。</p>
+<blockquote>
+<p>编者注：自从 <a href="https://openai.com">OpenAI</a> 发布诸多 AI 模型之后（特别是 GPT-3），全球短时间内涌现出了大量基于 OpenAI 的 AI 创业公司，编者觉得 Cogram 很大可能是基于 OpenAI 的。W22 这一期另外一家叫 <a href="https://mintlify.com">Mintlify</a> 的公司应该也是基于 OpenAI 的，他们的产品是 AI 辅助生成注释和文档。</p>
+</blockquote>
+<h2 id="convoy" class="flex group">
+    <span>Convoy</span>
+    <a href="#convoy" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/convoy.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://getconvoy.io">https://getconvoy.io</a></p>
+<p>Convoy 是一家诞生于尼日利亚的初创公司，他们做的是一个 Webhook-as-a-Service 的产品，这是最近业界涌现出来的一个新品类，之前还看到过一家 <a href="https://hookdeck.com">hookdeck</a> 在做类似的事情。这块随着 Webhook 成为应用间对接的事实标准，也就成为了应用开发的刚需。Convoy 的特点在于开源，是 Golang + VueJS 的技术栈。笔者觉得在 API 赛道相对拥挤的情况下，Webhook infra 是一个更好的切入点。整个业界这块还没有约定俗成的方案，因为 Convoy 有开源的优势，值得后期关注。就像 Convoy 自己所言：</p>
+<blockquote>
+<p>Essentially, just like Redis is to key-value storage, and Gitlab is to DevOps, Convoy is to webhooks。</p>
+</blockquote>
+<h2 id="growthbook" class="flex group">
+    <span>GrowthBook</span>
+    <a href="#growthbook" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/growthbook.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://www.growthbook.io">https://www.growthbook.io</a></p>
+<p>GrowthBook 是一家做开源的 Feature Flag, A/B 测试解决方案的公司。Feature Flag 和 A/B 测试也是研发工具链里的重要一环，业界商业化比较成熟的有 <a href="https://launchdarkly.com/">LaunchDarkly</a>, <a href="https://www.split.io/">Split</a>。而开源方案里，比较早做的是 <a href="https://www.getunleash.io/">unleash</a> (也是 GitLab 内置的方案)，也有后起之秀 <a href="https://flagsmith.com/">Flagsmith</a>。国内也有 <a href="https://www.feature-flags.co/">敏捷开关</a> 正在做这块。</p>
+<h2 id="hydra" class="flex group">
+    <span>Hydra</span>
+    <a href="#hydra" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/hydra.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://hydras.io">https://hydras.io</a></p>
+<p>Hydra 是硅谷一家基于 PostgreSQL 做数仓的公司。通过 PostgreSQL 访问 OLAP 数据库，目前只支持 Snowflake。实现方式是自己实现了一个 PostgreSQL extension (这点和 <a href="https://timescale.com">TimescaleDB</a> 类似），而不是采用了 PostgreSQL FDW (Foreign Data Wrapper)，根据 <a href="https://news.ycombinator.com/item?id=30443033">CTO 的说法</a>，主要是 FDW 仍然不能很好地支持计算下推 (push down)，导致稍微复杂一点的 query 执行效率不行。Hydra 也提供了 HTAP 实现的另一种思路，把 OLAP 外包给了其他专门的 AP 系统。当然这也需要数据库本身扩展性足够才行，目前市面上也只有 PostgreSQL 可以了。</p>
+<blockquote>
+<p>编者注：Tianzhou 写了一篇更详细介绍 Hydra 的文章，感兴趣可以点击阅读。</p>
+<div class="url-preview">
+ <div>Hydra - 通过 PostgreSQL 集成 Snowflake 的 HTAP 数据库</div>
+ <div>Hydra, 基于 PostgreSQL 的 Hybrid Transactional / Analytical Processing / HTAP 系统。</div>
+ <a href="https://mp.weixin.qq.com/s/4UCAAtxLY1YRoevl5ACQ-g">https://mp.weixin.qq.com/s/4UCAAtxLY1YRoevl5ACQ-g</a>
+</div>
+</blockquote>
+<h2 id="nimbus" class="flex group">
+    <span>Nimbus</span>
+    <a href="#nimbus" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/nimbus.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://www.usenimbus.com">https://www.usenimbus.com</a></p>
+<p>Nimbus 是一家成立于硅谷的初创公司，他们的产品是云端开发环境，这是一个国人主导的团队（编者注：他们的一位联合创始人是华人，前 TikTok 北美员工）。云端研发喊了很久了，业界做的比较早的有 Gitpod，后来又有 GitHub Codespaces，最近也看到几家新公司在做。</p>
+<p>可用云端开发环境的难点在于：</p>
+<ol>
+<li>提供和本地开发类似的 UI 响应速度。</li>
+<li>微服务架构下的 service wiring。</li>
+<li>像数据库这样有状态的数据准备和生命周期管理。</li>
+</ol>
+<p>第 <strong>1</strong> 点，<a href="https://code.visualstudio.com/docs/remote/remote-overview">VSCode Remote 模式</a> 算是基本解决了，但 <strong>2</strong> 和 <strong>3</strong> 还是业界尚未解决的问题。看 Nimbus 官网也尚未提到这方面的工作，期待后续的进展。</p>
+<h2 id="reality defender" class="flex group">
+    <span>Reality Defender</span>
+    <a href="#reality defender" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/realitydefender.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://www.realitydefender.ai">https://www.realitydefender.ai</a></p>
+<p>随着 AI 技术的快速发展，互联网上也不断涌现出了很多通过深度学习等技术合成的虚假内容，比如虚假图片、虚假视频、虚假音频等等，这些被统称为 Deep fake。Deep fake 的可怕之处是人很难辨别这些内容的真实性。Reality Defender 这家公司就是专门来识别这些 Deep fake 的。Reality Defender 最初是由 Microsoft 和 <a href="https://aifoundation.com">AI Foundation</a> 孵化的项目。</p>
+<h2 id="requestly" class="flex group">
+    <span>Requestly</span>
+    <a href="#requestly" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/requestly.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://requestly.io">https://requestly.io</a></p>
+<p>Requestly 是一款可以用来修改 HTTP 请求，mock 回复，模拟各种异常，测试应用的产品。看到这个介绍，相信有些同学就会想到 Postman，巧合的是这家公司也来自印度，也是从 Chrome 插件入手。</p>
+<h2 id="shaped" class="flex group">
+    <span>Shaped</span>
+    <a href="#shaped" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/shaped.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://www.shaped.ai">https://www.shaped.ai</a></p>
+<p>Shaped 是一家提供 AI 推荐算法的初创公司，成立于纽约，据介绍团队初始成员来源于 Facebook 推荐团队。把内容作为输入，内容排序作为输出，等于是给公司打造了一支抖音推荐算法团队。</p>
+<h2 id="vessel" class="flex group">
+    <span>Vessel</span>
+    <a href="#vessel" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="/static/s2/2/vessel.png" alt="" loading="lazy"></p>
+<p>官网：<a href="https://www.vessel.land">https://www.vessel.land</a></p>
+<p>Vessel 是一家成立于美国加州的初创公司，他们提供了一套统一的 API 来打通不同 CRM 工具之间的数据。</p>
+<h2 id="总结" class="flex group">
+    <span>总结</span>
+    <a href="#总结" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p>篇幅所限，30 家公司也无法一一罗列，如读者所见相当一部分的公司都是 API 领域的公司，简单做一些总结:</p>
+<ol>
+<li>Developer Tools 领域，我们可以把 API 看成水流，各类玩家就分布在水流的上下游。API 生态里既有 API 提供商提供水源，也有 API Gateway 作为水闸，比如 <a href="https://2d2d.io/s1/kong-vs-apisix/">Kong 和 APISIX</a>。</li>
+<li>API 一开始是涓涓细流，接着就汇成大江大河，像 FinTech 领域的 <a href="https://plaid.com">Plaid</a>，上文提到想做 CRM 领域 Plaid 的 Vessel，以及还没列出来的建筑施工领域 Plaid 的 <a href="https://www.agaveapi.com/">Agave</a>。</li>
+<li>垂直领域可以做的 API 机会还有不少，除了文中已经罗列的，这次 W22 batch 里还有提供类似 Figma 多人协作能力的 <a href="https://snippyly.com/">Snippyly</a>，通过卫星图像来帮助挖真矿的 <a href="https://www.korrai.com/">KorrAI</a>，语言识别和信息提取 API <a href="https://www.speechly.com/">Speechly</a>, 基于 AI 的医疗影像标注 <a href="https://redbrickai.com/">RedBrick API</a>，提供通用 ML 能力 API 的 <a href="https://www.slai.io/">slai</a>，反洗钱 API <a href="https://www.flagright.com/">Flagright</a>，甚至是给游戏提供经济系统的 API <a href="https://www.worldql.com/">WorldQL</a> 等等。</li>
+</ol>
+<p>流水不争先，争的是滔滔不绝。在池子里自己玩，即使建得再早，扩得再大，终究会成为一潭死水。要能滔滔不绝，还是需要汇入整个水系。</p>
+<p>无论是 Developer Tools 还是通用 SaaS 都是这个道理。</p>
+<blockquote>
+<p>本文由 <a href="https://bytebase.com">Bytebase</a> CEO Tianzhou 投稿，责任编辑 Folyd 校对补充。</p>
+</blockquote>
+]]>
+        </content>
+
+        <author>
+            <name>Tianzhou</name>
+        </author>
+    </entry>
     <entry>
         <title>微软 Deis Labs 的故事</title>
         <link rel="alternate" href="https://2d2d.io/s2/deislabs" type="text/html" title="微软 Deis Labs 的故事" />
@@ -312,7 +540,7 @@
 <p>更多书可以看 Matt Butcher 的<a href="http://technosophos.com/">博客</a>。非常有意思的是，Matt Butcher 本科、硕士、博士都是哲学专业，并没有主修过计算机相关专业，也是一个非常传奇的人物！</p>
 <p><img src="/static/s2/1/matt-butcher.png" alt="" loading="lazy"></p>
 <blockquote>
-<p>还有一个叫 <a href="http://www.mattfarina.com/">Matt Farina</a> 的人也非常值得介绍，虽然他不在 Deis Labs，但是他和 Matt Butcher 很早就在惠普相识，后来两人合作开发过很多开源项目，还和一起出版过至少 3 本书，上面提到的 《Go In Practice》和 《Learning Helm》主要就是他们俩一起写的。</p>
+<p>还有一个叫 <a href="http://www.mattfarina.com/">Matt Farina</a> 的人也非常值得介绍，虽然他不在 Deis Labs，但是他和 Matt Butcher 很早就在惠普相识，后来两人合作开发过很多开源项目，还一起出版过至少 3 本书，上面提到的 《Go In Practice》和 《Learning Helm》主要就是他们俩一起写的。</p>
 <p><img style="width: 380px" src="/static/s2/1/helm-book.png"/></p>
 <p>Matt Farina 早期也参与 Helm 的开发，是 Helm 的主要贡献者之一。说来真的很巧，Matt Farina 后来加入了 Rancher，被 Rancher 老板梁胜安排做一个新项目，这个新项目就叫 Rancher Desktop！Matt Farina 现在就是 Rancher Desktop 的主要负责人，目前他还是 CNCF TOC 的成员。</p>
 </blockquote>

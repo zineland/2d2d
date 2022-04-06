@@ -43,15 +43,21 @@
         <loc>https://2d2d.io/s2/deislabs/</loc>
     </url>
     <url>
+        <loc>https://2d2d.io/s2/yc-w22/</loc>
+    </url>
+    <url>
         <loc>https://2d2d.io/blog/</loc>
     </url>
     <url>
-        <loc>https://2d2d.io/sponsor/</loc>
+        <loc>https://2d2d.io/about/</loc>
     </url>
     <url>
         <loc>https://2d2d.io/faq/</loc>
     </url>
     <url>
-        <loc>https://2d2d.io/about/</loc>
+        <loc>https://2d2d.io/sponsor/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/testimonial/</loc>
     </url>
 </urlset>
