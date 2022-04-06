@@ -11,9 +11,9 @@ publish = true
 [[article]]
 slug = "yc-w22"
 file = "2-yc-w22.md"
-title = "YC Winter 2022 Batch 开发者工具巡礼"
+title = "YC 2022 冬季营 DevTools 公司一览"
 author = "Tianzhou"
 cover = "/static/s2/2/yc-w22.png"
 pub_date = "2022-04-06"
-featured = false
-publish = false
+featured = true
+publish = true
