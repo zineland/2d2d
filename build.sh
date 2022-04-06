@@ -4,16 +4,9 @@ set -e
 
 BRANCH="gh-pages"
 
-if ! command -v zine &> /dev/null
-then
-    echo "zine could not be found, start installing..."
-
-    RUSTUP_TOOLCHAIN=stable cargo install zine
-fi
-
 TEMP_DIR="/tmp/2d2d-build"
 
-zine build ${TEMP_DIR}
+./bin/zine-linux-amd64 build ${TEMP_DIR}
 
 deploy
 
