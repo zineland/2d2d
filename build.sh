@@ -6,10 +6,6 @@ BRANCH="gh-pages"
 
 TEMP_DIR="/tmp/2d2d-build"
 
-RUST_BACKTRACE=1 ./bin/zine-linux-amd64 build . ${TEMP_DIR}
-
-deploy
-
 deploy() {
   echo "Starting deploying..."
   git config --global url."https://".insteadOf git://
@@ -25,4 +21,20 @@ deploy() {
 
   echo "Deploy complete"
 }
+
+if [ $1 == "deploy" ]
+then
+    echo "Build then deploy..."
+    RUST_BACKTRACE=1 ./bin/zine-linux-amd64 build . ${TEMP_DIR}
+    deploy
+else
+    echo "Build..."
+    if ! command -v zine &> /dev/null
+    then
+        echo "zine could not be found, start installing..."
+        RUSTUP_TOOLCHAIN=stable cargo install zine
+    fi
+    zine build
+
+fi
 
