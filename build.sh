@@ -6,7 +6,7 @@ BRANCH="gh-pages"
 
 TEMP_DIR="/tmp/2d2d-build"
 
-./bin/zine-linux-amd64 build ${TEMP_DIR}
+RUST_BACKTRACE=1 ./bin/zine-linux-amd64 build ${TEMP_DIR}
 
 deploy
 
