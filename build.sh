@@ -11,6 +11,7 @@ deploy() {
   git config --global url."https://".insteadOf git://
   git config --global url."https://github.com/".insteadOf git@github.com:
 
+  git fetch -all
   git checkout ${BRANCH}
   cp -vr ${TEMP_DIR} .
   git config user.name "GitHub Actions"
