@@ -13,7 +13,7 @@ deploy() {
 
   git fetch --all
   git checkout ${BRANCH}
-  cp -vr ${TEMP_DIR} .
+  cp -vr ${TEMP_DIR}/* .
   git config user.name "GitHub Actions"
   git config user.email "github-actions-bot@users.noreply.github.com"
   git add .
