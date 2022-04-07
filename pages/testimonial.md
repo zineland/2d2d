@@ -2,8 +2,14 @@
 # 读者好评
 
 <div class="prose lead">
-很高兴 《TO-D 杂志》受到了大家的喜欢，这里例举了部分读者的好评。如果你也想发表点评，欢迎 <a href="https://github.com/zineland/2d2d/blob/main/pages/testimonial.md">在这里提 PR</a>，再次感谢大家！
+很高兴 《TO-D 杂志》受到了大家的喜欢，这里例举了部分读者的好评。如果你也想发表点评，欢迎<a href="https://github.com/zineland/2d2d/blob/main/pages/testimonial.md">在这里提 PR</a>，再次感谢大家！
 </div>
+
+### 杜頔康
+
+> 金沙江创投投资人
+
+调研 wasm 过程中发现的高品质专栏，对 Fermyon 的前身 Deis Lab 的历史进行了深入的挖掘，沿着脉络也透视出 Matt 看好新方向的原因。遗憾这么晚才了解到 TO-D，感谢作者们分享前瞻又有趣的开发者江湖。
 
 ### 张汉东
 
