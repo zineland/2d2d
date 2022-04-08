@@ -1,5 +1,9 @@
 {
   "urlPreviews": {
+    "https://2d2d.io/s1/docker/": [
+      "一封 Docker 公司的来信",
+      "亲爱的开发者，您好，"
+    ],
     "https://deislabs.io/posts/introducing-hippo/": [
       "Introduction to Hippo: the WebAssembly PaaS",
       "Hippo makes it easy to run applications and services at scale"

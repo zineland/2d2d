@@ -5,11 +5,11 @@
 
 > 微软的收购清单
 
-Deis，就是 DeisLab 的前身，这是一个非常优秀并且充满创造力的团队，也是笔者非常喜欢的团队。今天我们就来分享 DeisLab 的故事。
+Deis，就是 DeisLabs 的前身，这是一个非常优秀并且充满创造力的团队，也是笔者非常喜欢的团队。今天我们就来分享 DeisLabs 的故事。
 
 ## PaaS 与 Deis
 
-我们的故事要先从 PaaS 开始说起。2007 年，[Heroku](https://www.heroku.com/) 成立后开启了 PaaS 的黄金时代。很多人把 Heroku 称为 PaaS “鼻祖”，其实并不准确。比他成立更早的 [Engine Yard](https://www.engineyard.com/) 在 2006 年就开始做类似的事情了，只是 Engine Yard 后来发展比 Heroku 差太多，只能算 PaaS 领域的第二梯队。Engine Yard 几乎是一个没人听过的名字，但他与我们今天的主角 DeisLab 息息相关。2015 年 4 月 15 日，Engine Yard [收购](https://web.archive.org/web/20170611174913/https://blog.engineyard.com/2015/engine-yard-joins-forces-with-opdemand)了一家名为 OpDemand 的公司，这家公司有一款叫 Deis 的主打产品。Deis 是 OpDemand 受 Heroku 启发，于 2013 年开始开发的 PaaS 产品（那个时候的 Heroku 真的是非常火）。Deis 最早的架构是基于 CoreOS, Fleet 和 Docker，后来被称为 v1 版架构，早已被弃用，不过我们现在依然可以在 Github 上一瞥曾经 Deis v1 的代码 ([https://github.com/deis/deis](https://github.com/deis/deis))。
+我们的故事要先从 PaaS 开始说起。2007 年，[Heroku](https://www.heroku.com/) 成立后开启了 PaaS 的黄金时代。很多人把 Heroku 称为 PaaS “鼻祖”，其实并不准确。比他成立更早的 [Engine Yard](https://www.engineyard.com/) 在 2006 年就开始做类似的事情了，只是 Engine Yard 后来发展比 Heroku 差太多，只能算 PaaS 领域的第二梯队。Engine Yard 几乎是一个没人听过的名字，但他与我们今天的主角 DeisLabs 息息相关。2015 年 4 月 15 日，Engine Yard [收购](https://web.archive.org/web/20170611174913/https://blog.engineyard.com/2015/engine-yard-joins-forces-with-opdemand)了一家名为 OpDemand 的公司，这家公司有一款叫 Deis 的主打产品。Deis 是 OpDemand 受 Heroku 启发，于 2013 年开始开发的 PaaS 产品（那个时候的 Heroku 真的是非常火）。Deis 最早的架构是基于 CoreOS, Fleet 和 Docker，后来被称为 v1 版架构，早已被弃用，不过我们现在依然可以在 Github 上一瞥曾经 Deis v1 的代码 ([https://github.com/deis/deis](https://github.com/deis/deis))。
 
 > 没错，这里又出现了 Fleet，就是 CoreOS 打造的 Fleet。我们曾经在 [CoreOS](/s1/coreos)、[Rancher](/s1/rancher) 那两期都提到过它。
 
@@ -17,7 +17,7 @@ OpDemand 在加入 Engine Yard 之后，继续以 Deis 的名义开发维护 Dei
 
 <p><img class="mx-auto" style="width: 400px;" src="/static/s2/1/deis-zhihu.png"/></p>
 
-2017 年已经到了 Kubernetes 风起云涌的阶段，公有云领域的后起之秀微软 Azure 也在为自己的容器服务物色合适的公司或团队，慧眼识珠的 Azure 看中了 Deis 这个团队。2017 年 4 月 10 日，在和 Engine Yard 协商之后，Azure 正式把 Deis 这个团队[收入囊中](https://blogs.microsoft.com/blog/2017/04/10/microsoft-acquire-deis-help-companies-innovate-containers/)。Deis 加入 Azure 之后负责 Kubernetes 和容器相关的产品，现在点击 https://deis.com 就会跳转到 Azure Kubernetes Service (AKS) 的产品页面。
+2017 年已经到了 Kubernetes 风起云涌的阶段，公有云领域的后起之秀微软 Azure 也在为自己的容器服务物色合适的公司或团队，慧眼识珠的 Azure 看中了 Deis 这个团队。2017 年 4 月 10 日，在和 Engine Yard 协商之后，Azure 正式把 Deis 这个团队[收入囊中](https://blogs.microsoft.com/blog/2017/04/10/microsoft-acquire-deis-help-companies-innovate-containers/)。Deis 加入 Azure 之后负责 Kubernetes 和容器相关的产品，现在点击 [https://deis.com](https://deis.com) 就会跳转到 Azure Kubernetes Service (AKS) 的产品页面。
 
 > 在被微软收购几个月后，包括 Deis Workflow 在内的 Deis 之前的项目都不再维护更新：[Deis Workflow Final Release](https://web.archive.org/web/20180626034638/https://deis.com/blog/2017/deis-workflow-final-release/)
 
@@ -180,6 +180,11 @@ Matt Butcher 是一个非常极客的工程师，他早期是 Deis 项目的核�
 > <p><img style="width: 380px" src="/static/s2/1/helm-book.png"/></p>
 >
 > Matt Farina 早期也参与 Helm 的开发，是 Helm 的主要贡献者之一。说来真的很巧，Matt Farina 后来加入了 Rancher，被 Rancher 老板梁胜安排做一个新项目，这个新项目就叫 Rancher Desktop！Matt Farina 现在就是 Rancher Desktop 的主要负责人，目前他还是 CNCF TOC 的成员。
+>
+> 我们之前在第一季讲过 Rancher Desktop，感兴趣可以阅读这篇文章了解更多。
+> ```urlpreview
+> https://2d2d.io/s1/docker/
+> ```
 
 ## 新未来
 
