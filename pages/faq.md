@@ -53,3 +53,8 @@ content = "The cool comment"
 ```
 
 > 上面其实是简单易懂的 [toml](https://toml.io) 格式。`bio` 和 `content` 支持写 Markdown。
+
+具体评论之后的效果，可以查看这篇文章：
+```urlpreview
+https://2d2d.io/s2/yc-w22/
+```
