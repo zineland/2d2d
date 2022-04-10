@@ -21,9 +21,9 @@ publish = true
 [[article]]
 slug = "warp"
 file = "3-warp.md"
-title = "小小的终端何以撬动千万美元资本"
-author = "Handong Zhang"
-cover = "/static/s2/3/warp.png"
+title = "终端的困境与 Warp 的野心"
+author = "Folyd"
+cover = "/static/s2/3/warp-cover.jpg"
 pub_date = "2022-04-09"
 featured = true
-publish = false
+publish = true
