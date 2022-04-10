@@ -20,6 +20,10 @@
       "Hydra - 通过 PostgreSQL 集成 Snowflake 的 HTAP 数据库",
       "Hydra, 基于 PostgreSQL 的 Hybrid Transactional / Analytical Processing / HTAP 系统。"
     ],
+    "https://mp.weixin.qq.com/s/KOVqdCnf73ptg8dmLYf5Aw": [
+      "TO-D 观察｜小小的终端何以撬动千万美元资本",
+      "这篇文章不是为了宣传 Warp，而是我本人想探索 Warp 融资 2300 w 美元背后的价值。"
+    ],
     "https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ": [
       "【年度公司】Hashicorp：160亿美金的开源标杆，15000字的研究笔记，2021年不遗憾",
       "2021年最后一天，看看Hashicorp怎样用十年的坎坷，打造了一家了不起的公司。产品战略，开源商业化，全球社区，以及，坚持理想主义那些事儿。"
@@ -40,6 +44,10 @@
       "HashiCorp State of Cloud Strategy Survey",
       "Multi-cloud has become the de facto standard operations model for IT organizations of all sizes, in all regions, and every industry."
     ],
+    "https://www.linkedin.com/pulse/why-im-leading-warps-series-dylan-field": [
+      "Dylan Field: Why I'm Leading Warp's Series A",
+      "I’m ecstatic to lead Warp’s Series A round. This is my first time leading a round like this; I’m very grateful for the opportunity to support a company that I believe will open up our industry and bring more collaboration to software engineering."
+    ],
     "https://www.nomadproject.io/docs/nomad-vs-kubernetes": [
       "Nomad vs. Kubernetes | Nomad by HashiCorp",
       "Comparison between Nomad and Kubernetes"
@@ -55,6 +63,10 @@
     "https://www.suse.com/c/rancher_blog/suse-enters-into-definitive-agreement-to-acquire-rancher-labs/": [
       "SUSE Enters Into Definitive Agreement to Acquire Rancher Labs | SUSE Communities",
       "Read our free white paper: How to Build a Kubernetes Strategy Download Now I’m excited to announce that Rancher has signed a definitive agreement to be acquired by SUSE. Rancher is the most widely u"
+    ],
+    "https://www.warp.dev/blog/introducing-warp": [
+      "Introducing Warp: The Terminal for the 21st Century | Warp",
+      "Today, I’m proud to officially introduce Warp, a from-first-principles reinvention of the terminal to make it work better for developers and teams."
     ]
   }
 }
