@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>TO-D 杂志</title>
     <subtitle>专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。</subtitle>
-    <updated>2022-04-10T08:38:37.302766114+00:00</updated>
+    <updated>2022-04-10T08:48:50.793568430+00:00</updated>
     <id>https://2d2d.io</id>
     <link href="https://2d2d.io/feed.xml" rel="self" type="application/atom+xml" />
     <link href="https://2d2d.io" rel="alternate" type="text/html" />
@@ -15,8 +15,8 @@
     <entry>
         <title>终端的困境与 Warp 的野心</title>
         <link rel="alternate" href="https://2d2d.io/s2/warp" type="text/html" title="终端的困境与 Warp 的野心" />
-        <published>2022-04-09</published>
-        <updated>2022-04-09</updated>
+        <published>2022-04-11</published>
+        <updated>2022-04-11</updated>
         <id>https://2d2d.io/s2/warp</id>
         <content type="html" xml:base="https://2d2d.io/s2/warp">
             <![CDATA[<p>每个工程师电脑里面都有两款必不可少的软件，一款为代码编辑器，另一款就是终端 (Terminal)。前者在过去几十年里几乎从来没有停止过创新，诞生过的代码编辑器产品可谓数不胜数。目前这部分市场份额虽然已经被 JetBrians 的商业 IDE 和微软开源免费的 VS Code 所垄断，但人们依然在乐此不彼的不断折腾，不断打造新的代码编辑器。而后者则完全是另外一番凄惨景象，过去几十年来终端软件的产品形态、交互方式等等各方面几乎没有大改进。可能大多数人似乎对现有终端软件习以为常了，以至于形成了某种思维定式：现在的终端已经够用了呀，还有啥好创新的？而本期的主角 Warp 却不这样认为。他们认为终端软件还大有可为，为此他们要打造一款属于 21 世纪的终端。</p>

@@ -49,12 +49,6 @@
         <loc>https://2d2d.io/s2/warp/</loc>
     </url>
     <url>
-        <loc>https://2d2d.io/testimonial/</loc>
-    </url>
-    <url>
-        <loc>https://2d2d.io/blog/</loc>
-    </url>
-    <url>
         <loc>https://2d2d.io/sponsor/</loc>
     </url>
     <url>
@@ -62,5 +56,11 @@
     </url>
     <url>
         <loc>https://2d2d.io/faq/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/testimonial/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/blog/</loc>
     </url>
 </urlset>
