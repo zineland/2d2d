@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<title>终端的困境与 Warp 的野心</title>
+    <meta name="description" content="每个工程师电脑里面都有两款必不可少的软件，一款为代码编辑器，另一款就是终端 (Terminal)。前者在过去几十年里几乎从来没有停止过创新，诞生过的代码编辑器产品可谓数不胜数。目前这部分市场份额虽然已经被 JetBrians 的商业 IDE 和微软开源免费的 VS Code 所垄断，但人们依然在乐此不彼的不断折腾，不断打造新的代码编辑器。而后者则完全是另外一番凄惨景象，过去几十年来终端软件的产品形">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="终端的困境与 Warp 的野心">
+    <meta property="og:description" content="每个工程师电脑里面都有两款必不可少的软件，一款为代码编辑器，另一款就是终端 (Terminal)。前者在过去几十年里几乎从来没有停止过创新，诞生过的代码编辑器产品可谓数不胜数。目前这部分市场份额虽然已经被 JetBrians 的商业 IDE 和微软开源免费的 VS Code 所垄断，但人们依然在乐此不彼的不断折腾，不断打造新的代码编辑器。而后者则完全是另外一番凄惨景象，过去几十年来终端软件的产品形">
+    <meta name="twitter:title" content="终端的困境与 Warp 的野心">
+    <meta name="twitter:description" content="每个工程师电脑里面都有两款必不可少的软件，一款为代码编辑器，另一款就是终端 (Terminal)。前者在过去几十年里几乎从来没有停止过创新，诞生过的代码编辑器产品可谓数不胜数。目前这部分市场份额虽然已经被 JetBrians 的商业 IDE 和微软开源免费的 VS Code 所垄断，但人们依然在乐此不彼的不断折腾，不断打造新的代码编辑器。而后者则完全是另外一番凄惨景象，过去几十年来终端软件的产品形">
+
+<meta property="og:url" content="https://2d2d.io/s2/warp">
+    <meta property="twitter:url" content="https://2d2d.io/s2/warp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://2d2d.io/static/s2/3/warp-cover.jpg">
+    <meta name="twitter:image" content="https://2d2d.io/static/s2/3/warp-cover.jpg">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
+    <style>
+      :root {
+          --primary-color: #ffb52f;
+          --main-color: #000;
+          --link-color: #e07312;
+          --secondary-color: #eff3f7;
+      }
+    </style>
+</head>
+
+<body class="h-full bg-secondary">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <header class="p-8 md:p-10">
+            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+
+            <ul>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
+                </ul>
+        </header>
+        <div class="w-full h-32 md:h-36 lg:h-44 xl:h-48 2xl:h-56"></div>
+    </div>
+
+    <main class="pb-10 -translate-y-32
+                 md:-translate-y-32 lg:-translate-y-36 xl:-translate-y-44 2xl:-translate-y-56
+                 mx-auto sm:max-w-scree-md md:max-w-screen-lg">
+            <div class="p-4 pb-10 md:p-8 md:pb-14 mx-4 my-6 bg-white 
+            shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
+    <div class="relative mx-2">
+        <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
+                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s2">
+            <div class="relative text-main px-4">第二季</div>
+        </a>
+        <span class="ml-2 text-gray-700"> /  第 ⁨3⁩ 篇</span>
+    </div>
+    <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
+    <div class="prose mx-auto">
+        <h1 class="text-center">终端的困境与 Warp 的野心</h1>
+        <div class="relative text-sm text-gray-400">
+            <span>2022-04-09</span>
+            <span class="absolute right-2">Folyd</span>
+        </div>
+    </div>
+    <article class="prose mx-auto my-12">
+        <p>每个工程师电脑里面都有两款必不可少的软件，一款为代码编辑器，另一款就是终端 (Terminal)。前者在过去几十年里几乎从来没有停止过创新，诞生过的代码编辑器产品可谓数不胜数。目前这部分市场份额虽然已经被 JetBrians 的商业 IDE 和微软开源免费的 VS Code 所垄断，但人们依然在乐此不彼的不断折腾，不断打造新的代码编辑器。而后者则完全是另外一番凄惨景象，过去几十年来终端软件的产品形态、交互方式等等各方面几乎没有大改进。可能大多数人似乎对现有终端软件习以为常了，以至于形成了某种思维定式：现在的终端已经够用了呀，还有啥好创新的？而本期的主角 Warp 却不这样认为。他们认为终端软件还大有可为，为此他们要打造一款属于 21 世纪的终端。</p>
+<h2 id="终端的困境" class="flex group">
+    <span>终端的困境</span>
+    <a href="#终端的困境" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2><p>
+<img class="bg-black" src="https://2d2d.io/static/s2/3/terminals.png">
+</p>
+<p>终端软件从现代计算机诞生以来就存在了，在 GUI 图形化软件被发明以前，终端几乎是人和计算机交互的唯一方式。一直到今天，每个人的电脑里面默认都会自带一款终端软件，这足以说明终端的重要性。但是，如今的终端就像开头提到的一样，其实陷入了某种困境。</p>
+<ul>
+<li><strong>操作系统开发商没有足够动力去优化内置的终端软件</strong>。系统内置的终端只保证能用，却不保证好用。因为终端的受众主要是工程师，其他人群几乎用不上，而工程师在所有用户中占比太小，不值得操作系统厂商花额外的成本去给你提供一个更好的终端软件。（最近几年微软良心发现，开发了新的 <a href="https://github.com/microsoft/terminal">Windows Terminal</a>，值得称赞）</li>
+<li><strong>社区开发的终端软件难以盈利</strong>。因为操作系统默认提供了一个免费能用的终端，大家都习惯了终端软件就应该是免费的，所以就算社区提供了更好的终端替代品，却依然难以商业化。正是因为难以盈利，就会有越少的开发者去开发更好的终端。为什么我们能看到很多付费的 Git GUI 软件，却很少发现付费的终端软件？我想这就是可能原因之一。</li>
+<li><strong>痛点一直有，但解决方案太分散，门槛较高</strong>。系统自带的终端软件有非常多的槽点，社区针对不同的痛点诞生了不同的工具来解决。默认的 bash 不好用，于是诞生了 zsh 和 fish；zsh 默认的配置太繁琐，UI 不好看，于是诞生了傻瓜式的 <a href="https://ohmyz.sh">oh-my-zsh</a>；终端的 session 不能保存，不能共享，于是有了 <a href="https://github.com/tmux/tmux">tmux</a>；终端命令行提示不够友好，不够智能，于是有了 <a href="https://fig.io">Fig</a> 。总的来说，虽然每个痛点都有对应的解决方案，但是最大的问题是真的很分散，而且有些方案门槛比较高，比如 tmux。</li>
+<li><strong>懒惰是天性，能用就行</strong>。我们不得不承认，我们都很懒。绝大多数人都不会花额外的时间去学习掌握这些工具，大都数人的选择是妥协，能用就行。</li>
+</ul>
+<p>以上种种，让<strong>终端软件一直处在他的困境之中，以至于在几十年时间里，创新乏善可陈，用户安于现状，无人愿意打破僵局</strong>。直到 Warp 的出现，这一状况似乎有了新的变局。</p>
+<h2 id="warp" class="flex group">
+    <span>Warp</span>
+    <a href="#warp" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="https://2d2d.io/static/s2/3/warp.png" alt="" loading="lazy"></p>
+<p>Warp 是一家创立于 2020 年的公司，创始人兼 CEO Zach Lloyd 是前 Google 资深工程师，Google Docs / Sheets 的 tech leader，离开 Google 后他有两次创业经验。之所以创立 Warp 是因为他看到了终端软件的这一困境，40 多年来几乎没有太大创新，于是决定以创业的形式打造一款全新的终端。</p>
+<div class="url-preview">
+ <div>Introducing Warp: The Terminal for the 21st Century | Warp</div>
+ <div>Today, I’m proud to officially introduce Warp, a from-first-principles reinvention of the terminal to make it work better for developers and teams.</div>
+ <a href="https://www.warp.dev/blog/introducing-warp">https://www.warp.dev/blog/introducing-warp</a>
+</div>
+<p>笔者初步体验了一下 Warp，整体来说真的很不错，有不少细节值得称赞。下面重点介绍其中的几项：</p>
+<h3 id="block" class="flex group">
+    <span>Block</span>
+    <a href="#block" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p>Block 真的是 Warp 的一个很不错的创新。在 Warp 里面，每一次命令的输入输出都是一个 Block。不像传统的终端，所有命令和输出都混在一起，肉眼很难区分相邻两条命令的内容，也不方便往上查找之前的命令。Warp 的 Block 很好的解决了这个问题。</p>
+<p><img src="https://2d2d.io/static/s2/3/warp-block.png" alt="" loading="lazy"></p>
+<p>而且 Block 提供了很多非常实用的功能，比如它把 Copy 功能划分特别细，你可以选择 <em>Copy command, output, prompt, Working Directory</em> 等等，还可以把当前 block 以链接的形式分享出去。<em>Find Within Block</em> 也是一个非常棒的功能！</p>
+<h3 id="workflow" class="flex group">
+    <span>Workflow</span>
+    <a href="#workflow" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p>Warp 提供了一个 Workflow 的功能，简单来说就是把常用的命令创建成模板，使用的时候把参数替换一下就可以了。Warp 还专门搞了一个 <a href="https://commands.dev">commands.dev</a> 的站点，每个人都可以制作和分享自己的 Workflow。</p>
+<blockquote>
+<p>Warp 还提供了一个 AI 功能，可以用自然语言描述一下你要做的事情，Warp 会生成相应的命令。（应该也是使用了 OpenAI 的 API）</p>
+</blockquote>
+<p><img src="https://2d2d.io/static/s2/3/warp-workflow.png" alt="" loading="lazy"></p>
+<h3 id="进阶版 fig" class="flex group">
+    <span>进阶版 Fig</span>
+    <a href="#进阶版 fig" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p>Fig 是这两年来笔者看到的终端软件领域最大创新的产品之一，他有很不错的命令行提示，支持各大主流终端软件，其中尚未发布的 <strong>App Ecosystem for Terminal</strong> 更是让笔者眼前一亮，非常惊艳！</p>
+<p><video preload="auto" style="margin-top:1.75rem;max-width:976px;border-radius:0.5rem" width="100%" autoplay="" controls="" loop="" muted="" playsinline=""><source src="/static/s2/3/fig-video.mp4" type="video/mp4">Sorry, your browser doesn’t support embedded videos.</video></p>
+<p>而 Warp 确实是有借鉴了 Fig 的功能，他的命令行补全直接使用了 Fig 的 <a href="https://github.com/withfig/autocomplete">completion specs</a>，不过因为 Warp 本身是一个终端，他把命令行补全体验做得比 Fig 更好，更极致。上图 Fig 的 <strong>App Ecosystem</strong> 我想 Warp 肯定也会做，甚至会做得更方便。</p>
+<blockquote>
+<p>因为 Fig 不是终端，只是一个终端辅助软件，每次都需要输入 <code>fig</code> 命令才能使用 <strong>App Ecosystem</strong> 的功能，Warp 或许能做到更极致。未来 Warp 收购 Fig 也不是不可能的事情。</p>
+</blockquote>
+<h3 id="团队协作" class="flex group">
+    <span>团队协作</span>
+    <a href="#团队协作" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<p>过去的终端软件自始至终都是一个单人使用的本地软件，最近几年很多工具都有了团队协作功能，那么<strong>终端软件也需要团队协作吗？Warp 的 CEO 认为是的</strong>：<em>Every productivity application is more powerful when it’s collaborative. I’m confident that the terminal is no exception.</em> 他还提到终端的团队协作不仅仅是 Google Docs, Figma 那种实时协作，还有异步协作，比如共享终端、命令行、设置、历史记录等等方式。目前团队协作功能还未发布，笔者也未曾体验到，所以我们只能拭目以待了。</p>
+<p><img src="https://2d2d.io/static/s2/3/warp-collaboration.png" alt="" loading="lazy"></p>
+<h3 id="其他特点" class="flex group">
+    <span>其他特点</span>
+    <a href="#其他特点" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h3>
+<ul>
+<li><strong>现代化的设计</strong>。Warp 整体设计充满现代感，UI 颜值也不错，毕竟他们专门有一个 Founding Designer.</li>
+<li><strong>开箱即用</strong>。Warp CEO 之前写了一篇博客，讲到他们的 <a href="https://www.warp.dev/blog/how-we-design-warp-our-product-philosophy">8 条产品准则</a>，其中包括 <code>backwards compatible</code> 和 <code>out-of-the-box</code>。笔者在初次使用过程中也确实体会到了这一点，不需要额外繁琐的配置，就能跟我之前使用的终端习惯非常接近，毫无违和感。</li>
+<li><strong>高性能</strong>。Warp 最初的原型是使用 Electron 开发，但因为性能太糟糕，所以转用了 Rust 开发 + GPU 渲染。关于具体的 Warp 技术栈官方写了一篇 <a href="https://www.warp.dev/blog/how-warp-works">How Warp Works</a> 的文章，感兴趣可以自行了解。</li>
+</ul>
+<h2 id="商业模式" class="flex group">
+    <span>商业模式</span>
+    <a href="#商业模式" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p>Warp 在他们的 <a href="https://www.warp.dev/faq">FAQ</a> 中提到了他们的商业模式：<strong>对个人免费，团队协作功能需要付费</strong>。这个模式也是目前主流 SaaS 软件的盈利模式，在过去各大 SaaS 公司得到了很好的验证。笔者认为，Warp 选择这个模式是非常适合的。我们前面讲到，个人需付费的终端是很难让用户买单的，所以不能针对个人用户收费。其次，终端在开发者领域是一个受众非常广的软件，他的用户基数会非常大，企业内的工程师必不可少的会用到 Warp。<strong>至于 Warp 后期企业付费客户能做到多大，ARR 营收能达到多少，就要看他提供的团队协作功能是不是真正能解决能企业内的需求了。</strong></p>
+<h2 id="融资情况" class="flex group">
+    <span>融资情况</span>
+    <a href="#融资情况" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p><img src="https://2d2d.io/static/s2/3/warp-cover.jpg" alt="" loading="lazy"></p>
+<p>Warp 目前总共获得了两轮融资，分别是 2021 年 1 月，GV (Google Ventures) 领投的种子轮 600 万美金。最新一轮是 2022 年 4 月 5 号 1700 万美金 A 轮，主要是科技圈几位知名人物的个人投资，其中包括 Figma 的创始人及 CEO <a href="https://www.linkedin.com/in/dylanfield/">Dylan Field</a> (A 轮领投)，AirBnB、Pinterest、Stripe 和 Square 的早期投资人 <a href="https://www.linkedin.com/in/eladgil/">Elad Gil</a>，LinkedIn 执行董事长兼前 CEO <a href="https://www.linkedin.com/in/jeffweiner08/">Jeff Weiner</a>，还有 Salesforce 创始人兼 CEO <a href="https://www.linkedin.com/in/marcbenioff/">Marc Benioff</a>。</p>
+<div class="url-preview">
+ <div>Dylan Field: Why I'm Leading Warp's Series A</div>
+ <div>I’m ecstatic to lead Warp’s Series A round. This is my first time leading a round like this; I’m very grateful for the opportunity to support a company that I believe will open up our industry and bring more collaboration to software engineering.</div>
+ <a href="https://www.linkedin.com/pulse/why-im-leading-warps-series-dylan-field">https://www.linkedin.com/pulse/why-im-leading-warps-series-dylan-field</a>
+</div>
+<p>两轮融资总共 2300 万美金，对于一个偏工具类产品来说确实是非常可观。资本可不是慈善，两笔融资或许跟 Warp 创始人个人人脉有关，但更重要的是 Warp 的产品实力和他们的愿景能让资本买单。终端软件过去几十年的一成不变，的确需要一场革新。这场革新或许将由 Warp 来书写，资本便是这场革新的催化剂。</p>
+<h2 id="总结" class="flex group">
+    <span>总结</span>
+    <a href="#总结" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
+        <div class="w-6 h-6 text-slate-400 ring-1 ring-slate-900/5 rounded-md shadow-sm flex items-center justify-center hover:ring-slate-900/10 hover:shadow hover:text-slate-700">
+            <svg width="12" height="12" fill="none" aria-hidden="true">
+                <path d="M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            </svg>
+        </div>
+    </a>
+</h2>
+<p>Warp 的这笔融资最近在国内也吸引了不少开发者的注意，大家都会诧异为什么“老掉牙”的终端软件还能获得如此大笔融资？我们很少去思考过为什么终端软件会“老掉牙”？他是不是就该“老掉牙”？这也给笔者一个小小的启发：<code>往往被大多数人所忽略的场景，正好是非常好的创新之处。</code>另一方面，这件事或许会让国内的资本更多的关注到开发者赛道，或许也能激发更多开发者领域的创新者诞生。最后引用张浩东在另一篇 Warp 文章结尾写的一段话：</p>
+<blockquote>
+<p>Warp 给我的感触最深的不是它的功能有多丰富强大，也不是它巨大的商业价值，而是，它很可能标志着国外软件现代化革命浪潮的开始。我们中国能赶上这一波吗？</p>
+<p>山形海岸已变迁，云垒故道俱为烟。吾辈登临应有意，敢为李杜续新篇。</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>本文最初由 <a href="https://github.com/zhanghandong">张汉东</a> 投稿，后由笔者从另外一个角度重新编写。标题中<code>终端的困境</code>受张汉东的文章所启发，在此再次感谢张汉东，也强烈推荐阅读他的文章。</p>
+</blockquote>
+<div class="url-preview">
+ <div>TO-D 观察｜小小的终端何以撬动千万美元资本</div>
+ <div>这篇文章不是为了宣传 Warp，而是我本人想探索 Warp 融资 2300 w 美元背后的价值。</div>
+ <a href="https://mp.weixin.qq.com/s/KOVqdCnf73ptg8dmLYf5Aw">https://mp.weixin.qq.com/s/KOVqdCnf73ptg8dmLYf5Aw</a>
+</div>
+
+
+        </article>
+    <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
+        <div class="flex flex-col md:flex-row">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s2/yc-w22">
+                    上一篇：
+                    YC 2022 冬季营 DevTools 公司一览
+                </a>
+            </div>
+    </div>
+</main>
+
+    <footer class="relative">
+        <div class="bg-neutral-900 p-10 pt-20 text-slate-300 translate-y-[-8rem]">
+    <div class="flex justify-center mb-28 top-16 font-bold">
+        <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
+            <span class="text-main bg-primary p-4">订阅方式：</span>
+            <span class="px-2 md:px-4">
+                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
+            </span>
+        </div>
+    </div>
+    <div class="container mx-auto flex flex-col sm:flex-row">
+        <div class="text-sm max-w-sm">
+            <div class="bg-primary w-12 h-5 my-4"></div>
+            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <div class="py-6">
+                专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:justify-around grow">
+            <div class="pt-12 sm:pt-0">
+                <div class="bg-primary w-5 h-5 my-4"></div>
+                <div class="text-xl font-bold mb-4">责任编辑</div>
+                <a class="my-2 block hover:underline" href="https://folyd.com">@Folyd</a>
+            </div>
+            <div class="pt-12 sm:pt-0">
+                <div class="bg-primary w-5 h-5 my-4"></div>
+                <div class="text-xl font-bold mb-4">更多</div>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
+                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-36 bg-neutral-900">
+    <div class="text-xs text-slate-400 text-center mt-12">
+        Copyright © 2022 TO-D 杂志
+    </div>
+</div>
+<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PFMPLGGJHQ');
+</script>
+            <a href="https://github.com/zineland" 
+           class="absolute z-20 bottom-0 w-full text-center font-bold
+                  md:text-slate-100 md:opacity-10 md:hover:opacity-50 md:bg-transparent
+                  bg-primary p-2 text-main">
+            Proudly powered by Zine.
+        </a>
+        </div>
+    </footer>
+</body>
+<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
+<script src="https://2d2d.io/static/zine.js"></script>
+</html>
+
