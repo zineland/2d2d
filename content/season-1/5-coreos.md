@@ -54,7 +54,7 @@ CoreOS 的产品非常具有前瞻性，在早期都没多少人知道容器、K
 
 ## 被收购
 
-2014 年 RedHat 看到了 CoreOS 的崛起，推出了对标 CoreOS 的项目 - [Atomic](https://projectatomic.io/)。同时，RedHat 的另一款商业产品 OpenShift 跟 CoreOS 的 Tectonic 也存在非常大的竞争关系。经过几年的相爱相杀，RedHat 和 CoreOS 达成共识。**2018 年 1 月 30 号，RedHat 以 25 亿美金的价格全资收购 CoreOS（*当时 CoreOS 的员工才 130 人*）。** 收购后，CoreOS 的 Container Linux 和 Atomic 合并进 Red Hat Enterprise Linux，CoreOS 的 Tectonic 合入 OpenShift，Quay.io 则作为 RedHat 的子产品继续存在。
+2014 年 RedHat 看到了 CoreOS 的崛起，推出了对标 CoreOS 的项目 - [Atomic](https://projectatomic.io/)。同时，RedHat 的另一款商业产品 OpenShift 跟 CoreOS 的 Tectonic 也存在非常大的竞争关系。经过几年的相爱相杀，RedHat 和 CoreOS 达成共识。**2018 年 1 月 30 号，RedHat 以 2.5 亿美金的价格全资收购 CoreOS（*当时 CoreOS 的员工才 130 人*）。** 收购后，CoreOS 的 Container Linux 和 Atomic 合并进 Red Hat Enterprise Linux，CoreOS 的 Tectonic 合入 OpenShift，Quay.io 则作为 RedHat 的子产品继续存在。
 
 ```urlpreview
 https://www.redhat.com/en/blog/faq-red-hat-acquire-coreos
