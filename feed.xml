@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>TO-D 杂志</title>
     <subtitle>专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。</subtitle>
-    <updated>2022-04-10T13:05:31.076287563+00:00</updated>
+    <updated>2022-04-13T13:13:47.737145609+00:00</updated>
     <id>https://2d2d.io</id>
     <link href="https://2d2d.io/feed.xml" rel="self" type="application/atom+xml" />
     <link href="https://2d2d.io" rel="alternate" type="text/html" />
@@ -1574,7 +1574,7 @@
         </div>
     </a>
 </h2>
-<p>2014 年 RedHat 看到了 CoreOS 的崛起，推出了对标 CoreOS 的项目 - <a href="https://projectatomic.io/">Atomic</a>。同时，RedHat 的另一款商业产品 OpenShift 跟 CoreOS 的 Tectonic 也存在非常大的竞争关系。经过几年的相爱相杀，RedHat 和 CoreOS 达成共识。<strong>2018 年 1 月 30 号，RedHat 以 25 亿美金的价格全资收购 CoreOS（<em>当时 CoreOS 的员工才 130 人</em>）。</strong> 收购后，CoreOS 的 Container Linux 和 Atomic 合并进 Red Hat Enterprise Linux，CoreOS 的 Tectonic 合入 OpenShift，Quay.io 则作为 RedHat 的子产品继续存在。</p>
+<p>2014 年 RedHat 看到了 CoreOS 的崛起，推出了对标 CoreOS 的项目 - <a href="https://projectatomic.io/">Atomic</a>。同时，RedHat 的另一款商业产品 OpenShift 跟 CoreOS 的 Tectonic 也存在非常大的竞争关系。经过几年的相爱相杀，RedHat 和 CoreOS 达成共识。<strong>2018 年 1 月 30 号，RedHat 以 2.5 亿美金的价格全资收购 CoreOS（<em>当时 CoreOS 的员工才 130 人</em>）。</strong> 收购后，CoreOS 的 Container Linux 和 Atomic 合并进 Red Hat Enterprise Linux，CoreOS 的 Tectonic 合入 OpenShift，Quay.io 则作为 RedHat 的子产品继续存在。</p>
 <div class="url-preview">
  <div>FAQ: Red Hat to acquire CoreOS</div>
  <div>What is being announced?On Jan. 30, 2018, Red Hat announced that it has signed a definitive agreement to acquire CoreOS, Inc. The acquisition is subject to certain customary closing conditions.Q. </div>
