@@ -2,7 +2,7 @@
 # 读者好评
 
 <div class="prose lead">
-很高兴 《TO-D 杂志》受到了大家的喜欢，这里例举了部分读者的好评。如果你也想发表点评，欢迎<a href="https://github.com/zineland/2d2d/blob/main/pages/testimonial.md">在这里提 PR</a>，再次感谢大家！
+很高兴 《TO-D 杂志》受到了大家的喜欢，这里例举了部分读者的好评。如果你也想发表点评，欢迎<a href="https://github.com/zineland/2d2d/blob/main/pages/review.md">在这里提 PR</a>，再次感谢大家！
 </div>
 
 ### 杜頔康
