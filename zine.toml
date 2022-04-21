@@ -23,11 +23,11 @@ footer-template = "templates/footer.html"
 slug = "s1"
 number = 1
 title = "第一季"
-path = "content/season-1"
-intro = "content/season-1/intro.md"
+path = "content/issue-1"
+intro = "content/issue-1/intro.md"
 
 [[issue]]
 slug = "s2"
 number = 2
 title = "第二季"
-path = "content/season-2"
+path = "content/issue-2"
