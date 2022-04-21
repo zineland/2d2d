@@ -9,7 +9,7 @@ menu = [
   { name = "博客", url = "/blog" },
   { name = "读者好评", url = "/review" },
   { name = "赞助", url = "/sponsor" },
-  { name = "Github", url = "https://github.com/zineland/2d2d" },
+  { name = "GitHub", url = "https://github.com/zineland/2d2d" },
 ]
 
 [authors]
@@ -22,7 +22,7 @@ folyd = { avatar = "/static/avatar/folyd.jpg", editor = true, bio = """
 
 可以通过如下方式联系到我：
 - [博客](https://folyd.com)
-- [Github](https://github.com/folyd)
+- [GitHub](https://github.com/folyd)
 - [Twitter](https://twitter.com/_hisriver)
 - [Telegram](https://t.me/hisriver)
 """ }
@@ -35,7 +35,7 @@ bytebase.com 首席涂鸦官
 > 申明：个人文章代表不了公司观点。
 
 可以通过如下方式联系到我：
-- [Github](https://github.com/tianzhou)
+- [GitHub](https://github.com/tianzhou)
 - [Twitter](https://twitter.com/tianzhouchen)
 """ }
 
