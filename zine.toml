@@ -19,14 +19,14 @@ link-color = "#e07312"
 background-image = "/static/pattern.svg"
 footer-template = "templates/footer.html"
 
-[[season]]
+[[issue]]
 slug = "s1"
 number = 1
 title = "第一季"
 path = "content/season-1"
 intro = "content/season-1/intro.md"
 
-[[season]]
+[[issue]]
 slug = "s2"
 number = 2
 title = "第二季"
