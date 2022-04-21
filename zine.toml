@@ -27,6 +27,19 @@ folyd = { avatar = "/static/avatar/folyd.jpg", editor = true, bio = """
 - [Telegram](https://t.me/hisriver)
 """ }
 
+tianzhou = { avatar = "/static/avatar/tianzhou.jpg", editor = false, bio = """
+<p class="text-center">
+bytebase.com 首席涂鸦官
+</p>
+
+> 申明：个人文章代表不了公司观点。
+
+可以通过如下方式联系到我：
+- [Github](https://github.com/tianzhou)
+- [Twitter](https://twitter.com/tianzhouchen)
+""" }
+
+
 [theme]
 primary-color = "#ffb52f"
 main-color = "#000"
