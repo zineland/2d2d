@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s1/9/mirantis.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s1/9/mirantis.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -33,15 +33,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -55,7 +55,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s1">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s1">
             <div class="relative text-main px-4">第一季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨9⁩ 篇</span>
@@ -63,15 +64,16 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">收购 Docker 企业业务的 Mirantis 是什么来路？</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2022-02-25</span>
-            <span class="absolute right-2">Folyd</span>
+            <span>Folyd</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
         <p>2019 年 11 月，Docker 公司出售了自己的 Docker Enterprise 业务和整个 300 人的团队，出人意料的是购买方是一家似乎名不见经传的公司 Mirantis。相信绝大多数人（包括笔者本人）之前并未听闻过Mirantis，这家公司是个什么来路？为什么他能收购 Docker 的企业业务？收购之后这家公司目前发展得如何？</p>
 <p>
-  <img class="mx-auto" style="height: 280px;" src="https://2d2d.io/static/s1/9/mirantis-light.png" />
+  <img class="mx-auto" style="height: 280px;" src="/static/s1/9/mirantis-light.png"/>
 </p>
 <h3 id="外包公司能有什么出息？" class="flex group">
     <span>外包公司能有什么出息？</span>
@@ -104,7 +106,7 @@
 <p>Mirantis 在<a href="http://web.archive.org/web/20130916010432/http://www.mirantis.com/company/press-release/mirantis-receives-10-million-from-intel-capital-westsummit-capital-and-dell-ventures-to-accelerate-its-openstack-game/">官方博客</a>中也提到之所以接受华山资本的投资是<strong>因为<a href="http://OpenStack.org">openstack.org</a>访问量最大的国家是中国， 中国拥有世界上最大的云部署和 OpenStack 需求</strong>，华山资本可以帮助 Mirantis 在中国更好的拓展市场和客户。</p>
 </blockquote>
 <p>在资本的支持下，<strong>Mirantis 发行了自己的商业化 OpenStack 发行版，也成为了全球顶尖的 OpenStack 服务提供商。在 OpenStack 贡献方面，当时的 Mirantis 很长时间一直都能排前三。</strong></p>
-<p><img src="https://2d2d.io/static/s1/9/openstack-rank.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/9/openstack-rank.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>OpenStack Kilo 版本按 commit 数排名，Mirantis 排名第三 (扇图中最大的绿色部分为其他公司的总和)。数据来源于 Mirantis 维护的网站：<a href="https://www.stackalytics.com">https://www.stackalytics.com</a></p>
 <p>OpenStack 的版本命名和 Android 类似，从字母 A 开始命名，每一个版本换一个字母，截止到目前最新的版本是 Wallaby。</p>
@@ -130,7 +132,7 @@
 <li>OpenStack 在公有云上无法和 AWS、Azure 等厂商的自有技术抗衡，在私有云上也无法威胁到 VMware。</li>
 <li><strong>Kubernetes 的崛起给 OpenStack 着实带来了很大挑战和冲击。</strong></li>
 </ul>
-<p><img src="https://2d2d.io/static/s1/9/openstack-maillist.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/9/openstack-maillist.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>OpenStack邮件列表数量统计图，来源：https://openstack.markmail.org。</p>
 </blockquote>
@@ -162,7 +164,7 @@
 </li>
 <li>
 <p>2017 年 4 月，Mirantis <a href="https://www.zdnet.com/article/mirantis-enters-the-kubernetes-game-and-ups-its-openstack-play/">发布</a>了一款 OpenStack 和 Kubernetes 的结合产品：Mirantis Cloud Platform (MCP)，这款产品至今依然存在，只是改名叫了 <a href="https://www.mirantis.com/software/mirantis-openstack-for-kubernetes/">Mirantis OpenStack for Kubernetes</a>。</p>
-<p><img src="https://2d2d.io/static/s1/9/mcp.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/9/mcp.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>MCP 里面包含两款子产品: </p>
 <ul>
@@ -179,7 +181,7 @@
 </li>
 </ul>
 <p><strong>到了 2019 年底，Mirantis 终于迎来了他的高光时刻：收购 Docker 的 Enterprise 业务。这部分业务几乎在 Docker 公司所有业务中占比 90%，其他还包括所有相关的知识产权、约 400 名 Docker 员工中的 300 名、750 名企业客户以及所有企业合作伙伴关系。</strong></p>
-<p><img src="https://2d2d.io/static/s1/9/docker-enterprise.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/9/docker-enterprise.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>曾经 Docker <a href="https://web.archive.org/web/20191106112336/https://www.docker.com/">公司官网</a>的 Docker Enterprise 和 Docker Enterprise Solutions 板块。</p>
 </blockquote>
@@ -212,7 +214,7 @@
 <blockquote>
 <p>Lens 的桌面版 IDE 是开源免费的，但是它提供的团队协作功能 (<a href="https://k8slens.dev/spaces.html">Lens Space</a>) 则需要订阅付费。</p>
 </blockquote>
-<p><img src="https://2d2d.io/static/s1/9/lens.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/9/lens.png" alt="" loading="lazy"></p>
 </li>
 <li>
 <p><a href="https://www.mirantis.com/software/lens/devopscare/">DevOpsCare</a> - Lens 团队被收购后和 Mirantis 一起搞的适用于任何 Kubernetes 环境的 CI / CD 产品。</p>
@@ -234,7 +236,7 @@
 <p>Mirantis 从外包起家，到及时拥抱 OpenStack，到迅速转型 Kubernetes，每一步似乎都踩得恰到好处。如今 Mirantis 不断推陈出新，影响力越来越大，相信他会不断开创他自己的美好未来！</p>
 <blockquote>
 <p>就在笔者调研 Mirantis 的期间，俄罗斯 2 月 24 号从乌克兰第二大城市 Kharkiv (哈尔科夫) 对乌克兰发动军事行动，俄乌局势急转直下。而刚好 Mirantis 的创始人是俄罗斯人，他们在 Kharkiv 有办公室，而且一直在招人。我们只能祝愿一切安好！</p>
-<p><img src="https://2d2d.io/static/s1/9/kharkiv.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/9/kharkiv.png" alt="" loading="lazy"></p>
 <p>后续：在这篇文章发表当天，Mirantis 在官方博客对乌克兰危机<a href="https://www.mirantis.com/blog/mirantis-response-to-ukraine-crisis/">做出了回应</a>。Mirantis 说乌克兰的 86 名员工目前都安全；因为俄罗斯受到各方面制裁，俄罗斯团队也在紧急制定措施应对制裁，减少对客户的影响。</p>
 </blockquote>
 
@@ -242,11 +244,13 @@
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/mesos">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/mesos">
                     上一篇：
                     曾经 Mesos 背后的公司，如今在干嘛?
                 </a>
-            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/why">
+            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/why">
                     下一篇：
                     为什么要写《TO-D 杂志》？
                 </a>
@@ -260,7 +264,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -268,7 +272,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -282,10 +286,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -296,7 +300,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -316,7 +320,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 

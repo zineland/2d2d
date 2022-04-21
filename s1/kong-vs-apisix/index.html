@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s1/4/vs.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s1/4/vs.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -33,15 +33,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -55,7 +55,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s1">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s1">
             <div class="relative text-main px-4">第一季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨4⁩ 篇</span>
@@ -63,14 +64,15 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">云原生时代的中外 API 网关之争</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2022-01-13</span>
-            <span class="absolute right-2">Folyd</span>
+            <span>Folyd</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
         <p>API 网关是企业应用的关键基础组件和流量入口，<strong>目前绝大部分 API 网关市场份额都被几大公有云厂商占据</strong>（AWS API Gateway, Google Apigee, 阿里云 API 网关等）。但是公有云厂商的 API 网关不符合 CNCF 的云原生理念，如果你用了阿里云的 API 网关，你就会被被它锁定了，因为网关是流量的入口，你没有办法分发到其它云厂商上。CNCF 全景图的 API Gateway 分类下有数十款产品，但并不包含公有云厂商的那些。</p>
-<p><img src="https://2d2d.io/static/s1//4/api-gateway.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1//4/api-gateway.png" alt="" loading="lazy"></p>
 <p>上图中有一半是大厂的产品，比如 3Scale 是 RedHat 的，Akana 是 Perforce 的闭源商业化产品，MuleSoft 是老牌软件厂商，2018 年被 Salesforce 收购。值得注意的是，来自中国的有四款产品，分别是（按字母序）:</p>
 <ul>
 <li><a href="http://apioak.com/">Apioak</a> - 国内的开源项目，背后似乎并没有商业化公司。</li>
@@ -108,7 +110,7 @@
 <p><a href="https://insomnia.rest/">Insomnia</a> - Kong 于 2019 年从一位独立开发者那里<a href="https://konghq.com/blog/kong-acquires-insomnia/">收购</a>的开源 API 调式、测试产品，类似于 Postman。</p>
 <blockquote>
 <p>笔者于 2017 年在 IndieHackers 上和 Insomnia 的作者有过关于他的产品名字的交流。作者回复 Insomnia 的产品名是一个双关语。Insomnia 是失眠的意思，而失眠需要休息 (rest)，而 Insomnia 就是一款 REST API 调试工具，域名也是 <a href="https://insomnia.rest">https://insomnia.rest</a>.</p>
-<p><img src="https://2d2d.io/static/s1//4/insomnia.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1//4/insomnia.png" alt="" loading="lazy"></p>
 </blockquote>
 </li>
 </ul>
@@ -141,7 +143,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s1/4/vs-lite.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/4/vs-lite.png" alt="" loading="lazy"></p>
 <p><strong>Kong 和支流科技有很多相似的地方，在这场市场较量中也体现着中美两种开源商业化公司的差异。</strong></p>
 <p><strong>相似点：</strong></p>
 <ul>
@@ -161,11 +163,13 @@
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/hashicorp">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/hashicorp">
                     上一篇：
                     时势造英雄-HashiCorp
                 </a>
-            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/coreos">
+            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/coreos">
                     下一篇：
                     云原生的一代传奇 CoreOS
                 </a>
@@ -179,7 +183,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -187,7 +191,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -201,10 +205,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -215,7 +219,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -235,7 +239,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 

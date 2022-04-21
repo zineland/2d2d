@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s2/2/yc-w22.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s2/2/yc-w22.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -33,15 +33,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -55,7 +55,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s2">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s2">
             <div class="relative text-main px-4">第二季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨2⁩ 篇</span>
@@ -63,9 +64,10 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">YC 2022 冬季营 DevTools 公司一览</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2022-04-06</span>
-            <span class="absolute right-2">Tianzhou</span>
+            <span>Tianzhou</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
@@ -100,7 +102,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/botcity.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/botcity.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://botcity.dev">https://botcity.dev</a></p>
 <p>BotCity 是一家成立于巴西，对标 <a href="https://www.uipath.com">UiPath</a> 的 RPA 软件公司，官方的简介是 <code>UiPath for developers</code>。他的亮点是结合了计算机视觉来识别用户 UI 操作交互，帮助用户自动生成 RPA 代码。
 和 Excel 的宏录制 (Macro Recorder) 也比较像，不过借助于 Computer Vision，就可以做一个更加通用的方案。</p>
@@ -117,7 +119,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/brainboard.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/brainboard.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://www.brainboard.co">https://www.brainboard.co</a></p>
 <p>Brainboard 是一家成立于法国的公司。鉴于 HashiCorp 的 Terraform 已经成为了多云部署的业界标准，但手动编写 Terraform 文件也算是一个比较繁琐的过程。Brainboard 的产品则完全是基于 Terraform，他们提供一个可视化设计 Cloud Infra 的平台，然后把设计好的架构图自动生成 Terraform 文件（术语叫 reverse terraform）。这种方式类似于 Design-to-Code，从 Figma 生成 React 代码。但在 infra 领域，反 Terraform 的思路笔者持保留态度。或许聚焦在基于 Terraform 文件做可视化展示的切入会更好一些，类似于可视化展示网络拓扑，数据库 Schema。</p>
 <blockquote>
@@ -133,7 +135,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/cogram.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/cogram.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://cogram.com">https://cogram.com</a></p>
 <p>Cogram 是一家硅谷创业公司，他们的产品是可以让用户使用自然语言来生成 SQL。这个挺有用的，因为有些复杂的 SQL 语句，即使让熟悉 SQL 的工程师，数据分析师来写也是挺困难的。</p>
 <p>Cogram 也让笔者联想到了 AppleScript，差别在于前者是 AI based，而后者是 rule based，这就是时代的演进吧。</p>
@@ -150,7 +152,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/convoy.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/convoy.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://getconvoy.io">https://getconvoy.io</a></p>
 <p>Convoy 是一家诞生于尼日利亚的初创公司，他们做的是一个 Webhook-as-a-Service 的产品，这是最近业界涌现出来的一个新品类，之前还看到过一家 <a href="https://hookdeck.com">hookdeck</a> 在做类似的事情。这块随着 Webhook 成为应用间对接的事实标准，也就成为了应用开发的刚需。Convoy 的特点在于开源，是 Golang + VueJS 的技术栈。笔者觉得在 API 赛道相对拥挤的情况下，Webhook infra 是一个更好的切入点。整个业界这块还没有约定俗成的方案，因为 Convoy 有开源的优势，值得后期关注。就像 Convoy 自己所言：</p>
 <blockquote>
@@ -166,7 +168,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/growthbook.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/growthbook.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://www.growthbook.io">https://www.growthbook.io</a></p>
 <p>GrowthBook 是一家做开源的 Feature Flag, A/B 测试解决方案的公司。Feature Flag 和 A/B 测试也是研发工具链里的重要一环，业界商业化比较成熟的有 <a href="https://launchdarkly.com/">LaunchDarkly</a>, <a href="https://www.split.io/">Split</a>。而开源方案里，比较早做的是 <a href="https://www.getunleash.io/">unleash</a> (也是 GitLab 内置的方案)，也有后起之秀 <a href="https://flagsmith.com/">Flagsmith</a>。国内也有 <a href="https://www.feature-flags.co/">敏捷开关</a> 正在做这块。</p>
 <h2 id="hydra" class="flex group">
@@ -179,7 +181,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/hydra.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/hydra.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://hydras.io">https://hydras.io</a></p>
 <p>Hydra 是硅谷一家基于 PostgreSQL 做数仓的公司。通过 PostgreSQL 访问 OLAP 数据库，目前只支持 Snowflake。实现方式是自己实现了一个 PostgreSQL extension (这点和 <a href="https://timescale.com">TimescaleDB</a> 类似），而不是采用了 PostgreSQL FDW (Foreign Data Wrapper)，根据 <a href="https://news.ycombinator.com/item?id=30443033">CTO 的说法</a>，主要是 FDW 仍然不能很好地支持计算下推 (push down)，导致稍微复杂一点的 query 执行效率不行。Hydra 也提供了 HTAP 实现的另一种思路，把 OLAP 外包给了其他专门的 AP 系统。当然这也需要数据库本身扩展性足够才行，目前市面上也只有 PostgreSQL 可以了。</p>
 <blockquote>
@@ -200,7 +202,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/nimbus.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/nimbus.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://www.usenimbus.com">https://www.usenimbus.com</a></p>
 <p>Nimbus 是一家成立于硅谷的初创公司，他们的产品是云端开发环境，这是一个国人主导的团队（编者注：他们的一位联合创始人是华人，前 TikTok 北美员工）。云端研发喊了很久了，业界做的比较早的有 Gitpod，后来又有 GitHub Codespaces，最近也看到几家新公司在做。</p>
 <p>可用云端开发环境的难点在于：</p>
@@ -220,7 +222,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/realitydefender.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/realitydefender.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://www.realitydefender.ai">https://www.realitydefender.ai</a></p>
 <p>随着 AI 技术的快速发展，互联网上也不断涌现出了很多通过深度学习等技术合成的虚假内容，比如虚假图片、虚假视频、虚假音频等等，这些被统称为 Deep fake。Deep fake 的可怕之处是人很难辨别这些内容的真实性。Reality Defender 这家公司就是专门来识别这些 Deep fake 的。Reality Defender 最初是由 Microsoft 和 <a href="https://aifoundation.com">AI Foundation</a> 孵化的项目。</p>
 <h2 id="requestly" class="flex group">
@@ -233,7 +235,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/requestly.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/requestly.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://requestly.io">https://requestly.io</a></p>
 <p>Requestly 是一款可以用来修改 HTTP 请求，mock 回复，模拟各种异常，测试应用的产品。看到这个介绍，相信有些同学就会想到 Postman，巧合的是这家公司也来自印度，也是从 Chrome 插件入手。</p>
 <h2 id="shaped" class="flex group">
@@ -246,7 +248,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/shaped.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/shaped.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://www.shaped.ai">https://www.shaped.ai</a></p>
 <p>Shaped 是一家提供 AI 推荐算法的初创公司，成立于纽约，据介绍团队初始成员来源于 Facebook 推荐团队。把内容作为输入，内容排序作为输出，等于是给公司打造了一支抖音推荐算法团队。</p>
 <h2 id="vessel" class="flex group">
@@ -259,7 +261,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/2/vessel.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/2/vessel.png" alt="" loading="lazy"></p>
 <p>官网：<a href="https://www.vessel.land">https://www.vessel.land</a></p>
 <p>Vessel 是一家成立于美国加州的初创公司，他们提供了一套统一的 API 来打通不同 CRM 工具之间的数据。</p>
 <h2 id="总结" class="flex group">
@@ -281,7 +283,7 @@
 <p>流水不争先，争的是滔滔不绝。在池子里自己玩，即使建得再早，扩得再大，终究会成为一潭死水。要能滔滔不绝，还是需要汇入整个水系。</p>
 <p>无论是 Developer Tools 还是通用 SaaS 都是这个道理。</p>
 <blockquote>
-<p>本文由 <a href="https://bytebase.com">Bytebase</a> CEO Tianzhou 投稿，责任编辑 Folyd 校对补充。</p>
+<p>本文由 <a href="https://bytebase.com">Bytebase</a> CEO <code>@Tianzhou</code> 投稿，责任编辑 <code>@Folyd</code> 校对补充。</p>
 </blockquote>
 
 
@@ -294,7 +296,7 @@
                     </div>
                 <div class="prose prose-slate">
                     <p>前不久 Requestly 创始人在 Slack 说有 900+ 的用户是字节跳动员工，不过没有一个付费的。😅
-<img src="https://2d2d.io/static/s2/2/requestly-comment.png" alt="" loading="lazy">
+<img src="/static/s2/2/requestly-comment.png" alt="" loading="lazy">
 截图来源：<a href="https://twitter.com/anneincoding">@Anne阿伦</a></p>
 
                 </div>
@@ -309,11 +311,13 @@
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s2/deislabs">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s2/deislabs">
                     上一篇：
                     微软 Deis Labs 的故事
                 </a>
-            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s2/warp">
+            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s2/warp">
                     下一篇：
                     终端的困境与 Warp 的野心
                 </a>
@@ -327,7 +331,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -335,7 +339,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -349,10 +353,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -363,7 +367,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -383,7 +387,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 

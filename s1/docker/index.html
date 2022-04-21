@@ -23,7 +23,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s1/6/docker.jpeg">
     <meta name="twitter:image" content="https://2d2d.io/static/s1/6/docker.jpeg">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -36,15 +36,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -58,7 +58,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s1">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s1">
             <div class="relative text-main px-4">第一季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨6⁩ 篇</span>
@@ -66,21 +67,22 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">一封 Docker 公司的来信</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2022-01-27</span>
-            <span class="absolute right-2">Folyd</span>
+            <span>Folyd</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
         <blockquote>
-<img class="mx-auto" style="width: 150px;" src="https://2d2d.io/static/s1/6/docker-logo.png" />
+<img class="mx-auto" style="width: 150px;" src="/static/s1/6/docker-logo.png"/>
 <p>亲爱的开发者，您好，</p>
 <p>        感谢您过去一年使用 Docker 公司的产品！2022 年新春将至，Docker 公司祝您新年愉快，虎年大吉！</p>
 <p>Docker 团队敬上</p>
 </blockquote>
 <p>啊不对，发错了，赶紧撤回！应该发这封的：</p>
 <blockquote>
-<img class="mx-auto" style="width: 150px;" src="https://2d2d.io/static/s1/6/docker-logo.png" />
+<img class="mx-auto" style="width: 150px;" src="/static/s1/6/docker-logo.png"/>
 <p>Hello,</p>
 <p>As a reminder you’re receiving this email because on August 31, 2021 we updated the <a href="https://www.docker.com/legal/docker-subscription-service-agreement">terms</a> applicable to the Docker products or services you use.</p>
 <p><strong>On January 31, 2022, the grace period ends for free commercial use of Docker Desktop in larger enterprises.</strong> Companies with <strong>more than 250 employees OR more than $10 million USD in annual revenue now require a paid subscription to use Docker Desktop.</strong> <a href="https://www.docker.com/blog/the-grace-period-for-the-docker-subscription-service-agreement-ends-soon-heres-what-you-need-to-know">Read the blog</a> or visit our <a href="https://www.docker.com/pricing/faq">FAQ</a> to learn more about these updates.</p>
@@ -106,7 +108,7 @@
 <p>不知道哎，反正也是年后的事情。<strong>年后的事情等年后再说！</strong></p>
 <p>3 月更新: 在字节内部某位同学的推动下，字节已正在和 Docker 公司在对接了。</p>
 </blockquote>
-<p><img src="https://2d2d.io/static/s1/6/docker-desktop.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/6/docker-desktop.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>笔者 Docker Desktop 的截图</p>
 </blockquote>
@@ -118,12 +120,12 @@
 <li>2019 年 11 月 13 号，一家当时仅 450 人的公司 Mirantis <a href="https://www.mirantis.com/company/press-center/company-news/mirantis-acquires-docker-enterprise/">收购</a>了 Docker 的 Enterprise 业务，近 300 名 Docker 员工加入 Mirantis。</li>
 <li>Docker 公司从 2013 年成立至今更换了 4 任 CEO。</li>
 </ul>
-<p><img src="https://2d2d.io/static/s1/6/au-revoir.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/6/au-revoir.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>创始人 Solomon Hykes 离开 Docker 公司时的配图。详情见官宣博客：<a href="https://www.docker.com/blog/au-revoir/">https://www.docker.com/blog/au-revoir/</a></p>
 </blockquote>
 <p><strong>现在 Docker 公司还有什么拿得出手的产品吗？似乎没有了，只剩下 Docker Hub 和 Docker Desktop 了。</strong> 实际上 Docker Hub 的私有镜像服务也是打包在 Docker Desktop 里面售卖的。Docker 公司的 <a href="https://www.docker.com/pricing">pricing 页面</a>现在也非常简单，只有一款产品：Docker Desktop！</p>
-<p><img src="https://2d2d.io/static/s1/6/docker-pricing.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/6/docker-pricing.png" alt="" loading="lazy"></p>
 <p><strong>就算这样，社区依然让 Docker 公司不好过</strong>。因为 Rancher 看到 Docker 公司连 Desktop 都不允许免费使用后就推出了 Rancher 版的 Desktop。<strong>2022 年 1 月 26 日，就在 Docker 公司发出上面那封邮件的同一天，Rancher 宣布 Rancher Desktop 1.0 发布！</strong></p>
 <blockquote>
 <p>Rancher Desktop 的官网：<a href="https://rancherdesktop.io/">https://rancherdesktop.io/</a></p>
@@ -135,18 +137,20 @@
 </div>
 <p>虽然 Rancher Desktop 还没有 Docker Desktop 那么成熟，但他确实是一个值得期待的 Docker Desktop 免费替代品！</p>
 <p>说到 Rancher，这家公司也非常值得分享，这将是我们下一期的主题。<strong>刚好要放假了，放假就应该有放假的样子，Rancher 的事也年后再说！</strong></p>
-<p><img src="https://2d2d.io/static/s1/6/later1.jpg" alt="" loading="lazy"></p>
-<p><img src="https://2d2d.io/static/s1/6/later2.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/6/later1.jpg" alt="" loading="lazy"></p>
+<p><img src="/static/s1/6/later2.png" alt="" loading="lazy"></p>
 
 
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/coreos">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/coreos">
                     上一篇：
                     云原生的一代传奇 CoreOS
                 </a>
-            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/rancher">
+            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/rancher">
                     下一篇：
                     云农场的放牧人 Rancher
                 </a>
@@ -160,7 +164,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -168,7 +172,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -182,10 +186,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -196,7 +200,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -216,7 +220,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 

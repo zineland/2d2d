@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s2/3/warp-cover.jpg">
     <meta name="twitter:image" content="https://2d2d.io/static/s2/3/warp-cover.jpg">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -33,15 +33,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -55,7 +55,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s2">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s2">
             <div class="relative text-main px-4">第二季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨3⁩ 篇</span>
@@ -63,9 +64,10 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">终端的困境与 Warp 的野心</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2022-04-11</span>
-            <span class="absolute right-2">Folyd</span>
+            <span>Folyd</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
@@ -80,7 +82,7 @@
         </div>
     </a>
 </h2><p>
-<img class="bg-black" src="https://2d2d.io/static/s2/3/terminals.png">
+<img class="bg-black" src="/static/s2/3/terminals.png">
 </p>
 <p>终端软件从现代计算机诞生以来就存在了，在 GUI 图形化软件被发明以前，终端几乎是人和计算机交互的唯一方式。一直到今天，每个人的电脑里面默认都会自带一款终端软件，这足以说明终端的重要性。但是，如今的终端就像开头提到的一样，其实陷入了某种困境。</p>
 <ul>
@@ -100,7 +102,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/3/warp.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/3/warp.png" alt="" loading="lazy"></p>
 <p>Warp 是一家创立于 2020 年的公司，创始人兼 CEO Zach Lloyd 是前 Google 资深工程师，Google Docs / Sheets 的 tech leader，离开 Google 后他有两次创业经验。之所以创立 Warp 是因为他看到了终端软件的这一困境，40 多年来几乎没有太大创新，于是决定以创业的形式打造一款全新的终端。</p>
 <div class="url-preview">
  <div>Introducing Warp: The Terminal for the 21st Century | Warp</div>
@@ -119,7 +121,7 @@
     </a>
 </h3>
 <p>Block 真的是 Warp 的一个很不错的创新。在 Warp 里面，每一次命令的输入输出都是一个 Block。不像传统的终端，所有命令和输出都混在一起，肉眼很难区分相邻两条命令的内容，也不方便往上查找之前的命令。Warp 的 Block 很好的解决了这个问题。</p>
-<p><img src="https://2d2d.io/static/s2/3/warp-block.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/3/warp-block.png" alt="" loading="lazy"></p>
 <p>而且 Block 提供了很多非常实用的功能，比如它把 Copy 功能划分特别细，你可以选择 <em>Copy command, output, prompt, Working Directory</em> 等等，还可以把当前 block 以链接的形式分享出去。<em>Find Within Block</em> 也是一个非常棒的功能！</p>
 <h3 id="workflow" class="flex group">
     <span>Workflow</span>
@@ -135,7 +137,7 @@
 <blockquote>
 <p>Warp 还提供了一个 AI 功能，可以用自然语言描述一下你要做的事情，Warp 会生成相应的命令。（应该也是使用了 OpenAI 的 API）</p>
 </blockquote>
-<p><img src="https://2d2d.io/static/s2/3/warp-workflow.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/3/warp-workflow.png" alt="" loading="lazy"></p>
 <h3 id="进阶版 fig" class="flex group">
     <span>进阶版 Fig</span>
     <a href="#进阶版 fig" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
@@ -163,7 +165,7 @@
     </a>
 </h3>
 <p>过去的终端软件自始至终都是一个单人使用的本地软件，最近几年很多工具都有了团队协作功能，那么<strong>终端软件也需要团队协作吗？Warp 的 CEO 认为是的</strong>：<em>Every productivity application is more powerful when it’s collaborative. I’m confident that the terminal is no exception.</em> 他还提到终端的团队协作不仅仅是 Google Docs, Figma 那种实时协作，还有异步协作，比如共享终端、命令行、设置、历史记录等等方式。目前团队协作功能还未发布，笔者也未曾体验到，所以我们只能拭目以待了。</p>
-<p><img src="https://2d2d.io/static/s2/3/warp-collaboration.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/3/warp-collaboration.png" alt="" loading="lazy"></p>
 <h3 id="其他特点" class="flex group">
     <span>其他特点</span>
     <a href="#其他特点" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
@@ -200,7 +202,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/3/warp-cover.jpg" alt="" loading="lazy"></p>
+<p><img src="/static/s2/3/warp-cover.jpg" alt="" loading="lazy"></p>
 <p>Warp 目前总共获得了两轮融资，分别是 2021 年 1 月，GV (Google Ventures) 领投的种子轮 600 万美金。最新一轮是 2022 年 4 月 5 号 1700 万美金 A 轮，主要是科技圈几位知名人物的个人投资，其中包括 Figma 的创始人及 CEO <a href="https://www.linkedin.com/in/dylanfield/">Dylan Field</a> (A 轮领投)，AirBnB、Pinterest、Stripe 和 Square 的早期投资人 <a href="https://www.linkedin.com/in/eladgil/">Elad Gil</a>，LinkedIn 执行董事长兼前 CEO <a href="https://www.linkedin.com/in/jeffweiner08/">Jeff Weiner</a>，还有 Salesforce 创始人兼 CEO <a href="https://www.linkedin.com/in/marcbenioff/">Marc Benioff</a>。</p>
 <div class="url-preview">
  <div>Dylan Field: Why I'm Leading Warp's Series A</div>
@@ -237,7 +239,8 @@
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s2/yc-w22">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s2/yc-w22">
                     上一篇：
                     YC 2022 冬季营 DevTools 公司一览
                 </a>
@@ -251,7 +254,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -259,7 +262,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -273,10 +276,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -287,7 +290,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -307,7 +310,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 

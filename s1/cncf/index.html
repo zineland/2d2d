@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s1/2/specs.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s1/2/specs.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -33,15 +33,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -55,7 +55,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s1">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s1">
             <div class="relative text-main px-4">第一季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨2⁩ 篇</span>
@@ -63,14 +64,15 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">CNCF 的愿景：技术变革与对抗熵增</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2021-12-29</span>
-            <span class="absolute right-2">Folyd</span>
+            <span>Folyd</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
         <p>有一张让每个人都眼花缭乱的图，它包含上千张卡片，总市值 16.7 万亿美金，总融资超过规模 273 亿美金；它是人类软件领域的智慧结晶，它代表未来软件技术的新一代潮流，它承担着对抗技术熵增的艰难重任。它就是 <strong>CNCF 全景图</strong> (Landscape)：<a href="https://landscape.cncf.io/">https://landscape.cncf.io/</a></p>
-<p><img src="https://2d2d.io/static/s1/2/landscape.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/2/landscape.png" alt="" loading="lazy"></p>
 <p>CNCF (Cloud Native Computing Foundation) 这个词大家都有所耳闻，Cloud Native (云原生) 的概念在国内外也如火如荼。这家成立于 2015 年的非盈利基金会的愿景是什么？这一期我们来简单探讨一下。</p>
 <p>CNCF 的官方章程 (charter) 写的是：<strong>The Foundation’s mission is to make cloud native computing ubiquitous…</strong> 那云原生 (Cloud Native) 具体是指什么？官方给了一个<a href="https://www.cncf.io/about/who-we-are/">定义</a>： </p>
 <blockquote>
@@ -107,7 +109,7 @@
     </a>
 </h2>
 <p>事物无序程度的度量被称为熵，而熵增（事物无序程度的增加）是宇宙客观存在的规律。软件技术在不断进化变革的同时，不可避免的也会发生熵增。<strong>这种熵增会体现在很多方面，比如技术复杂度变高、技术规范程度变低、软件间可交互性变难。</strong> CNCF 不仅有引领新的技术变革的产品（Kubernetes, Prometeus)，同样也在孵化一批对抗熵增的项目，那就是这一系列的 <strong>Specification（技术规范）</strong>。 </p>
-<p><img src="https://2d2d.io/static/s1/2/specs.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/2/specs.png" alt="" loading="lazy"></p>
 <ul>
 <li><a href="https://opentelemetry.io/">OpenTelemetry</a> 制定了软件可观测性 (Observability) 的规范；</li>
 <li><a href="https://cloudevents.io/">CloudEvent</a> 制定了跨云、跨系统、跨平台之间的事件定义与通信的规范；</li>
@@ -126,11 +128,13 @@
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/retool">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/retool">
                     上一篇：
                     Retool: Raising less money at lower valuations
                 </a>
-            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/hashicorp">
+            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/hashicorp">
                     下一篇：
                     时势造英雄-HashiCorp
                 </a>
@@ -144,7 +148,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -152,7 +156,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -166,10 +170,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -180,7 +184,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -200,7 +204,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 

@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s1/3/ipo.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s1/3/ipo.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -33,15 +33,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -55,7 +55,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s1">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s1">
             <div class="relative text-main px-4">第一季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨3⁩ 篇</span>
@@ -63,14 +64,15 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">时势造英雄-HashiCorp</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2022-01-06</span>
-            <span class="absolute right-2">Folyd</span>
+            <span>Folyd</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
         <p>2013、2014 年开始，国内外开始流行一个 Ruby 编写的开源产品 <a href="https://www.vagrantup.com/">Vagrant</a>，它是一个主要用来解决本地（特别是多人协作）开发环境配置繁琐、不一致等痛点的项目，深受很多工程师喜欢。难以预测的是， 2016 年 Docker 的大范围普及，让这个产品逐渐没落。更难预测的是，这个 2010 年开发 Vagrant 的作者，多年后成为了一家市值 150 亿美金的 To B SaaS 公司的创始人。这家公司就是我们这一期的主角 —— HashiCorp。上期我们介绍了 CNCF 全景图，而 HashiCorp 有五款产品就在全景图中。</p>
-<p><img src="https://2d2d.io/static/s1/3/thrending.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/3/thrending.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>上图为 Vagrant 关键字的 Google Trends 图，纵轴代表相对顶峰搜索频次的百分比，而非绝对数字；</p>
 <p>Trends 链接：<a href="https://trends.google.com/trends/explore?date=2010-12-04%202022-01-04&amp;q=vagrant">https://trends.google.com/trends/explore?date=2010-12-04%202022-01-04&amp;q=vagrant</a></p>
@@ -149,7 +151,7 @@
 <p><a href="https://www.waypointproject.io/">Waypoint</a> - HashiCorp 最新的产品（同2020 年 10 月份）。遵循 Intrasturecture as code 的应用构建、部署、上线一站式工具。这个产品感觉潜力也很大。</p>
 </li>
 </ul>
-<p><img src="https://2d2d.io/static/s1/3/stack.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/3/stack.png" alt="" loading="lazy"></p>
 <p>HashiCorp 早些年发布了它的 HashiCorp 之道 (<a href="https://www.hashicorp.com/tao-of-hashicorp">The Tao of HashiCorp</a>)，这些产品无一不践行着这一哲学。HashiCorp 同样是 Go 语言的深度使用者，几乎所有产品都是 Go 语言编写，他们甚至把 Go 语言推崇的 <a href="https://en.wikipedia.org/wiki/Communicating_sequential_processes">CSP 并发</a>理念也写进了他们的道中。</p>
 <h2 id="商业模式" class="flex group">
     <span>商业模式</span>
@@ -162,7 +164,7 @@
     </a>
 </h2>
 <p>HashiCorp 的商业模式也很有代表性，算是开源软件商业化的经典范例。</p>
-<p><img src="https://2d2d.io/static/s1/3/product.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/3/product.png" alt="" loading="lazy"></p>
 <ul>
 <li>
 <p><strong>产品全部开源。</strong> 开源是非常好的获客方式，同时也能得到社区检验和快速获取反馈、快速迭代的好途径。</p>
@@ -187,17 +189,19 @@
  <a href="https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ">https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ</a>
 </div>
 <p>HashiCorp 是 2012 年创立，CNCF 的云原生在 2015 年才提出来，目前 HashiCorp 有五款产品在 CNCF 的全景图中，分别是 Terraform, Vault, Nomad, Consul, Packer，而这五款产品都是 2015 年之前发布的。从创立到上市的九年时间，HashiCorp 顺应了时代的潮流，而时代也成就了 HashiCorp!</p>
-<p><img src="https://2d2d.io/static//s1/3/ipo.png" alt="" loading="lazy"></p>
+<p><img src="/static//s1/3/ipo.png" alt="" loading="lazy"></p>
 
 
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/cncf">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/cncf">
                     上一篇：
                     CNCF 的愿景：技术变革与对抗熵增
                 </a>
-            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/kong-vs-apisix">
+            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/kong-vs-apisix">
                     下一篇：
                     云原生时代的中外 API 网关之争
                 </a>
@@ -211,7 +215,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -219,7 +223,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -233,10 +237,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -247,7 +251,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -267,7 +271,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 

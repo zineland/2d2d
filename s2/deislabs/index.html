@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s2/1/deislabs.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s2/1/deislabs.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -33,15 +33,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -55,7 +55,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s2">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s2">
             <div class="relative text-main px-4">第二季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨1⁩ 篇</span>
@@ -63,14 +64,15 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">微软 Deis Labs 的故事</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2022-04-02</span>
-            <span class="absolute right-2">Folyd</span>
+            <span>Folyd</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
         <p>微软历史上收购合并过无数的产品、公司和团队，很多产品或公司甚至在被收购前已经是家喻户晓的品牌（比如 LinkedIn，Github，最近的暴雪动视），而我们这一期的主角 Deis Labs 纯粹是微软这个<a href="https://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Microsoft">超长收购清单</a>中普通到不能再普通的一项，当你用手指划过这个清单时，你都丝毫不会注意到有一项写着：<code>Deis, 收购于 2017 年 4 月 10 日</code>。</p>
-<p><img src="https://2d2d.io/static/s2/1/list.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/1/list.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>微软的收购清单</p>
 </blockquote>
@@ -87,15 +89,15 @@
 </h2>
 <p>我们的故事要先从 PaaS 开始说起。2007 年，<a href="https://www.heroku.com/">Heroku</a> 成立后开启了 PaaS 的黄金时代。很多人把 Heroku 称为 PaaS “鼻祖”，其实并不准确。比他成立更早的 <a href="https://www.engineyard.com/">Engine Yard</a> 在 2006 年就开始做类似的事情了，只是 Engine Yard 后来发展比 Heroku 差太多，只能算 PaaS 领域的第二梯队。Engine Yard 几乎是一个没人听过的名字，但他与我们今天的主角 DeisLabs 息息相关。2015 年 4 月 15 日，Engine Yard <a href="https://web.archive.org/web/20170611174913/https://blog.engineyard.com/2015/engine-yard-joins-forces-with-opdemand">收购</a>了一家名为 OpDemand 的公司，这家公司有一款叫 Deis 的主打产品。Deis 是 OpDemand 受 Heroku 启发，于 2013 年开始开发的 PaaS 产品（那个时候的 Heroku 真的是非常火）。Deis 最早的架构是基于 CoreOS, Fleet 和 Docker，后来被称为 v1 版架构，早已被弃用，不过我们现在依然可以在 Github 上一瞥曾经 Deis v1 的代码 (<a href="https://github.com/deis/deis">https://github.com/deis/deis</a>)。</p>
 <blockquote>
-<p>没错，这里又出现了 Fleet，就是 CoreOS 打造的 Fleet。我们曾经在 <a href="https://2d2d.io/s1/coreos">CoreOS</a>、<a href="https://2d2d.io/s1/rancher">Rancher</a> 那两期都提到过它。</p>
+<p>没错，这里又出现了 Fleet，就是 CoreOS 打造的 Fleet。我们曾经在 <a href="/s1/coreos">CoreOS</a>、<a href="/s1/rancher">Rancher</a> 那两期都提到过它。</p>
 </blockquote>
 <p>OpDemand 在加入 Engine Yard 之后，继续以 Deis 的名义开发维护 Deis 这款产品，他们有自己独立的官网 <a href="https://web.archive.org/web/20170209220933/https://deis.com/">https://deis.com</a> 。2015 年 12 月 30 号，他们发布了基于 Kubernetes 的 Deis 第二代产品 Deis Workflow。当年的 Deis 确实做的很不错的，影响力甚至慢慢的扩散到了中国，知乎上现在还可以看到当年和 Deis 有关的问题。</p>
-<p><img class="mx-auto" style="width: 400px;" src="https://2d2d.io/static/s2/1/deis-zhihu.png" /></p>
+<p><img class="mx-auto" style="width: 400px;" src="/static/s2/1/deis-zhihu.png"/></p>
 <p>2017 年已经到了 Kubernetes 风起云涌的阶段，公有云领域的后起之秀微软 Azure 也在为自己的容器服务物色合适的公司或团队，慧眼识珠的 Azure 看中了 Deis 这个团队。2017 年 4 月 10 日，在和 Engine Yard 协商之后，Azure 正式把 Deis 这个团队<a href="https://blogs.microsoft.com/blog/2017/04/10/microsoft-acquire-deis-help-companies-innovate-containers/">收入囊中</a>。Deis 加入 Azure 之后负责 Kubernetes 和容器相关的产品，现在点击 <a href="https://deis.com">https://deis.com</a> 就会跳转到 Azure Kubernetes Service (AKS) 的产品页面。</p>
 <blockquote>
 <p>在被微软收购几个月后，包括 Deis Workflow 在内的 Deis 之前的项目都不再维护更新：<a href="https://web.archive.org/web/20180626034638/https://deis.com/blog/2017/deis-workflow-final-release/">Deis Workflow Final Release</a></p>
 </blockquote>
-<p><img src="https://2d2d.io/static/s2/1/deis-legacy.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/1/deis-legacy.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>Deis 被收购前的<a href="https://web.archive.org/web/20170209220933/https://deis.com/">官网</a>。</p>
 </blockquote>
@@ -114,7 +116,7 @@
     </a>
 </h2>
 <p>被微软收购后，所有 Deis 的成员全部加入 Azure，为了致敬曾经的 Deis 团队，他们把自己在微软的新团队取名 Deis Labs，官网：<a href="https://deislabs.io">https://deislabs.io</a>。</p>
-<p><img src="https://2d2d.io/static/s2/1/deislabs.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/1/deislabs.png" alt="" loading="lazy"></p>
 <p>新的 Deis Labs 主要专注于 Kubernetes 和 WebAssembly 两大领域。微软也给 Deis Labs 提供了一个足够大的平台，激发了 Deis Labs 的无穷创造力。他们在短短几年内除了要顾及 Azure 的容器服务，还推出了很多开源项目。虽然有些项目并没有特别知名，但长远来看很多都是很有意义的项目。在介绍这些项目前，我们不得不先介绍一下 Deis Labs 在老东家 Engine Yard 就推出的项目 <a href="https://helm.sh/">Helm</a>。</p>
 <h3 id="helm" class="flex group">
     <span>Helm</span>
@@ -126,7 +128,7 @@
         </div>
     </a>
 </h3>
-<p><img src="https://2d2d.io/static/s2/1/helm.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/1/helm.png" alt="" loading="lazy"></p>
 <p><strong>Helm 是 Deis 团队于 2015 年发布的一个 Kubernetes 的包管理工具，目前是 CNCF 的已毕业项目，也是 Kubernetes 生态里面不可或缺的明星级项目</strong>。Kubernetes 默认需要开发者手动编写、维护数量繁多的 Yaml 文件，并且应用的分发、安装也比较繁琐。Helm 引入了 Charts 的概念，开发者可以把自己的应用配置文件打包成 Charts 格式，发布到 <a href="https://artifacthub.io/">ArtifactHub</a> (取代了之前的 Helm Hub) 后，安装新的 Kubernetes 应用只需要一条 Helm 命令就能搞定，极大程度上解决了 Kubernetes 应用维护、分发、安装等问题。</p>
 <blockquote>
 <p>Helm 创始人 Matt Butcher 在 InfoQ 的<a href="https://www.infoq.com/news/2019/09/helm-butcher/">一次采访</a>中提到：Helm 最初是他和另外几个同事参加 Engine Yard 的一次两天 Hackthon 团建开发的项目，最初是为了解决 Deis Workflow 众多微服务在 Kubernetes 内安装部署繁琐的问题。</p>
@@ -143,7 +145,7 @@
     </a>
 </h3>
 <p><strong>Deis Labs 团队官网列举了他们的大部分项目，其中有 7 个是 CNCF 项目</strong>。后来笔者调研发现，CNCF 另外几个项目也是 Deis Labs 团队的人和其他公司合作搞的，并没有例举在上面。</p>
-<p><img src="https://2d2d.io/static/s2/1/projects.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/1/projects.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>Deis Labs 官网列出的项目列表，应该是官网没有及时更新，有些项目没有列举上去。</p>
 </blockquote>
@@ -157,7 +159,7 @@
             </svg>
         </div>
     </a>
-</h4><img class="mx-auto" style="width: 200px;" src="https://2d2d.io/static/s2/1/akri.png" />
+</h4><img class="mx-auto" style="width: 200px;" src="/static/s2/1/akri.png"/>
 <p><a href="https://github.com/project-akri/akri">Akri</a> 是微软在 2020 年 10 月<a href="https://cloudblogs.microsoft.com/opensource/2020/10/20/announcing-akri-open-source-project-building-connected-edge-kubernetes/">推出</a>的用于帮助 Kubernetes 集群主动发现并利用边缘设备的项目。这里的边缘设备通常是指各种传感器、控制器、相机等 IoT 设备，它们都没办法运行 Kubernetes 充当 Kubernetes 集群的节点。Akri 的目标是想成为边缘 IoT 设备和 Kubernetes 集群交互的标准，所以 Akri 其实是 <code>A Kubernetes Resource Interface</code> 的缩写（同时，Akri 也是希腊语 “Edge” 的意思）。</p>
 <blockquote>
 <p>Akri 是一个 Rust 项目，目前处在 <strong>CNCF 沙盒阶段</strong>。</p>
@@ -182,7 +184,7 @@
             </svg>
         </div>
     </a>
-</h4><img class="mx-auto" style="width: 300px;" src="https://2d2d.io/static/s2/1/krustlet.png" />
+</h4><img class="mx-auto" style="width: 300px;" src="/static/s2/1/krustlet.png"/>
 <p><a href="https://krustlet.dev/">Krustlet</a> 是 Deis Labs 觉得 Kubernetes 生态里面几乎都是 Go 的项目，这是他们为了探索 Rust 怎样和 Kubernetes 结合起来的实验性项目，<strong>是一个 Rust 编写的的 Kubelet，可以直接用来在 Kubernetes 中跑编译成 WebAssembly 的模块。<strong>所以 Kruslet 这个名字其实是  <strong>K</strong>ubernetes-<strong>rust</strong>-kube</strong>let</strong> 的缩写。 </p>
 <blockquote>
 <p>Kubelet 是 Kubernetes 非常核心的组件，用来调度 Pod 等资源的。</p>
@@ -197,7 +199,7 @@
             </svg>
         </div>
     </a>
-</h4><img class="mx-auto" style="width: 80px;" src="https://2d2d.io/static/s2/1/krator.png" />
+</h4><img class="mx-auto" style="width: 80px;" src="/static/s2/1/krator.png"/>
 <p><a href="https://github.com/krator-rs/krator">Krator</a> 是 Deis Labs 在开发 Krustlet 过程中抽出来的一个方便构建 Kubernetes Operator 的 Rust 项目。名字是<strong>K</strong>ubernetes <strong>R</strong>ust st<strong>at</strong>e machine operat<strong>or</strong> 的缩写，目前是 <strong>CNCF 沙盒项目</strong>。</p>
 <h4 id="mystikos" class="flex group">
     <span>Mystikos</span>
@@ -208,7 +210,7 @@
             </svg>
         </div>
     </a>
-</h4><img class="mx-auto" style="width: 200px;" src="https://2d2d.io/static/s2/1/mystikos.png" />
+</h4><img class="mx-auto" style="width: 200px;" src="/static/s2/1/mystikos.png"/>
 <p><a href="https://github.com/deislabs">Mystikos</a> 是一系列用来帮助在硬件可信执行环境 (Trusted Execution Environment，简称 TEE) 下运行 Linux 容器的运行时和工具。目前仅支持 Intel ® SGX，其他 TEE 硬件将在未来支持。</p>
 <h4 id="bindle" class="flex group">
     <span>Bindle</span>
@@ -230,7 +232,7 @@
             </svg>
         </div>
     </a>
-</h4><img class="mx-auto" style="width: 200px;" src="https://2d2d.io/static/s2/1/oras.png" />
+</h4><img class="mx-auto" style="width: 200px;" src="/static/s2/1/oras.png"/>
 <p><a href="https://oras.land/">ORAS</a> 是 OCI Registry As Storage 的缩写，目前也是 <strong>CNCF 沙盒项目</strong>。笔者了解也不多，暂时没办法给出通俗的解释，欢迎大家补充。</p>
 <h4 id="brigade" class="flex group">
     <span>Brigade</span>
@@ -241,7 +243,7 @@
             </svg>
         </div>
     </a>
-</h4><img class="mx-auto" style="width: 200px;" src="https://2d2d.io/static/s2/1/brigade.png" />
+</h4><img class="mx-auto" style="width: 200px;" src="/static/s2/1/brigade.png"/>
 <p><a href="https://brigade.sh/">Brigade</a> 是微软在 2017 年底推出的一个借助 Kubernetes 来实现事件驱动、事务处理编排的工具，可以使用在 CI / CD 环节。目前也是 <strong>CNCF 沙盒项目</strong>，但是看起来在国内毫无用户。</p>
 <h4 id="hippo" class="flex group">
     <span>Hippo</span>
@@ -268,7 +270,7 @@
             </svg>
         </div>
     </a>
-</h4><img class="mx-auto" style="width: 200px;" src="https://2d2d.io/static/s2/1/porter.png" />
+</h4><img class="mx-auto" style="width: 200px;" src="/static/s2/1/porter.png"/>
 <p><a href="https://porter.sh">Porter</a> 是微软 2020 年初推出的实现前面说过的 CNAB 规范的打包工具，目前是 <strong>CNCF 的沙盒项目</strong>。笔者没有具体用过，大家感兴趣可以自行了解。</p>
 <h4 id="wagi" class="flex group">
     <span>WAGI</span>
@@ -341,7 +343,7 @@
 <blockquote>
 <p>前不久，DigitalOcean <a href="https://www.digitalocean.com/blog/css-tricks-joins-digitalocean">收购了 CSS-Tricks.com</a> 可能也是 Gabe Monroy 在主导推动。</p>
 </blockquote>
-<p><img src="https://2d2d.io/static/s2/1/gabe-monroy.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/1/gabe-monroy.png" alt="" loading="lazy"></p>
 <h3 id="matt butcher" class="flex group">
     <span>Matt Butcher</span>
     <a href="#matt butcher" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
@@ -360,10 +362,10 @@
 <li>O’Reilly 出版的《Learning Helm》</li>
 </ul>
 <p>更多书可以看 Matt Butcher 的<a href="http://technosophos.com/">博客</a>。非常有意思的是，Matt Butcher 本科、硕士、博士都是哲学专业，并没有主修过计算机相关专业，也是一个非常传奇的人物！</p>
-<p><img src="https://2d2d.io/static/s2/1/matt-butcher.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/1/matt-butcher.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>还有一个叫 <a href="http://www.mattfarina.com/">Matt Farina</a> 的人也非常值得介绍，虽然他不在 Deis Labs，但是他和 Matt Butcher 很早就在惠普相识，后来两人合作开发过很多开源项目，还一起出版过至少 3 本书，上面提到的 《Go In Practice》和 《Learning Helm》主要就是他们俩一起写的。</p>
-<p><img style="width: 380px" src="https://2d2d.io/static/s2/1/helm-book.png" /></p>
+<p><img style="width: 380px" src="/static/s2/1/helm-book.png"/></p>
 <p>Matt Farina 早期也参与 Helm 的开发，是 Helm 的主要贡献者之一。说来真的很巧，Matt Farina 后来加入了 Rancher，被 Rancher 老板梁胜安排做一个新项目，这个新项目就叫 Rancher Desktop！Matt Farina 现在就是 Rancher Desktop 的主要负责人，目前他还是 CNCF TOC 的成员。</p>
 <p>我们之前在第一季讲过 Rancher Desktop，感兴趣可以阅读这篇文章了解更多。</p>
 <div class="url-preview">
@@ -382,7 +384,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s2/1/fermyon.png" alt="" loading="lazy"></p>
+<p><img src="/static/s2/1/fermyon.png" alt="" loading="lazy"></p>
 <p>2022 年 1 月，一家名叫 <a href="https://www.fermyon.com/">Fermyon</a> 的新公司成立了，首轮融资 400 万美金，团队将近 10 位创始成员都来自 Deis Labs，CEO 就是 Matt Butcher。</p>
 <blockquote>
 <p>关于 Fermyon 这个词的含义，官方暂时没有给出具体解答，我和 <a href="https://github.com/zhanghandong">@zhanghandong</a> 有一个初步探讨，猜测应该和基本粒子<code>费米子</code> 有关：
@@ -398,7 +400,8 @@
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s2/yc-w22">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s2/yc-w22">
                     下一篇：
                     YC 2022 冬季营 DevTools 公司一览
                 </a>
@@ -412,7 +415,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -420,7 +423,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -434,10 +437,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -448,7 +451,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -468,7 +471,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 

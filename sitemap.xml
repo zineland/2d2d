@@ -4,19 +4,64 @@
         <loc>https://2d2d.io/</loc>
     </url>
     <url>
-        <loc>https://2d2d.io/authors/</loc>
+        <loc>https://2d2d.io/s1/</loc>
     </url>
     <url>
-        <loc>https://2d2d.io/sponsor/</loc>
+        <loc>https://2d2d.io/s1/retool/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s1/cncf/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s1/hashicorp/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s1/kong-vs-apisix/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s1/coreos/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s1/docker/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s1/rancher/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s1/mesos/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s1/mirantis/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s1/why/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s2/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s2/deislabs/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s2/yc-w22/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/s2/warp/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/authors/</loc>
     </url>
     <url>
         <loc>https://2d2d.io/testimonial/</loc>
     </url>
     <url>
-        <loc>https://2d2d.io/about/</loc>
+        <loc>https://2d2d.io/blog/</loc>
     </url>
     <url>
-        <loc>https://2d2d.io/blog/</loc>
+        <loc>https://2d2d.io/sponsor/</loc>
+    </url>
+    <url>
+        <loc>https://2d2d.io/about/</loc>
     </url>
     <url>
         <loc>https://2d2d.io/faq/</loc>

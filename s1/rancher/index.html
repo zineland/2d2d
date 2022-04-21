@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s1/7/rancher.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s1/7/rancher.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -33,15 +33,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -55,7 +55,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s1">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s1">
             <div class="relative text-main px-4">第一季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨7⁩ 篇</span>
@@ -63,14 +64,15 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">云农场的放牧人 Rancher</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2022-02-10</span>
-            <span class="absolute right-2">Folyd</span>
+            <span>Folyd</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
         <p>1999 年 Sun 公司的一名工程师出版了一本书，名为<a href="https://book.douban.com/subject/3162962/">《The Java Native Interface (JNI)》</a>。这位工程师的名字叫 Sheng Liang（梁胜），他正是 Java 语言 JNI 的作者，在 Sun 公司他还领导过 Java JVM 的开发工作。15 年后的 2014 年，这位曾经的工程师已经成为了一名拥有多次成功创业经验的企业家，在这一年他再度出发，创建了他的第三家公司，也就是本期主题公司 Rancher。</p>
-<p><img src="https://2d2d.io/static/s1/7/jni.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/7/jni.png" alt="" loading="lazy"></p>
 <h2 id="技术梦想家" class="flex group">
     <span>技术梦想家</span>
     <a href="#技术梦想家" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
@@ -105,7 +107,7 @@
 <p>2011 年 Cloud.com 又被 Citrix 以 2 亿美金的价格收购，梁胜博士成为 Citrix 公司首位华人 CTO。</p>
 <blockquote>
 <p><a href="https://cloudstack.apache.org/">CloudStack</a> 是云计算领域举足轻重的软件，它的竞品 <a href="http://openstack.org">OpenStack</a> 于 2011 年才正式推出。2012 年开始 OpenStack 与 CloudStack 竞争异常激烈。2012 年 4 月，在梁胜的推动下，Citrix 将 CloudStack 捐献给了 Apache 基金会，2013 年，CloudStack 正式成为 Apache 的顶级项目。</p>
-<p><img src="https://2d2d.io/static/s1/7/cloudstack.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/7/cloudstack.png" alt="" loading="lazy"></p>
 <p>不过 CloudStack 还是太过复杂，在后来的竞争中不敌 OpenStack。</p>
 </blockquote>
 </li>
@@ -114,7 +116,7 @@
 </li>
 <li>
 <p>2020 年 2 月 4 日，梁胜入选 CNCF 技术监督委员会（<a href="https://www.cncf.io/people/technical-oversight-committee/">Technical Oversight Committee</a> ，简称TOC）。</p>
-<p><img src="https://2d2d.io/static/s1/7/cncf-toc.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/7/cncf-toc.png" alt="" loading="lazy"></p>
 </li>
 <li>
 <p>2020 年 7 月 8 日，Rancher 被老牌企业级 Linux 提供商 SUSE 收购，梁胜成为 SUSE 工程与创新部总裁。</p>
@@ -132,24 +134,24 @@
     </a>
 </h2>
 <p>2014 年，Docker 已经正式发布一年了，CoreOS 也成立了，K8S 正在萌芽中，梁胜博士敏锐的发现一个新的技术变革时代即将到来，未来不可能再是 CloudStack 和 OpenStack 的时代，而将是容器的时代。Rancher 就这样诞生了！</p>
-<p><img src="https://2d2d.io/static/s1/7/liangsheng.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/7/liangsheng.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>如果把云计算比作是一片大的农场，各种计算资源比作是农场里的“牛”，那 Rancher 想做的就是那个“放牧人”，这也是他们把公司命名为“Rancher（牧场主）”的原因。对于 Rancher 这样的“放牧人”而言，谁家的“牛”都可以放，客户需要什么样的“牛”，Rancher 就会给客户提供相应的“牛”。</p>
 </blockquote>
-<p><img src="https://2d2d.io/static/s1/7/rancher.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/7/rancher.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>Rancher <a href="https://web.archive.org/web/20141201085105/http://www.rancher.com/">创立之初的官网</a>。官网背景就是一片充满惬意的云下农场，非常应景。</p>
 </blockquote>
 <p>刚开始 Rancher 这款产品的前身是 Rancher 联合创始人 Darren Shepherd 的个人项目 <a href="https://github.com/cattleio/stampede">stampede</a>，这是一个基于 CoreOS 的混合 IaaS / Docker 编排工具。后来 stampede 重命名为 Rancher，并于 2014 年 11 月 14 号<a href="https://web.archive.org/web/20150911135907/http://rancher.com/announcing-rancher-io-portable-infrastructure-services-for-docker/">正式发布</a>。这个版本的 Rancher 算是 1.X 版本，它底层的核心项目是一个叫 <a href="https://github.com/rancher/cattle">Cattle</a> 的编排工具。不过没多久 K8S 发展迅猛，容器编排战争开始打响，Rancher 也跟进支持另外三大编排项目， Rancher 自身的 Cattle 在这场战争最终也是落败给 K8S。这场战争尘埃落定之后，2018 年 Rancher 正式推出只支持 Kubernetes 的 Rancher 2.0 版本，一直到现在都是 Rancher 公司的主打产品。</p>
 <p><strong>Rancher 同样是一个非常具有创造性的公司，他们在不同阶段推出过多款不同产品，这些产品大都数都很成功，当然也有一些产品也并不那么成功。</strong></p>
-<p><img src="https://2d2d.io/static/s1/7/timeline.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/7/timeline.png" alt="" loading="lazy"></p>
 <ul>
 <li>
 <p><strong>Rancher</strong> - (特指 Rancher 2.X) 一款口碑非常好的企业级 Kubernetes 管理平台。<strong>Rancher 在全球有好几亿次的下载量，绝对是明星级产品。</strong></p>
 <blockquote>
 <p>Rancher 的理念是开源开放，简单易用，并且是支持多云的 100% 云原生产品。Rancher 不仅支持自身的 RKE，也支持主流公有云厂商的 Kubernetes 托管版，比如 AWS 的 EKS，Google 的 GKE 等等。</p>
 <p>目前 Rancher 的知名对标产品有：Red Hat OpenShift，VMware Tanzu，Google Anthos 等。</p>
-<p><img src="https://2d2d.io/static/s1/7/rancer-ui.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/7/rancer-ui.png" alt="" loading="lazy"></p>
 <p>上图为 Rancher 创建 Kubernetes 集群时的选择界面。</p>
 </blockquote>
 </li>
@@ -178,13 +180,13 @@
 <p><a href="https://harvesterhci.io/">Harvester</a> - 一款通过 Kubernetes 构建的超融合基础架构（hyperconverged infrastructure，简称 HCI）软件。</p>
 <blockquote>
 <p>Harvester 是一个完全由 Rancher 中国研发团队设计和开发的开源软件，笔者刚好有一个朋友就在 Harvester 的这个团队。</p>
-<p><img src="https://2d2d.io/static/s1/7/tg-harvester.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/7/tg-harvester.png" alt="" loading="lazy"></p>
 </blockquote>
 </li>
 <li>
 <p><a href="https://github.com/rancher/fleet">Fleet</a> - 业界首款<strong>海量 K8S 集群</strong> (up to a million clusters) 管理产品。</p>
 <blockquote>
-<p>Fleet 是 Rancher 联合创始人 Darren Shepherd 主导的项目，目前正在活跃开发中。细心的读者会发现之前 <a href="https://2d2d.io/s1/coreos">CoreOS 那一期</a>介绍过他们也有一款产品叫 Fleet。它是 CoreOS 团队在早期构建的容器编排系统，目前已经停止维护。<strong>Rancher 的 Fleet 正是 Darren Shepherd 为了致敬 CoreOS 的 Fleet 的。</strong>“我一直是它的忠实粉丝，将这一项目命名为 Fleet 也包含了我的私心。所以我希望重新使用 Fleet 这一名字，这是对这个非常出色的容器领域早期项目的致敬。”</p>
+<p>Fleet 是 Rancher 联合创始人 Darren Shepherd 主导的项目，目前正在活跃开发中。细心的读者会发现之前 <a href="/s1/coreos">CoreOS 那一期</a>介绍过他们也有一款产品叫 Fleet。它是 CoreOS 团队在早期构建的容器编排系统，目前已经停止维护。<strong>Rancher 的 Fleet 正是 Darren Shepherd 为了致敬 CoreOS 的 Fleet 的。</strong>“我一直是它的忠实粉丝，将这一项目命名为 Fleet 也包含了我的私心。所以我希望重新使用 Fleet 这一名字，这是对这个非常出色的容器领域早期项目的致敬。”</p>
 </blockquote>
 </li>
 <li>
@@ -196,7 +198,7 @@
 <li>
 <p><a href="https://github.com/rancher/rio">Rio</a> - 基于 Kubernetes 的 MicroPaaS 平台，后来于 2021 年暂停，官方并未给出具体原因。</p>
 <blockquote>
-<p><img src="https://2d2d.io/static/s1/7/tg-rio.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/7/tg-rio.png" alt="" loading="lazy"></p>
 <p>3 月更新：有 Twitter 网友问了为什么暂停 Rio 这个项目的问题， Darren Shepherd 给了一个<a href="https://twitter.com/ibuildthecloud/status/1503411799294500866">简短的回答</a>。</p>
 </blockquote>
 </li>
@@ -206,7 +208,7 @@
 <li>
 <p><a href="https://epinio.io/">Epinio</a> - Rancher 被收购后和 SUSE 一起开发的基于 Kubernetes 的 PaaS 项目，目前还在早期阶段。个人感觉 Rio 被暂停可能跟这个项目有关。</p>
 <blockquote>
-<p><img style="width: 380px" src="https://2d2d.io/static/s1/7/tg-epinio.png" /></p>
+<p><img style="width: 380px" src="/static/s1/7/tg-epinio.png"/></p>
 </blockquote>
 </li>
 </ul>
@@ -221,7 +223,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s1/7/suse-rancher.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/7/suse-rancher.png" alt="" loading="lazy"></p>
 <p>2020 年 7 月 8 号，SUSE 和 Rancher 联合宣布，SUSE 将收购 Rancher，不过双方都未透露具体的收购金额。2020 年 12 月 1 号，Rancher 收购案正式完成。</p>
 <div class="url-preview">
  <div>SUSE Enters Into Definitive Agreement to Acquire Rancher Labs | SUSE Communities</div>
@@ -234,18 +236,20 @@
 <blockquote>
 <p><strong>后续：</strong></p>
 <p>就在本篇文章发布一天后，Rancher 联合创始人 Darren Shepherd 在推特上<a href="https://twitter.com/ibuildthecloud/status/1492175776057217026">宣布离开</a> Rancher 和 SUSE。同一天，Rancher 的另外一位核心人物 Vincent Fiduccia 也<a href="https://twitter.com/vincentfiduccia/status/1491851410937303042">宣布退休</a>。
-<img src="https://2d2d.io/static/s1/7/twitter-shepherd.png" alt="" loading="lazy"></p>
+<img src="/static/s1/7/twitter-shepherd.png" alt="" loading="lazy"></p>
 </blockquote>
 
 
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/docker">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/docker">
                     上一篇：
                     一封 Docker 公司的来信
                 </a>
-            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/mesos">
+            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/mesos">
                     下一篇：
                     曾经 Mesos 背后的公司，如今在干嘛?
                 </a>
@@ -259,7 +263,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -267,7 +271,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -281,10 +285,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -295,7 +299,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -315,7 +319,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 

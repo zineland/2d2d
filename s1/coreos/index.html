@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s1/5/product.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s1/5/product.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -33,15 +33,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -55,7 +55,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s1">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s1">
             <div class="relative text-main px-4">第一季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨5⁩ 篇</span>
@@ -63,9 +64,10 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">云原生的一代传奇 CoreOS</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2022-01-20</span>
-            <span class="absolute right-2">Folyd</span>
+            <span>Folyd</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
@@ -80,7 +82,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s1/5/garage.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/5/garage.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>CoreOS 成立时的车库。图来源于 Wired 在他们成立没多久时的一篇专访文章：<a href="https://www.wired.com/2013/08/coreos-the-new-linux/">Linux Hackers Rebuild Internet From Silicon Valley Garage</a></p>
 </blockquote>
@@ -139,7 +141,7 @@
 <p><a href="https://dexidp.io/">Dex</a> - <strong>【CNCF 沙盒项目】</strong> 一个 OpenID Connect 协议的 Go 实现库，也捐赠给了 CNCF。</p>
 </li>
 </ul>
-<p><img src="https://2d2d.io/static/s1/5/product.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/5/product.png" alt="" loading="lazy"></p>
 <p>另外，CoreOS 是 CNCF 2015 年创立时的最初始成员之一，当时他们公司成立才两年。</p>
 <p>上述这些产品在现在依然影响深远，可以毫不夸张的说：<strong>云原生领域的半壁江山都是构建在这些产品的基础上的，这种一路开挂的操作在世界上恐怕没有几家创业公司可以与之匹敌。</strong></p>
 <h2 id="商业化" class="flex group">
@@ -159,7 +161,7 @@
 <li>Tectonic - 企业级的 Kubernetes 容器编排产品。</li>
 </ul>
 <p><strong>这三款产品形成了一个完整的容器操作系统、镜像托管、容器编排的链路，商业思路也非常清晰。</strong> CoreOS 在其<a href="https://web.archive.org/web/20190113053653/https://coreos.com/blog/coreos-fourth-birthday">四周年的博客</a>中提到当时他们有 2000+ 家全球的主要客户 (Key customers)。</p>
-<p><img src="https://2d2d.io/static/s1/5/martix.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/5/martix.png" alt="" loading="lazy"></p>
 <h2 id="被收购" class="flex group">
     <span>被收购</span>
     <a href="#被收购" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
@@ -176,7 +178,7 @@
  <div>What is being announced?On Jan. 30, 2018, Red Hat announced that it has signed a definitive agreement to acquire CoreOS, Inc. The acquisition is subject to certain customary closing conditions.Q. </div>
  <a href="https://www.redhat.com/en/blog/faq-red-hat-acquire-coreos">https://www.redhat.com/en/blog/faq-red-hat-acquire-coreos</a>
 </div>
-<p><img src="https://2d2d.io/static/s1/5/acquire.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/5/acquire.png" alt="" loading="lazy"></p>
 <p>被收购前，CoreOS 只经历了三轮融资（种子轮、A 轮和 B 轮），总共融资 4800 万美金，投资机构包括 YC，GV (Google Ventures)，A16Z，Accel 等。</p>
 <p>被收购后，经过差不多两年的整合，两位创始人也相继离开了 RedHat，然后出现了开头提到的那一幕：CoreOS 网站全部下线，所有 CoreOS 相关产品镜像也全部下线。<strong>短短五年时间里，CoreOS 可谓是创造了传奇，他们虽然没有走向独立 IPO 这条路，但是被巨头收购也算是不错的归宿。</strong></p>
 <p>CoreOS 的创始人和这家公司都非常低调，在网上很难找到跟他们有关的资料。2021 年 GV 对 CoreOS 两位创始人的采访视频算是为数不多的宝贵资料。这篇采访的主题是：谈论他们是如何抓住巨大机会的。</p>
@@ -194,11 +196,13 @@
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/kong-vs-apisix">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/kong-vs-apisix">
                     上一篇：
                     云原生时代的中外 API 网关之争
                 </a>
-            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/docker">
+            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/docker">
                     下一篇：
                     一封 Docker 公司的来信
                 </a>
@@ -212,7 +216,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -220,7 +224,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -234,10 +238,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -248,7 +252,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -268,7 +272,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 

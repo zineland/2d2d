@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://2d2d.io/static/s1/8/d2iq.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s1/8/d2iq.png">
     <link rel="icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="https://2d2d.io/static/zine.css">
+    <link rel="stylesheet" href="/static/zine.css">
     <link rel="alternate" type="application/atom+xml" title="TO-D 杂志 RSS" href="/feed.xml">
     <style>
       :root {
@@ -33,15 +33,15 @@
 </head>
 
 <body class="h-full bg-secondary">
-    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('https://2d2d.io/static/pattern.svg')">
+    <div class="bg-primary text-main font-bold text-center z-0" style="background-image: url('/static/pattern.svg')">
     <header class="p-8 md:p-10">
-            <div class="text-4xl lg:text-5xl"><a href="https://2d2d.io/">TO-D 杂志</a></div>
+            <div class="text-4xl lg:text-5xl"><a href="/">TO-D 杂志</a></div>
 
             <ul>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/about">关于</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/blog">博客</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/testimonial">读者好评</a></li>
-                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://2d2d.io/sponsor">赞助</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/about">关于</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/blog">博客</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/testimonial">读者好评</a></li>
+                <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="/sponsor">赞助</a></li>
                 <li class="inline-block mt-6 mx-5 text-base hover:underline"><a href="https://github.com/zineland/2d2d">Github</a></li>
                 </ul>
         </header>
@@ -55,7 +55,8 @@
             shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5">
     <div class="relative mx-2">
         <a class="before:block before:absolute before:-inset-1 before:-skew-x-6 before:bg-primary relative inline-block
-                                transition sm:hover:scale-110 duration-500" href="https://2d2d.io/s1">
+                                transition sm:hover:scale-110 duration-500"
+                        href="/s1">
             <div class="relative text-main px-4">第一季</div>
         </a>
         <span class="ml-2 text-gray-700"> /  第 ⁨8⁩ 篇</span>
@@ -63,9 +64,10 @@
     <div class="mt-4 mb-8 w-full border-dashed border-t border-slate-300"></div>
     <div class="prose mx-auto">
         <h1 class="text-center">曾经 Mesos 背后的公司，如今在干嘛?</h1>
-        <div class="relative text-sm text-gray-400">
+        <div class="flex items-center justify-between text-gray-500">
             <span>2022-02-18</span>
-            <span class="absolute right-2">Folyd</span>
+            <span>Folyd</span>
+    
         </div>
     </div>
     <article class="prose mx-auto my-12">
@@ -80,7 +82,7 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s1/8/mesos.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/8/mesos.png" alt="" loading="lazy"></p>
 <h3 id="出生名门" class="flex group">
     <span>出生名门</span>
     <a href="#出生名门" class="ml-2 inline-flex items-center opacity-0 border-0 group-hover:opacity-100" aria-label="Anchor">
@@ -93,7 +95,7 @@
 </h3>
 <p>Mesos 最初是加州伯克利大学 RAD 实验室 2009 年开始的一个学术研究项目，当时项目的主要负责人是 Mesos <a href="https://people.eecs.berkeley.edu/%7Ealig/papers/mesos.pdf">这篇论文</a>的第一作者 Benjamin Hindman，他是 RAD 实验室的一名博士研究生。<strong>加州伯克利大学是现代计算机技术领域的一朵皇冠，里面诞生了非常多至今影响深远的技术，从 RISC 指令集、RAID（冗余磁盘阵列），到 PostgreSQL、Log-Structure Filesystem，再到 Spark 和 Ray，甚至连 eBPF 里面的 B 都是 Berkeley。</strong> 毫无疑问，Mesos 就是这样一个出生名门的项目。</p>
 <p>此时的 Twitter 早已进入高速发展的阶段，与之伴随的是 Twitter 频繁宕机的「失败鲸」时光。2010 年，正在 Twitter 苦不堪言的时候，他们看到了 Mesos 这个项目，随后马上应用到了 Twitter，成为 Twitter 自定义 PaaS 的实现基础，管理着 Twitter 超过 30 万台服务器上的应用部署。Benjamin Hindman 当时也加入了 Twitter，负责开发和部署 Mesos。Twitter 的这套基于 Mesos 的 PaaS 解决方案就是后来的 <a href="https://aurora.apache.org/">Apache Aurora</a>。</p>
-<p><img src="https://2d2d.io/static/s1/8/fall-whale.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/8/fall-whale.png" alt="" loading="lazy"></p>
 <blockquote>
 <p>Twitter 2008 ~ 2013 年宕机时的页面，被海外网友称为「失败鲸」。</p>
 </blockquote>
@@ -112,7 +114,7 @@
 <p>Mesos 一词来源于希腊语，是 middle (中间) 的意思，英语里面甚至有一个 <em>meso-</em> 的词根。Sphere 则表示某个领域或范围，而 Mesosphere 既指地球大气层的中流层（介于平流层和热流层中间），也可以表示 Mesos 这个领域。</p>
 <p>国内青云也有一个专注于 Kubernetes 技术的团队，他们的产品名为 <a href="https://kubesphere.io/">Kubesphere</a>，估计也是受到 Mesosphere 的启发。</p>
 </blockquote>
-<p><img src="https://2d2d.io/static/s1/8/mesosphere.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/8/mesosphere.png" alt="" loading="lazy"></p>
 <p>当时的 Mesosphere 除了 Apache Mesos 外，还有两款主要产品：</p>
 <ul>
 <li>
@@ -191,12 +193,12 @@
         </div>
     </a>
 </h2>
-<p><img src="https://2d2d.io/static/s1/8/d2iq.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/8/d2iq.png" alt="" loading="lazy"></p>
 <p>Mesos “死了”，但 Mesosphere 这家公司还得继续活着。<strong>没有成王败寇，新生的 D2iQ 选择拥抱了它曾经的死敌 Kubernetes，往事如烟，重新来过！</strong></p>
 <blockquote>
 <p>新名字 D2iQ 初看起来非常奇怪，但把它拆开后就可以发现里面的用意：<strong>D2iQ 里面的 D2 是指 Day 2，iQ 就是大家平时所指的那个 IQ (智商) 。</strong></p>
 <p>软件开发生命周期可以划分为 Day 0，Day 1 和 Day 2：</p>
-<p><img src="https://2d2d.io/static/s1/8/day2.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/8/day2.png" alt="" loading="lazy"></p>
 <ul>
 <li>
 <p>Day 0 通常是指初期的需求明确，架构设计阶段；</p>
@@ -218,18 +220,20 @@
 <li><a href="https://d2iq.com/products/kaptain">Kaptain</a> -  基于 Kubernetes 和 Kubeflow 的企业级端到端机器学习平台，<a href="https://d2iq.com/blog/kudo-for-kubeflow-the-enterprise-machine-learning-platform">前身</a>是 KUDO for Kubflow 这个项目；</li>
 <li><a href="https://d2iq.com/kubernetes-platform">DKP</a> (D2iQ Kubernetes Platform) - 将上面的产品打包到一起售卖的 Kubernetes 综合解决方案；</li>
 </ul>
-<p><img src="https://2d2d.io/static/s1/8/dkp.png" alt="" loading="lazy"></p>
+<p><img src="/static/s1/8/dkp.png" alt="" loading="lazy"></p>
 <p><strong>技术迭代如此之快，市场竞争愈加激烈，没有人能预料到下一个 Kubernetes 会什么时候崛起，唯有勇敢、坚定，跌倒了再重新爬起，像 D2iQ 一样，既往不恋，纵情向前！</strong></p>
 
 
         </article>
     <div class="my-4 w-full border-dashed border-t border-slate-300"></div>
         <div class="flex flex-col md:flex-row">
-        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/rancher">
+        <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/rancher">
                     上一篇：
                     云农场的放牧人 Rancher
                 </a>
-            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline" href="https://2d2d.io/s1/mirantis">
+            <a class="inline my-1 py-2 px-4 font-bold text-slate-700 hover:underline"
+                    href="/s1/mirantis">
                     下一篇：
                     收购 Docker 企业业务的 Mirantis 是什么来路？
                 </a>
@@ -243,7 +247,7 @@
         <div class="text-sm md:text-2xl border-solid border-2 border-[#ffb52f] py-3">
             <span class="text-main bg-primary p-4">订阅方式：</span>
             <span class="px-2 md:px-4">
-                <a class="hover:underline" href="https://2d2d.io/feed.xml">RSS</a>、
+                <a class="hover:underline" href="/feed.xml">RSS</a>、
                 <a class="hover:underline" href="https://t.me/tod_magazine">Telegram 频道</a>
             </span>
         </div>
@@ -251,7 +255,7 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="https://2d2d.io/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
             <div class="py-6">
                 专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
             </div>
@@ -265,10 +269,10 @@
             <div class="pt-12 sm:pt-0">
                 <div class="bg-primary w-5 h-5 my-4"></div>
                 <div class="text-xl font-bold mb-4">更多</div>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/about">关于杂志</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/sponsor">赞助支持</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/blog">博客</a>
-                <a class="my-2 block hover:underline" href="https://2d2d.io/faq">常见问题</a>
+                <a class="my-2 block hover:underline" href="/about">关于杂志</a>
+                <a class="my-2 block hover:underline" href="/sponsor">赞助支持</a>
+                <a class="my-2 block hover:underline" href="/blog">博客</a>
+                <a class="my-2 block hover:underline" href="/faq">常见问题</a>
                 <a class="my-2 block hover:underline" href="https://github.com/zineland/2d2d">Github</a>
             </div>
         </div>
@@ -279,7 +283,7 @@
         Copyright © 2022 TO-D 杂志
     </div>
 </div>
-<link rel="stylesheet" href="https://2d2d.io/static/footer.css">
+<link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -299,7 +303,7 @@
         </div>
     </footer>
 </body>
-<script src="https://2d2d.io/static/medium-zoom.min.js"></script>
-<script src="https://2d2d.io/static/zine.js"></script>
+<script src="/static/medium-zoom.min.js"></script>
+<script src="/static/zine.js"></script>
 </html>
 
