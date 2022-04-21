@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>TO-D 杂志</title>
     <subtitle>专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。</subtitle>
-    <updated>2022-04-21T08:49:19.483424345+00:00</updated>
+    <updated>2022-04-21T16:05:35.211688944+00:00</updated>
     <id>https://2d2d.io</id>
     <link href="https://2d2d.io/feed.xml" rel="self" type="application/atom+xml" />
     <link href="https://2d2d.io" rel="alternate" type="text/html" />
@@ -408,7 +408,11 @@
 <p>流水不争先，争的是滔滔不绝。在池子里自己玩，即使建得再早，扩得再大，终究会成为一潭死水。要能滔滔不绝，还是需要汇入整个水系。</p>
 <p>无论是 Developer Tools 还是通用 SaaS 都是这个道理。</p>
 <blockquote>
-<p>本文由 <a href="https://bytebase.com">Bytebase</a> CEO <code>@Tianzhou</code> 投稿，责任编辑 <a class="author-code" href="/@folyd">
+<p>本文由 <a href="https://bytebase.com">Bytebase</a> CEO <a class="author-code" href="/@tianzhou">
+<img src="/static/avatar/tianzhou.jpg" alt="avatar" loading="lazy">
+<span>Tianzhou</span>
+</a>
+ 投稿，责任编辑 <a class="author-code" href="/@folyd">
 <img src="/static/avatar/folyd.jpg" alt="avatar" loading="lazy">
 <span>Folyd</span>
 </a>
