@@ -80,4 +80,4 @@ https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ
 
 HashiCorp 是 2012 年创立，CNCF 的云原生在 2015 年才提出来，目前 HashiCorp 有五款产品在 CNCF 的全景图中，分别是 Terraform, Vault, Nomad, Consul, Packer，而这五款产品都是 2015 年之前发布的。从创立到上市的九年时间，HashiCorp 顺应了时代的潮流，而时代也成就了 HashiCorp!
 
-![](/static//s1/3/ipo.png)
+![](/static/s1/3/ipo.png)
