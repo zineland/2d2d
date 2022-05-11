@@ -3,6 +3,7 @@
 url = "https://2d2d.io"
 name = "TO-D 杂志"
 description = "专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。"
+social_image = "/static/2d2d.png"
 locale = "zh"
 menu = [
   { name = "关于", url = "/about" },
@@ -40,11 +41,15 @@ bytebase.com 首席涂鸦官
 
 
 [theme]
-primary-color = "#ffb52f"
-main-color = "#000"
-link-color = "#e07312"
-background-image = "/static/pattern.svg"
-footer-template = "templates/footer.html"
+primary_color = "#bbdaf3"
+main_color = "#000"
+link_color = "#e07312"
+background_image = "/static/pattern.svg"
+head_template = "templates/head.html"
+footer_template = "templates/footer.html"
+
+[markdown]
+highlight_theme = "ayu-light"
 
 [[issue]]
 slug = "s1"
