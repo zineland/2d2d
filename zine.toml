@@ -41,7 +41,7 @@ bytebase.com 首席涂鸦官
 
 
 [theme]
-primary_color = "#bbdaf3"
+primary_color = "#ffb52f"
 main_color = "#000"
 link_color = "#e07312"
 background_image = "/static/pattern.svg"
