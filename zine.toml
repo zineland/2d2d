@@ -47,6 +47,7 @@ link_color = "#e07312"
 background_image = "/static/pattern.svg"
 head_template = "templates/head.html"
 footer_template = "templates/footer.html"
+article_extend_template = "templates/article-extend.html"
 
 [markdown]
 highlight_theme = "ayu-light"
