@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>TO-D 杂志</title>
     <subtitle>专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。</subtitle>
-    <updated>2022-05-11T14:02:21.820643057+00:00</updated>
+    <updated>2022-06-08T15:22:22.052272106+00:00</updated>
     <id>https://2d2d.io</id>
     <link href="https://2d2d.io/feed.xml" rel="self" type="application/atom+xml" />
     <link href="https://2d2d.io" rel="alternate" type="text/html" />
-    <generator uri="https://github.com/zineland/zine" version="0.5.0">zine</generator>
+    <generator uri="https://github.com/zineland/zine" version="0.6.0">zine</generator>
     <author>
         <name>TO-D 杂志</name>
         <uri>https://2d2d.io</uri>

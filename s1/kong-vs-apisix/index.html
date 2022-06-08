@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport"
               content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#ffb52f">
         <title>云原生时代的中外 API 网关之争</title>
 <meta name="description" content="API 网关是企业应用的关键基础组件和流量入口，目前绝大部分 API 网关市场份额都被几大公有云厂商占据（AWS API Gateway, Google Apigee, 阿里云 API 网关等）。但是公有云厂商的 API 网关不符合 CNCF 的云原生理念，如果你用了阿里云的 API 网关，你就会被被它锁定了，因为网关是流量的入口，你没有办法分发到其它云厂商上。CNCF 全景图的 API Gate">
 <meta property="og:type" content="website">
@@ -17,11 +18,6 @@
     <meta property="og:image" content="https://2d2d.io/static/s1/4/vs.png">
     <meta name="twitter:image" content="https://2d2d.io/static/s1/4/vs.png">
 <link rel="icon" type="image/png" href="/favicon.ico">
-        <link rel="stylesheet" href="/static/zine.css">
-        <link rel="alternate"
-              type="application/atom+xml"
-              title="TO-D 杂志 RSS"
-              href="/feed.xml">
         <link rel="stylesheet" href="/static/footer.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFMPLGGJHQ"></script>
 <script>
@@ -32,7 +28,11 @@
     }
     gtag('js', new Date());
     gtag('config', 'G-PFMPLGGJHQ');
-</script>
+</script><link rel="stylesheet" href="/static/zine.css">
+        <link rel="alternate"
+              type="application/atom+xml"
+              title="TO-D 杂志 RSS"
+              href="/feed.xml">
         <style>
             :root {
                 --primary-color: #ffb52f;
@@ -218,6 +218,24 @@
                         </a>
                     </div>
         </div>
+    <div class="mx-4">
+    <div class="giscus"></div>
+</div>
+<script src="https://giscus.app/client.js"
+    data-repo="zineland/2d2d"
+    data-repo-id="R_kgDOG8KMPw"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOG8KMP84CPN6h"
+    data-mapping="pathname"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+</script>
 </main>
             <footer class="relative">
                 <div class="bg-neutral-900 p-10 pt-20 text-slate-300 translate-y-[-8rem]">
@@ -260,8 +278,7 @@
     <div class="text-xs text-slate-400 text-center mt-12">
         Copyright © 2022 TO-D 杂志
     </div>
-</div>
-                <a href="https://github.com/zineland"
+</div><a href="https://github.com/zineland"
                    class="absolute z-20 bottom-0 w-full text-center font-bold md:text-slate-100 md:opacity-10 md:hover:opacity-50 md:bg-transparent bg-primary p-2 text-main">
                     Proudly powered by Zine.
                 </a>
