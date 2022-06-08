@@ -1,6 +1,10 @@
 
 # 博客列表
 
+## 2022-06-09 文章页面增加了评论功能
+
+Zine 更新到 [0.6 版](https://github.com/zineland/zine/releases/tag/v0.6.0)之后，支持扩展文章页面了，于是我基于 [Giscus](https://giscus.app/) 加了一个评论功能。完全是基于 Github Discussion 的，大家点赞评论。👏👏
+
 ## 2022-04-21 上线了作者页面
 
 这是我的页面：[https://2d2d.io/@folyd](https://2d2d.io/@folyd)
