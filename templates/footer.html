@@ -11,9 +11,9 @@
     <div class="container mx-auto flex flex-col sm:flex-row">
         <div class="text-sm max-w-sm">
             <div class="bg-primary w-12 h-5 my-4"></div>
-            <a class="text-4xl font-bold text-slate-100" href="/">TO-D 杂志</a>
+            <a class="text-4xl font-bold text-slate-100" href="/">{{ site.name }}</a>
             <div class="py-6">
-                专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。
+                {{ site.description }}
             </div>
         </div>
         <div class="flex flex-col sm:flex-row sm:justify-around grow">
@@ -36,6 +36,6 @@
 </div>
 <div class="absolute bottom-0 left-0 right-0 h-36 bg-neutral-900">
     <div class="text-xs text-slate-400 text-center mt-12">
-        Copyright © 2022 TO-D 杂志
+        Copyright © {{ now() | date(format="%Y") }} {{ site.name }}
     </div>
 </div>
