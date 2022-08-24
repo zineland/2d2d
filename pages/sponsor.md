@@ -7,6 +7,7 @@
 
 ## 个人赞助
 
+- Github Sponsor: [@Folyd](https://github.com/sponsors/Folyd)
 - 爱发电：[https://afdian.net/@folyd](https://afdian.net/@folyd)
 - Paypal: [https://paypal.me/wichna](https://paypal.me/wichna)
 
