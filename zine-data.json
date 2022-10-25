@@ -1,72 +1,94 @@
 {
   "urlPreviews": {
+    "https://2d2d.io": [
+      "TO-D 杂志",
+      "专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。",
+      "https://2d2d.io/static/2d2d.png"
+    ],
     "https://2d2d.io/s1/docker/": [
       "一封 Docker 公司的来信",
-      "亲爱的开发者，您好，"
+      "亲爱的开发者，您好，",
+      "https://2d2d.io/static/s1/6/docker.jpeg"
     ],
     "https://2d2d.io/s2/yc-w22/": [
       "YC 2022 冬季营 DevTools 公司一览",
-      "上周 (2022 年 3 月 29 号) YC Winter 2022 Batch 举行了 Demo Day。此次亮相的 startup 数量也创下了 398 家的新高。Developer Tools 向来是 YC 项目里的热门赛道，这次也"
+      "上周 (2022 年 3 月 29 号) YC Winter 2022 Batch 举行了 Demo Day。此次亮相的 startup 数量也创下了 398 家的新高。Developer Tools 向来是 YC 项目里的热门赛道，这次也",
+      "https://2d2d.io/static/s2/2/yc-w22.png"
     ],
     "https://deislabs.io/posts/introducing-hippo/": [
       "Introduction to Hippo: the WebAssembly PaaS",
-      "Hippo makes it easy to run applications and services at scale"
+      "Hippo makes it easy to run applications and services at scale",
+      "https://deislabs.io/images/twitter-card.png"
     ],
     "https://github.com/zineland/zine": [
-      "Zine - an simple and opinionated tool to build your own magazine.",
-      "GitHub - zineland/zine: Zine - an simple and opinionated tool to build your own magazine."
+      "GitHub - zineland/zine: Zine - a simple and opinionated tool to build your own magazine.",
+      "Zine - a simple and opinionated tool to build your own magazine. - GitHub - zineland/zine: Zine - a simple and opinionated tool to build your own magazine.",
+      "https://repository-images.githubusercontent.com/463489443/841f79ec-570b-4a52-b855-2ca4852acd11"
     ],
     "https://mp.weixin.qq.com/s/4UCAAtxLY1YRoevl5ACQ-g": [
       "Hydra - 通过 PostgreSQL 集成 Snowflake 的 HTAP 数据库",
-      "Hydra, 基于 PostgreSQL 的 Hybrid Transactional / Analytical Processing / HTAP 系统。"
+      "Hydra, 基于 PostgreSQL 的 Hybrid Transactional / Analytical Processing / HTAP 系统。",
+      "http://mmbiz.qpic.cn/mmbiz_jpg/0nhrHSRiaNrskUSqpIiaOPDibqkvAw44aVpKydnzLdHBRBRsYHhuaheumMFdniccr5xiabG5sQibG5OiaLicSbbXdEBfRQ/0?wx_fmt=jpeg"
     ],
     "https://mp.weixin.qq.com/s/KOVqdCnf73ptg8dmLYf5Aw": [
       "TO-D 观察｜小小的终端何以撬动千万美元资本",
-      "这篇文章不是为了宣传 Warp，而是我本人想探索 Warp 融资 2300 w 美元背后的价值。"
+      "这篇文章不是为了宣传 Warp，而是我本人想探索 Warp 融资 2300 w 美元背后的价值。",
+      "http://mmbiz.qpic.cn/mmbiz_jpg/hicrFibaKFMd0zpHN1iaKvpoCiccs3V7bAQ88qXmTALQ8qXvKzt4LHXQGolUU60xu8X1zqYggicMQLpNJWKibjgOfcwA/0?wx_fmt=jpeg"
     ],
     "https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ": [
       "【年度公司】Hashicorp：160亿美金的开源标杆，15000字的研究笔记，2021年不遗憾",
-      "2021年最后一天，看看Hashicorp怎样用十年的坎坷，打造了一家了不起的公司。产品战略，开源商业化，全球社区，以及，坚持理想主义那些事儿。"
+      "2021年最后一天，看看Hashicorp怎样用十年的坎坷，打造了一家了不起的公司。产品战略，开源商业化，全球社区，以及，坚持理想主义那些事儿。",
+      "http://mmbiz.qpic.cn/mmbiz_jpg/hxjYKa0HByL7MG7cxKrHlDXlmGkTrAeFDrEZtT5A3H1ajQTZzs4TiaGlK3xdiaF3Q5S8Xicic30mMIo0lxYOJI47bQ/0?wx_fmt=jpeg"
     ],
     "https://retool.com/blog/series-c/": [
       "Series C: Raising less money at lower valuations",
-      "Many startups today fundraise with the goal of getting the most money at the highest valuation possible. But at Retool, we decided to take the opposite strategy."
+      "Many startups today fundraise with the goal of getting the most money at the highest valuation possible. But at Retool, we decided to take the opposite strategy.",
+      ""
     ],
     "https://www.gv.com/news/core-os-founders/": [
-      "CoreOS Co-Founders Alex Polvi and Brandon Philips on Tackling Enormous Opportunities | GV",
-      "One of the more fulfilling aspects of my job is connecting new founders with experienced mentors who can help them grow. CoreOS founders Alex Polvi and Brandon Philips are among the most requested ope"
+      "CoreOS Co-Founders Alex Polvi and Brandon Philips on Tackling Enormous Opportunities",
+      "One of the more fulfilling aspects of my job is connecting new founders with experienced mentors who can help them grow. CoreOS founders Alex Polvi and Brandon Philips are among the most requested ope",
+      "https://images.ctfassets.net/iuoxpp2nznvy/2JXhKfrOFKPdMKdiDtlu3n/2581195105c28db8000dc6cf51ed2659/coreos-alt.jpeg"
     ],
     "https://www.hashicorp.com/blog/a-new-chapter-for-hashicorp": [
       "A New Chapter for HashiCorp",
-      "As we officially enter the public markets, we plan to continue to do what we think we do best: solving problems for our end users."
+      "As we officially enter the public markets, we plan to continue to do what we think we do best: solving problems for our end users.",
+      "https://www.datocms-assets.com/2885/1639065942-ipo-bell-ring-company-photo.jpg"
     ],
     "https://www.hashicorp.com/state-of-the-cloud": [
       "HashiCorp State of Cloud Strategy Survey",
-      "Multi-cloud has become the de facto standard operations model for IT organizations of all sizes, in all regions, and every industry."
+      "The 2022 HashiCorp State of Cloud Strategy Survey reveals multi-cloud growth, cloud security’s importance, the lack of cloud skills, and the rise of platform teams",
+      "https://www.datocms-assets.com/2885/1659103394-sotc-social-share-2022.png"
     ],
     "https://www.linkedin.com/pulse/why-im-leading-warps-series-dylan-field": [
-      "Dylan Field: Why I'm Leading Warp's Series A",
-      "I’m ecstatic to lead Warp’s Series A round. This is my first time leading a round like this; I’m very grateful for the opportunity to support a company that I believe will open up our industry and bring more collaboration to software engineering."
+      "Why I'm Leading Warp's Series A",
+      "In today’s world full of inequality, the power to create digitally equals economic mobility. It’s imperative that we reduce barriers to creation so that more people can find opportunity and fulfil",
+      "https://media-exp1.licdn.com/dms/image/C4E12AQGdvXMJk05YAw/article-cover_image-shrink_720_1280/0/1649173880597?e=2147483647&v=beta&t=86ywRfJvLe28rFthQHdezLvfl8XmRAnFcWtcJ_INLbE"
     ],
     "https://www.nomadproject.io/docs/nomad-vs-kubernetes": [
       "Nomad vs. Kubernetes | Nomad by HashiCorp",
-      "Comparison between Nomad and Kubernetes"
+      "Comparison between Nomad and Kubernetes",
+      "https://www.nomadproject.io/nomad-public/img/og-image.png"
     ],
     "https://www.redhat.com/en/blog/faq-red-hat-acquire-coreos": [
       "FAQ: Red Hat to acquire CoreOS",
-      "What is being announced?On Jan. 30, 2018, Red Hat announced that it has signed a definitive agreement to acquire CoreOS, Inc. The acquisition is subject to certain customary closing conditions.Q. "
+      "]Q. What is being announced?On Jan. 30, 2018, Red Hat announced that it has signed a definitive agreement to acquire CoreOS, Inc. The acquisition is subject to certain customary closing conditions.Q. ",
+      "https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg"
     ],
     "https://www.suse.com/c/rancher_blog/rancher-desktop-1-0-0-has-arrived/": [
       "Rancher Desktop 1.0.0 Has Arrived | SUSE Communities",
-      "We are happy to announce the 1.0.0 release of Rancher Desktop. This release has been months in the making since development on Rancher Desktop began. After starting small and learning what users neede"
+      "We are happy to announce the 1.0.0 release of Rancher Desktop. This release has been months in the making since development on Rancher Desktop began. After starting small and learning what users neede",
+      "https://www.suse.com/c/wp-content/uploads/2022/01/rancher-desktop.jpeg"
     ],
     "https://www.suse.com/c/rancher_blog/suse-enters-into-definitive-agreement-to-acquire-rancher-labs/": [
       "SUSE Enters Into Definitive Agreement to Acquire Rancher Labs | SUSE Communities",
-      "Read our free white paper: How to Build a Kubernetes Strategy Download Now I’m excited to announce that Rancher has signed a definitive agreement to be acquired by SUSE. Rancher is the most widely u"
+      "Read our free white paper: How to Build a Kubernetes Strategy Download Now I’m excited to announce that Rancher has signed a definitive agreement to be acquired by SUSE. Rancher is the most widely u",
+      "https://www.suse.com/c/wp-content/uploads/2021/09/rancher_blog_suse-rancher-stronger-together.png"
     ],
     "https://www.warp.dev/blog/introducing-warp": [
       "Introducing Warp: The Terminal for the 21st Century | Warp",
-      "Today, I’m proud to officially introduce Warp, a from-first-principles reinvention of the terminal to make it work better for developers and teams."
+      "",
+      "https://assets-global.website-files.com/6221c6f68d6664279c408870/624c653083e23a50ca642dcd_blogCover.png"
     ]
   }
 }

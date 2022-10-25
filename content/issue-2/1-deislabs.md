@@ -11,7 +11,7 @@ Deis，就是 DeisLabs 的前身，这是一个非常优秀并且充满创造力
 
 我们的故事要先从 PaaS 开始说起。2007 年，[Heroku](https://www.heroku.com/) 成立后开启了 PaaS 的黄金时代。很多人把 Heroku 称为 PaaS “鼻祖”，其实并不准确。比他成立更早的 [Engine Yard](https://www.engineyard.com/) 在 2006 年就开始做类似的事情了，只是 Engine Yard 后来发展比 Heroku 差太多，只能算 PaaS 领域的第二梯队。Engine Yard 几乎是一个没人听过的名字，但他与我们今天的主角 DeisLabs 息息相关。2015 年 4 月 15 日，Engine Yard [收购](https://web.archive.org/web/20170611174913/https://blog.engineyard.com/2015/engine-yard-joins-forces-with-opdemand)了一家名为 OpDemand 的公司，这家公司有一款叫 Deis 的主打产品。Deis 是 OpDemand 受 Heroku 启发，于 2013 年开始开发的 PaaS 产品（那个时候的 Heroku 真的是非常火）。Deis 最早的架构是基于 CoreOS, Fleet 和 Docker，后来被称为 v1 版架构，早已被弃用，不过我们现在依然可以在 Github 上一瞥曾经 Deis v1 的代码 ([https://github.com/deis/deis](https://github.com/deis/deis))。
 
-> 没错，这里又出现了 Fleet，就是 CoreOS 打造的 Fleet。我们曾经在 [CoreOS](/s1/coreos)、[Rancher](/s1/rancher) 那两期都提到过它。
+> 没错，这里又出现了 Fleet，就是 CoreOS 打造的 Fleet。我们曾经在`/s1/coreos`、`/s1/rancher`那两期都提到过它。
 
 OpDemand 在加入 Engine Yard 之后，继续以 Deis 的名义开发维护 Deis 这款产品，他们有自己独立的官网 [https://deis.com](https://web.archive.org/web/20170209220933/https://deis.com/) 。2015 年 12 月 30 号，他们发布了基于 Kubernetes 的 Deis 第二代产品 Deis Workflow。当年的 Deis 确实做的很不错的，影响力甚至慢慢的扩散到了中国，知乎上现在还可以看到当年和 Deis 有关的问题。
 
