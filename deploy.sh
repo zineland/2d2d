@@ -6,7 +6,7 @@ BRANCH="gh-pages"
 
 TEMP_DIR="/tmp/2d2d-build"
 
-wget https://github.com/zineland/zine/releases/download/$ZINE_VERSION/zine-x86_64-unknown-linux-gnu.tar.gz -O zine.tar.gz
+wget https://github.com/zineland/zine/releases/download/${ZINE_VERSION}/zine-x86_64-unknown-linux-gnu.tar.gz -O zine.tar.gz
 tar xvf zine.tar.gz
 RUST_BACKTRACE=1 ./zine build . ${TEMP_DIR}
 

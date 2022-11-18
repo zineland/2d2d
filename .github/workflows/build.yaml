@@ -3,6 +3,11 @@ name: Build and deploy
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  ZINE_VERSION: v0.7.0
 
 jobs:
   build:
