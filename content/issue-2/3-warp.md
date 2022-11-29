@@ -93,6 +93,6 @@ Warp 的这笔融资最近在国内也吸引了不少开发者的注意，大家
 
 > 本文最初由 [张汉东](https://github.com/zhanghandong) 投稿，后由笔者从另外一个角度重新编写。标题中`终端的困境`受张汉东的文章所启发，在此再次感谢张汉东，也强烈推荐阅读他的文章。
 
-```urlpreview
+```urlpreview, image:false
 https://mp.weixin.qq.com/s/KOVqdCnf73ptg8dmLYf5Aw
 ```

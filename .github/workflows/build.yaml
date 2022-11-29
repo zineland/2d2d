@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  ZINE_VERSION: v0.7.0
+  ZINE_VERSION: v0.8.0
 
 jobs:
   build:

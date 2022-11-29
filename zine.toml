@@ -3,6 +3,7 @@
 url = "https://2d2d.io"
 name = "TO-D 杂志"
 description = "专注于探讨全球 To-D 领域相关产品、创业公司、融资等资讯的专栏杂志。"
+edit_url = "https://github.com/zineland/2d2d/edit/main"
 social_image = "/static/2d2d.png"
 locale = "zh"
 menu = [
@@ -51,16 +52,3 @@ article_extend_template = "templates/article-extend.html"
 
 [markdown]
 highlight_theme = "ayu-light"
-
-[[issue]]
-slug = "s1"
-number = 1
-title = "第一季"
-path = "content/issue-1"
-intro = "content/issue-1/intro.md"
-
-[[issue]]
-slug = "s2"
-number = 2
-title = "第二季"
-path = "content/issue-2"

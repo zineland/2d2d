@@ -20,6 +20,11 @@
       "Hippo makes it easy to run applications and services at scale",
       "https://deislabs.io/images/twitter-card.png"
     ],
+    "https://developer.hashicorp.com/nomad/docs/nomad-vs-kubernetes": [
+      "Nomad vs. Kubernetes | Nomad | HashiCorp Developer",
+      "Comparison between Nomad and Kubernetes",
+      "https://developer.hashicorp.com/og-image/nomad.jpg"
+    ],
     "https://github.com/zineland/zine": [
       "GitHub - zineland/zine: Zine - a simple and opinionated tool to build your own magazine.",
       "Zine - a simple and opinionated tool to build your own magazine. - GitHub - zineland/zine: Zine - a simple and opinionated tool to build your own magazine.",
@@ -65,15 +70,10 @@
       "In today’s world full of inequality, the power to create digitally equals economic mobility. It’s imperative that we reduce barriers to creation so that more people can find opportunity and fulfil",
       "https://media-exp1.licdn.com/dms/image/C4E12AQGdvXMJk05YAw/article-cover_image-shrink_720_1280/0/1649173880597?e=2147483647&v=beta&t=86ywRfJvLe28rFthQHdezLvfl8XmRAnFcWtcJ_INLbE"
     ],
-    "https://www.nomadproject.io/docs/nomad-vs-kubernetes": [
-      "Nomad vs. Kubernetes | Nomad by HashiCorp",
-      "Comparison between Nomad and Kubernetes",
-      "https://www.nomadproject.io/nomad-public/img/og-image.png"
-    ],
     "https://www.redhat.com/en/blog/faq-red-hat-acquire-coreos": [
       "FAQ: Red Hat to acquire CoreOS",
       "]Q. What is being announced?On Jan. 30, 2018, Red Hat announced that it has signed a definitive agreement to acquire CoreOS, Inc. The acquisition is subject to certain customary closing conditions.Q. ",
-      "https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/red-hat-social-share.jpg"
+      "https://www.redhat.com/themes/custom/rhdc/img/red-hat-social-share.jpg"
     ],
     "https://www.suse.com/c/rancher_blog/rancher-desktop-1-0-0-has-arrived/": [
       "Rancher Desktop 1.0.0 Has Arrived | SUSE Communities",

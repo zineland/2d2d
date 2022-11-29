@@ -47,7 +47,7 @@ HashiCorp 目前总共有八款主打产品，囊括了从开发 (Packer, Vagran
 - [Nomad](https://www.nomadproject.io/) - 简单灵活的 (容器化和传统非容器化) 应用部署、调度、管理的解决方案，它可以无缝的和  Terraform, Vault, Consul 结合，是一个轻量级的 Kubernetes 替代产品；
 
   ```urlpreview
-  https://www.nomadproject.io/docs/nomad-vs-kubernetes
+  https://developer.hashicorp.com/nomad/docs/nomad-vs-kubernetes
   ```
 
 - [Boundary](https://www.boundaryproject.io/) - 2020 年 10 月份推出的多云远程访问解决方案，很有创新性，目前也没有很好的竞争产品；
@@ -74,7 +74,7 @@ HashiCorp 的商业模式也很有代表性，算是开源软件商业化的经�
 
 > 商业模式这部分内容有参考 **M小姐研习录** 的这篇公众号文章，写的非常详细，强烈推荐阅读：
 
-```urlpreview
+```urlpreview, image:false
 https://mp.weixin.qq.com/s/Y2A7-Ui2nzUgodkEbgR6lQ
 ```
 
