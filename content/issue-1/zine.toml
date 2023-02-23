@@ -1,6 +1,7 @@
 slug = "s1"
 number = 1
 title = "第一季"
+publish = true
 
 [[article]]
 slug = "retool"

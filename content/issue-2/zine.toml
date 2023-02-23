@@ -1,6 +1,7 @@
 slug = "s2"
 number = 2
 title = "第二季"
+publish = true
 
 [[article]]
 slug = "deislabs"
